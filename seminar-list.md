@@ -107,7 +107,7 @@
 | 허유민          |    yumin224@snu.ac.kr               |            |            |            |
 |  강민성         |    darkester608@gmail.com               |            |            |            |
 |  김희서         |    graceheeseo@gmail.com               |            |            |            |
-|  전성진         |     samuel11271127@gmail.com              |            |            |            |
+|  전성진         |     samuel11271127@gmail.com              | React | Django | Spring |
 |  김지원         |    jeewonbob@gmail.com               |            |            |            |
 |  김도윤         |    doyoon0616@snu.ac.kr               |            |            |            |
 |  이상우         |    rain030411@gmail.com               |            |            |            |
