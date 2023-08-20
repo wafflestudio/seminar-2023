@@ -53,7 +53,7 @@
 |   정우진        |    woojin5555@gmail.com               |            |            |            |
 |  임지한         |    jhlim101@snu.ac.kr               |            |            |            |
 |  남기태         |   kevin9922@snu.ac.kr                |            |            |            |
-|  조석희         |   louischo453@gmail.com                |            |            |            |
+|  조석희         |   louischo453@gmail.com                |      react      |      android      |      django      |
 |   이민석        |   ehdtodvodl@gmail.com                |            |            |            |
 |  이규원         |   leekyw0323@snu.ac.kr                |            |            |            |
 |  심영인         |   sspjyins@snu.ac.kr                |            |            |            |
