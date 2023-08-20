@@ -70,7 +70,7 @@
 |   최서현        |    lily_choi7@snu.ac.kr               |            |            |            |
 | 정진혁          |    wlsgur263@snu.ac.kr               |            |            |            |
 |  김상협         |    drchasekim@gmail.com               |            |            |            |
-|  송유민         |    yms1204@snu.ac.kr               |            |            |            |
+|  송유민         |    yms1204@snu.ac.kr               |     react       |   iOS         |   django         |
 |  박지상         |   jace.jisang.park@gmail.com                |            |            |            |
 |  장하경         |   4722lego@gmail.com                |            |            |            |
 |   박소영        |   znlfl2@snu.ac.kr                |            |            |            |
