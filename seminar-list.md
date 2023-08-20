@@ -76,7 +76,7 @@
 |   박소영        |   znlfl2@snu.ac.kr                |            |            |            |
 |  박민철         |   parkmc1227@gmail.com                |            |            |            |
 |  백수지         |   sjvaque@snu.ac.kr                |            |            |            |
-|  권현구         |    harryk0702@gmail.com               |            |            |            |
+|  권현구         |    harryk0702@gmail.com               |   iOS         |   spring         |    django        |
 |  박찬영         |    vitacpark@snu.ac.kr               |            |            |            |
 |  배준범         |    jbjb7263@naver.com               |            |            |            |
 |  이현우         |    dlgusdn0414@snu.ac.kr               |            |            |            |
