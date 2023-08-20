@@ -37,7 +37,7 @@
 |    이수민       |     cirtuare@gmail.com              |            |            |            |
 |   전준아        |     junahjeon2002@snu.ac.kr              |            |            |            |
 |   이한나        |     dlgkssk38@snu.ac.kr              |            |            |            |
-|   김윤식        |      yoonshik1205@gmail.com             |            |            |            |
+|   김윤식        |      yoonshik1205@gmail.com             | django | spring | react |
 |   김태훈        |     terrypotterk@gmail.com              |            |            |            |
 |   이강현        |     yee12300@snu.ac.kr              |            |            |            |
 |   양석훈        |     sukhuny@snu.ac.kr              |            |            |            |
