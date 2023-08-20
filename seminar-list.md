@@ -101,7 +101,7 @@
 |  최승원         |   csw020730@gmail.com                |            |            |            |
 |  조민경         |   oke08034@snu.ac.kr                |            |            |            |
 |  나예경         |   nyk7535@naver.com                |            |            |            |
-|   강우진        |    wj0107@naver.com               |    django        |     react       |     iOS       |
+|   강우진        |    elryu0107@gmail.com               |    django        |     react     |     iOS     |
 |   이선재        |    satelite2517@gmail.com               |            |            |            |
 | 김시현          |   dbsejrdn@snu.ac.kr                |            |            |            |
 | 허유민          |    yumin224@snu.ac.kr               |            |            |            |
