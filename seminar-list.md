@@ -74,7 +74,7 @@
 |  박지상         |   jace.jisang.park@gmail.com                |            |            |            |
 |  장하경         |   4722lego@gmail.com                |            |            |            |
 |   박소영        |   znlfl2@snu.ac.kr                |            |            |            |
-|  박민철         |   parkmc1227@gmail.com                |            |            |            |
+|  박민철         |   parkmc1227@gmail.com                |  react  |  django   |  android  |
 |  백수지         |   sjvaque@snu.ac.kr                |            |            |            |
 |  권현구         |    harryk0702@gmail.com               |            |            |            |
 |  박찬영         |    vitacpark@snu.ac.kr               |            |            |            |
