@@ -88,7 +88,7 @@
 |   김건희        |   gunhee20011113@gmail.com                |            |            |            |
 |   조현우        |   henry.chohw04@gmail.com                |            |            |            |
 |  최영주         |   myday05@snu.ac.kr                |            |            |            |
-|   김민형        |    ytzka14@snu.ac.kr               |            |            |            |
+|   김민형        |    ytzka14@snu.ac.kr               |      django      |     react       |     android      |
 |  배진형         |  jonnyjh3455@gmail.com                 |            |            |            |
 |  강성민         |  kan5995@naver.com                 |            |            |            |
 |  전수빈         |  nname@snu.ac.kr                 |            |            |            |
