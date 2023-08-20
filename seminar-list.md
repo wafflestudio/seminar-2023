@@ -39,7 +39,7 @@
 |   이한나        |     dlgkssk38@snu.ac.kr              |            |            |            |
 |   김윤식        |      yoonshik1205@gmail.com             |            |            |            |
 |   김태훈        |     terrypotterk@gmail.com              |            |            |            |
-|   이강현        |     yee12300@snu.ac.kr              |            |            |            |
+|   이강현        |     yee12300@snu.ac.kr              |   spring   |   react    |   django   |
 |   양석훈        |     sukhuny@snu.ac.kr              |            |            |            |
 |   오수현        |     sh020119@snu.ac.kr              |            |            |            |
 |   한상우        |    buzz2604@gmail.com               |            |            |            |
