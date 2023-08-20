@@ -55,7 +55,7 @@
 |  남기태         |   kevin9922@snu.ac.kr                |            |            |            |
 |  조석희         |   louischo453@gmail.com                |            |            |            |
 |   이민석        |   ehdtodvodl@gmail.com                |            |            |            |
-|  이규원         |   leekyw0323@snu.ac.kr                |            |            |            |
+|  이규원         |   leekyw0323@snu.ac.kr                |   django   |   spring   |   android   |
 |  심영인         |   sspjyins@snu.ac.kr                |            |            |            |
 |  황경서         |   rudtj0801@snu.ac.kr                |            |            |            |
 |  김하늘         |   kimhaneal11@naver.com                |            |            |            |
