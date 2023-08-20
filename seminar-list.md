@@ -56,7 +56,7 @@
 |  조석희         |   louischo453@gmail.com                |            |            |            |
 |   이민석        |   ehdtodvodl@gmail.com                |            |            |            |
 |  이규원         |   leekyw0323@snu.ac.kr                |            |            |            |
-|  심영인         |   sspjyins@snu.ac.kr                |            |            |            |
+|  심영인         |   sspjyins@snu.ac.kr                |   Spring         |    Django        |   android         |
 |  황경서         |   rudtj0801@snu.ac.kr                |            |            |            |
 |  김하늘         |   kimhaneal11@naver.com                |            |            |            |
 |   김민재        |    kkomul1@snu.ac.kr               |            |            |            |
