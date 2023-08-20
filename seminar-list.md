@@ -80,7 +80,7 @@
 |  박찬영         |    vitacpark@snu.ac.kr               |            |            |            |
 |  배준범         |    jbjb7263@naver.com               |            |            |            |
 |  이현우         |    dlgusdn0414@snu.ac.kr               |            |            |            |
-|  박수민         |    parksm06g@gmail.com               |            |            |            |
+|  박수민         |    parksm06g@gmail.com               |   django        |   spring        |   react        |
 |   윤서담        |    sdc2717@snu.ac.kr               |            |            |            |
 |   정시훈        |    gssihunjung@gmail.com               |            |            |            |
 |  강시온         |    sion45840@snu.ac.kr               |            |            |            |
