@@ -112,7 +112,7 @@
 |  김도윤         |    doyoon0616@snu.ac.kr               |            |            |            |
 |  이상우         |    rain030411@gmail.com               |            |            |            |
 |   이희승        |    max980203@snu.ac.kr               |            |            |            |
-|  이지현         |    strider13@snu.ac.kr               |            |            |            |
+|  이지현         |    strider13@snu.ac.kr               |    iOS     |    react        |     spring       |
 |  박지훈         |    parkted@snu.ac.kr               |            |            |            |
 |  오하준         |    ohajun@snu.ac.kr               |            |            |            |
 |  이미르         |    danzzydala@gmail.com               |            |            |            |
