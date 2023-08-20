@@ -63,7 +63,7 @@
 |  황두현         |    ghkdengus97@gmail.com               |            |            |            |
 |  최유찬         |    cyc9820@gmail.com               |            |            |            |
 |  김남규         |    knk715@snu.ac.kr               |            |            |            |
-|  정민욱         |    jmuk911@gmail.com               |            |            |            |
+|  정민욱         |    jmuk911@gmail.com               |   android     |  react    |   django         |
 |  전종원         |    cjw107@snu.ac.kr               |            |            |            |
 |   김한들        |    del2090@snu.ac.kr               |            |            |            |
 |  윤정필         |    jpyoon0519@snu.ac.kr               |            |            |            |
