@@ -24,7 +24,7 @@
 | 이름       | GitHub Email         | 1지망       | 2지망       | 3지망       |
 | --------- | ----------------- | ---------- | ---------- | ---------- |
 | (예시) 양주현 | didwngus97@gmail.com     |   iOS        |   android        |   django        |
-|    이현도       |        plgafhd@snu.ac.kr           |            |            |            |
+|    이현도       |        plgafhd@snu.ac.kr           |   android  |  iOS  |  react  |
 |     김하람      |       gim222932@gmail.com            |            |            |            |
 |    이다은       |       dawnayi2002@gmail.com            |            |            |            |
 |    최재웅       |      jwchoi.tech@gmail.com            |            |            |            |
