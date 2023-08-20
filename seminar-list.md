@@ -33,7 +33,7 @@
 |    김한       |       superhan488@snu.ac.kr            |            |            |            |
 |    이현오       |     oasis2098@snu.ac.kr              |            |            |            |
 |   김재범        |     zboomz.iv@gamil.com              |            |            |            |
-|    장민준       |     jun1557@snu.ac.kr              |            |            |            |
+|    장민준       |     jun1557@snu.ac.kr              |   django  |   react  |   spring   |
 |    이수민       |     cirtuare@gmail.com              |            |            |            |
 |   전준아        |     junahjeon2002@snu.ac.kr              |            |            |            |
 |   이한나        |     dlgkssk38@snu.ac.kr              |            |            |            |
