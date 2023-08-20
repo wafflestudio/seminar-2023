@@ -23,7 +23,7 @@
 
 |  시간           | 장소 | 자료         | 참여 링크 | 
 | --------------- | ---- | ----------- | --------- | 
-| 2022년 8월 20일 오후 2시 | ZOOM | [21.5기 OT PDF](https://github.com/wafflestudio/seminar-2023/files/12387396/Wafflestudio_21.5_OT_PDF.pdf) | [줌 링크](https://snu-ac-kr.zoom.us/j/93850653159) |  
+| 2022년 8월 20일 오후 2시 | ZOOM | [21.5기 OT 자료](https://docs.google.com/presentation/d/1S9_kin2EPd5KJJPzSwhXBJe7fQjLdokf9MrgLhsDeCc/edit?usp=sharing) | [줌 링크](https://snu-ac-kr.zoom.us/j/93850653159) |  
 
 <br>
 
