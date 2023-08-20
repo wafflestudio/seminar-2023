@@ -99,7 +99,7 @@
 |   박채연        |   kidsland09@naver.com                |            |            |            |
 |  백창인         |  nuagenic@gmail.com                 |            |            |            |
 |  최승원         |   csw020730@gmail.com                |            |            |            |
-|  조민경         |   oke08034@snu.ac.kr                |            |            |            |
+|  조민경         |   oke08034@snu.ac.kr                |   Spring   |   django   |   android  |
 |  나예경         |   nyk7535@naver.com                |            |            |            |
 |   강우진        |    wj0107@naver.com               |            |            |            |
 |   이선재        |    satelite2517@gmail.com               |            |            |            |
