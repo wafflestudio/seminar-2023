@@ -52,7 +52,7 @@
 |   송원영        |   rachelsong10@snu.ac.kr                |            |            |            |
 |   정우진        |    woojin5555@gmail.com               |            |            |            |
 |  임지한         |    jhlim101@snu.ac.kr               |            |            |            |
-|  남기태         |   kevin9922@snu.ac.kr                |            |            |            |
+|  남기태         |   kevin9922@snu.ac.kr                |  android   |   spring   |    react   |
 |  조석희         |   louischo453@gmail.com                |            |            |            |
 |   이민석        |   ehdtodvodl@gmail.com                |            |            |            |
 |  이규원         |   leekyw0323@snu.ac.kr                |            |            |            |
