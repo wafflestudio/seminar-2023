@@ -105,7 +105,7 @@
 |   이선재        |    satelite2517@gmail.com               |            |            |            |
 | 김시현          |   dbsejrdn@snu.ac.kr                |            |            |            |
 | 허유민          |    yumin224@snu.ac.kr               |            |            |            |
-|  강민성         |    darkester608@gmail.com               |            |            |            |
+|  강민성         |    darkester608@gmail.com               |   django    |   Android    | React    |
 |  김희서         |    graceheeseo@gmail.com               |            |            |            |
 |  전성진         |     samuel11271127@gmail.com              |            |            |            |
 |  김지원         |    jeewonbob@gmail.com               |            |            |            |
