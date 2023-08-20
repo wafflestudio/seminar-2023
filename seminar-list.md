@@ -58,7 +58,7 @@
 |  이규원         |   leekyw0323@snu.ac.kr                |            |            |            |
 |  심영인         |   sspjyins@snu.ac.kr                |            |            |            |
 |  황경서         |   rudtj0801@snu.ac.kr                |            |            |            |
-|  김하늘         |   kimhaneal11@naver.com                |            |            |            |
+|  김하늘         |   kimhaneal11@naver.com                |   Android         |   Django         |   React         |
 |   김민재        |    kkomul1@snu.ac.kr               |            |            |            |
 |  황두현         |    ghkdengus97@gmail.com               |            |            |            |
 |  최유찬         |    cyc9820@gmail.com               |            |            |            |
