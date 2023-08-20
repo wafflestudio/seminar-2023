@@ -125,7 +125,7 @@
 |  박시은         |    susanpark0@snu.ac.kr               |            |            |            |
 |   윤동현        |   keroro19671967@gmail.com                |            |            |            |
 |   손영준        |  glenn.syj@gmail.com                 |            |            |            |
-|   손유진        |   qeugene2328@gamil.com                |            |            |            |
+|   손유진        |   qeugene2328@gamil.com                |       spring     |   react         |  android          |
 |  김민성         |  kms2786210@naver.com                 |            |            |            |
 |   최재열        |   andrew04247@gmail.com                |            |            |            |
 |  김상래         |    popatry@snu.ac.kr               |            |            |            |
