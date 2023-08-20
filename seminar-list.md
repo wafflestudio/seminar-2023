@@ -26,7 +26,7 @@
 | (예시) 양주현 | didwngus97@gmail.com     |   iOS        |   android        |   django        |
 |    이현도       |        plgafhd@snu.ac.kr           |            |            |            |
 |     김하람      |       gim222932@gmail.com            |            |            |            |
-|    이다은       |       dawnayi2002@gmail.com            |            |            |            |
+|    이다은       |       dawnayi2002@gmail.com            |      django      |    iOS        |      react      |
 |    최재웅       |      jwchoi.tech@gmail.com            |            |            |            |
 |   구현우        |      jrns1@naver.com             |            |            |            |
 |    정연석       |      danny020720@gmail.com             |            |            |            |
