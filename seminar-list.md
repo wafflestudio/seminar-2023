@@ -66,7 +66,7 @@
 |  정민욱         |    jmuk911@gmail.com               |            |            |            |
 |  전종원         |    cjw107@snu.ac.kr               |            |            |            |
 |   김한들        |    del2090@snu.ac.kr               |            |            |            |
-|  윤정필         |    jpyoon0519@snu.ac.kr               |            |            |            |
+|  윤정필         |    jpyoon0519@snu.ac.kr              |     android       |      django      |     spring       |
 |   최서현        |    lily_choi7@snu.ac.kr               |            |            |            |
 | 정진혁          |    wlsgur263@snu.ac.kr               |            |            |            |
 |  김상협         |    drchasekim@gmail.com               |            |            |            |
