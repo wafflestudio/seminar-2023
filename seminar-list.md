@@ -30,7 +30,7 @@
 |    최재웅       |      jwchoi.tech@gmail.com            |            |            |            |
 |   구현우        |      jrns1@naver.com             |            |            |            |
 |    정연석       |      danny020720@gmail.com             |            |            |            |
-|    김한       |       superhan488@snu.ac.kr            |            |            |            |
+|    김한       |       superhan488@snu.ac.kr            |     iOS       |      django      |      react      |
 |    이현오       |     oasis2098@snu.ac.kr              |            |            |            |
 |   김재범        |     zboomz.iv@gamil.com              |            |            |            |
 |    장민준       |     jun1557@snu.ac.kr              |            |            |            |
