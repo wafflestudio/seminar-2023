@@ -93,7 +93,7 @@
 |  강성민         |  kan5995@naver.com                 |            |            |            |
 |  전수빈         |  nname@snu.ac.kr                 |            |            |            |
 |  윤유상         |    fyoon46@gmail.com               |            |            |            |
-|  손정우         |   jeongwooson1218@gmail.com                |            |            |            |
+|  손정우         |   jeongwooson1218@gmail.com                |   spring         |  django          |   react         |
 | 서주원          |   juwon0718@naver.com                |            |            |            |
 |  이수인         |   silee1103@snu.ac.kr                |            |            |            |
 |   박채연        |   kidsland09@naver.com                |            |            |            |
