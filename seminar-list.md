@@ -85,7 +85,7 @@
 |   정시훈        |    gssihunjung@gmail.com               |            |            |            |
 |  강시온         |    sion45840@snu.ac.kr               |            |            |            |
 |   임찬영        |   dlacksdud2@snu.ac.kr                |            |            |            |
-|   김건희        |   gunhee20011113@gmail.com                |            |            |            |
+|   김건희        |   gunhee20011113@gmail.com                |  spring          |     django       |      iOS      |
 |   조현우        |   henry.chohw04@gmail.com                |            |            |            |
 |  최영주         |   myday05@snu.ac.kr                |            |            |            |
 |   김민형        |    ytzka14@snu.ac.kr               |            |            |            |
