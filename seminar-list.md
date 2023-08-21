@@ -123,7 +123,7 @@
 |  김서연         |     kkimseoyeon@naver.com              |            |            |            |
 |   안시영        |  pineldeer@snu.ac.kr                 |            |            |            |
 |  박시은         |    susanpark0@snu.ac.kr               |            |            |            |
-|   윤동현        |   keroro19671967@gmail.com                |    spring   | django      | react |         
+|   윤동현        |   keroro19671967@gmail.com      |   spring        |   django        |   react        |
 |   손영준        |  glenn.syj@gmail.com                 |            |            |            |
 |   손유진        |   qeugene2328@gamil.com                |            |            |            |
 |  김민성         |  kms2786210@naver.com                 |            |            |            |
