@@ -97,7 +97,7 @@
 | 서주원          |   juwon0718@naver.com                |            |            |            |
 |  이수인         |   silee1103@snu.ac.kr                |            |            |            |
 |   박채연        |   kidsland09@naver.com                |            |            |            |
-|  백창인         |  nuagenic@gmail.com                 |            |            |            |
+|  백창인         |  nuagenic@gmail.com                 |   django      |  react      |     iOS     |
 |  최승원         |   csw020730@gmail.com                |            |            |            |
 |  조민경         |   oke08034@snu.ac.kr                |            |            |            |
 |  나예경         |   nyk7535@naver.com                |            |            |            |
