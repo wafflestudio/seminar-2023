@@ -94,7 +94,7 @@
 |  전수빈         |  nname@snu.ac.kr                 |            |            |            |
 |  윤유상         |    fyoon46@gmail.com               |            |            |            |
 |  손정우         |   jeongwooson1218@gmail.com                |            |            |            |
-| 서주원          |   juwon0718@naver.com                |            |            |            |
+| 서주원          |   juwon0718@naver.com                |   django      |   spring       |   android      |
 |  이수인         |   silee1103@snu.ac.kr                |            |            |            |
 |   박채연        |   kidsland09@naver.com                |            |            |            |
 |  백창인         |  nuagenic@gmail.com                 |            |            |            |
