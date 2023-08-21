@@ -23,7 +23,7 @@
 
 | 이름       | GitHub Email         | 1지망       | 2지망       | 3지망       |
 | --------- | ----------------- | ---------- | ---------- | ---------- |
-|  강성민 | kan5995@naver.com     |   android        |   django        |   spring        |
+|  (예시) 양주현 | didwngus97@gmail.com     |   iOS        |   android        |   django        |
 |    이현도       |        plgafhd@snu.ac.kr           |            |            |            |
 |     김하람      |       gim222932@gmail.com            |            |            |            |
 |    이다은       |       dawnayi2002@gmail.com            |            |            |            |
@@ -90,7 +90,7 @@
 |  최영주         |   myday05@snu.ac.kr                |            |            |            |
 |   김민형        |    ytzka14@snu.ac.kr               |            |            |            |
 |  배진형         |  jonnyjh3455@gmail.com                 |            |            |            |
-|  강성민         |  kan5995@naver.com                 |            |            |            |
+|  강성민         |  kan5995@naver.com                 |    android     |  django       |  react     |
 |  전수빈         |  nname@snu.ac.kr                 |            |            |            |
 |  윤유상         |    fyoon46@gmail.com               |            |            |            |
 |  손정우         |   jeongwooson1218@gmail.com                |            |            |            |
