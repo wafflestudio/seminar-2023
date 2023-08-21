@@ -127,7 +127,7 @@
 |   손영준        |  glenn.syj@gmail.com                 |            |            |            |
 |   손유진        |   qeugene2328@gamil.com                |            |            |            |
 |  김민성         |  kms2786210@naver.com                 |            |            |            |
-|   최재열        |   andrew04247@gmail.com                |            |            |            |
+|   최재열        |   andrew04247@gmail.com                |    Spring     |   Django   |  React  |
 |  김상래         |    popatry@snu.ac.kr               |            |            |            |
 |  최준우         |    junwoo682@snu.ac.kr               |            |            |            |
 | 이민제          |    dlalswp25@naver.com               |            |            |            |
