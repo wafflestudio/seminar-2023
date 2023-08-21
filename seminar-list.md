@@ -114,7 +114,7 @@
 |   이희승        |    max980203@snu.ac.kr               |            |            |            |
 |  이지현         |    strider13@snu.ac.kr               |            |            |            |
 |  박지훈         |    parkted@snu.ac.kr               |            |            |            |
-|  오하준         |    ohajun@snu.ac.kr               |            |            |            |
+|  오하준         |    ohajun@snu.ac.kr               |   django   |   spring   |    react   |
 |  이미르         |    danzzydala@gmail.com               |            |            |            |
 |  최은우         |    soarhigh03@gmail.com               |            |            |            |
 | 김문겸          |    moongyum011@naver.com               |            |            |            |
