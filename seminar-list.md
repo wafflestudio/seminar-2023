@@ -103,7 +103,7 @@
 |  나예경         |   nyk7535@naver.com                |            |            |            |
 |   강우진        |    wj0107@naver.com               |            |            |            |
 |   이선재        |    satelite2517@gmail.com               |            |            |            |
-| 김시현          |   dbsejrdn@snu.ac.kr                |   Django         |   spring         |   react         |
+| 김시현          |   dbsejrdn@snu.ac.kr                |   Django         |   spring         |   react        |
 | 허유민          |    yumin224@snu.ac.kr               |            |            |            |
 |  강민성         |    darkester608@gmail.com               |            |            |            |
 |  김희서         |    graceheeseo@gmail.com               |            |            |            |
