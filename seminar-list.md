@@ -117,7 +117,7 @@
 |  오하준         |    ohajun@snu.ac.kr               |            |            |            |
 |  이미르         |    danzzydala@gmail.com               |            |            |            |
 |  최은우         |    soarhigh03@gmail.com               |            |            |            |
-| 김문겸          |    moongyum011@naver.com               |            |            |            |
+| 김문겸          |    moongyum011@naver.com               |    Django    |   Spring    | React   |
 |  이수혁         |    isuh88@snu.ac.kr               |            |            |            |
 |   이윤수        |     yunsu0915@snu.ac.kr              |            |            |            |
 |  김서연         |     kkimseoyeon@naver.com              |            |            |            |
