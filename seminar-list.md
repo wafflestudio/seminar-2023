@@ -79,7 +79,7 @@
 |  권현구         |    harryk0702@gmail.com               |            |            |            |
 |  박찬영         |    vitacpark@snu.ac.kr               |            |            |            |
 |  배준범         |    jbjb7263@naver.com               |            |            |            |
-|  이현우         |    dlgusdn0414@snu.ac.kr               |            |            |            |
+|  이현우         |    dlgusdn0414@snu.ac.kr               |  spring      |  react    |  android    |
 |  박수민         |    parksm06g@gmail.com               |            |            |            |
 |   윤서담        |    sdc2717@snu.ac.kr               |            |            |            |
 |   정시훈        |    gssihunjung@gmail.com               |            |            |            |
