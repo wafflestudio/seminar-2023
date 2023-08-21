@@ -60,7 +60,7 @@
 |  황경서         |   rudtj0801@snu.ac.kr                |            |            |            |
 |  김하늘         |   kimhaneal11@naver.com                |            |            |            |
 |   김민재        |    kkomul1@snu.ac.kr               |            |            |            |
-|  황두현         |    ghkdengus97@gmail.com               |   spring     |   django    |    android   |
+|  황두현         |    ghkdengus97@gmail.com               |   Spring     |   Django    |    android   |
 |  최유찬         |    cyc9820@gmail.com               |            |            |            |
 |  김남규         |    knk715@snu.ac.kr               |            |            |            |
 |  정민욱         |    jmuk911@gmail.com               |            |            |            |
