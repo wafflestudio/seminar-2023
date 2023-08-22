@@ -35,7 +35,7 @@
 |   김재범        |     zboomz.iv@gamil.com              |            |            |            |
 |    장민준       |     jun1557@snu.ac.kr              |            |            |            |
 |    이수민       |     cirtuare@gmail.com              |            |            |            |
-|   전준아        |     junahjeon2002@snu.ac.kr              |            |            |            |
+|   전준아        |     junahjeon2002@snu.ac.kr         |   android  |      spring   |    django     |
 |   이한나        |     dlgkssk38@snu.ac.kr              |            |            |            |
 |   김윤식        |      yoonshik1205@gmail.com             |            |            |            |
 |   김태훈        |     terrypotterk@gmail.com              |            |            |            |
