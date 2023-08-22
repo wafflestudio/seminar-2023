@@ -100,7 +100,7 @@
 |  백창인         |  nuagenic@gmail.com                 |            |            |            |
 |  최승원         |   csw020730@gmail.com                |            |            |            |
 |  조민경         |   oke08034@snu.ac.kr                |            |            |            |
-|  나예경         |   nyk7535@naver.com                |   django    |   spring      |   react     |
+|  나예경         |   nyk7535@naver.com                |   spring    |   django      |   react     |
 |   강우진        |    wj0107@naver.com               |            |            |            |
 |   이선재        |    satelite2517@gmail.com               |            |            |            |
 | 김시현          |   dbsejrdn@snu.ac.kr                |            |            |            |
