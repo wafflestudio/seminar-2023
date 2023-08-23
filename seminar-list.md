@@ -119,7 +119,7 @@
 |  최은우         |    soarhigh03@gmail.com               |            |            |            |
 | 김문겸          |    moongyum011@naver.com               |            |            |            |
 |  이수혁         |    isuh88@snu.ac.kr               |            |            |            |
-|   이윤수        |     yunsu0915@snu.ac.kr              |            |            |            |
+|   이윤수        |     yunsu0915@snu.ac.kr              |      spring      |     react       |     android       |
 |  김서연         |     kkimseoyeon@naver.com              |            |            |            |
 |   안시영        |  pineldeer@snu.ac.kr                 |            |            |            |
 |  박시은         |    susanpark0@snu.ac.kr               |            |            |            |
