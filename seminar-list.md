@@ -30,18 +30,18 @@
 |    최재웅       |      jwchoi.tech@gmail.com            |            |            |            |
 |   구현우        |      jrns1@naver.com             |            |            |            |
 |    정연석       |      danny020720@gmail.com             |            |            |            |
-|    김한       |       superhan488@snu.ac.kr            |            |            |            |
+|    김한       |       superhan488@snu.ac.kr            |     iOS       |      django      |      react      |
 |    이현오       |     oasis2098@snu.ac.kr              |            |            |            |
 |   김재범        |     zboomz.iv@gamil.com              |            |            |            |
 |    장민준       |     jun1557@snu.ac.kr              |            |            |            |
-|    이수민       |     cirtuare@gmail.com              |            |            |            |
+|    이수민       |     cirtuare@gmail.com              |    iOS        |     android      |   react    |
 |   전준아        |     junahjeon2002@snu.ac.kr              |            |            |            |
 |   이한나        |     dlgkssk38@snu.ac.kr              |            |            |            |
 |   김윤식        |      yoonshik1205@gmail.com             |            |            |            |
-|   김태훈        |     terrypotterk@gmail.com              |            |            |            |
+|   김태훈        |     terrypotterk@gmail.com              |      iOS      |      android      |      spring      |
 |   이강현        |     yee12300@snu.ac.kr              |            |            |            |
 |   양석훈        |     sukhuny@snu.ac.kr              |            |            |            |
-|   오수현        |     sh020119@snu.ac.kr              |            |            |            |
+| 오수현        | sh020119@snu.ac.kr         | react | android | django |
 |   한상우        |    buzz2604@gmail.com               |            |            |            |
 |   김기훈        |    maknoon45@snu.ac.kr               |            |            |            |
 |   조성해        |   jsh990324@snu.ac.kr                |            |            |            |
@@ -64,8 +64,8 @@
 |  최유찬         |    cyc9820@gmail.com               |            |            |            |
 |  김남규         |    knk715@snu.ac.kr               |            |            |            |
 |  정민욱         |    jmuk911@gmail.com               |            |            |            |
-|  전종원         |    cjw107@snu.ac.kr               |            |            |            |
-|   김한들        |    del2090@snu.ac.kr               |            |            |            |
+|  전종원         |    cjw107@snu.ac.kr               |   iOS        |   django        |   react        |
+|   김한들        |    del2090@snu.ac.kr               |   iOS         |   Django         |   react         |
 |  윤정필         |    jpyoon0519@snu.ac.kr               |            |            |            |
 |   최서현        |    lily_choi7@snu.ac.kr               |            |            |            |
 | 정진혁          |    wlsgur263@snu.ac.kr               |            |            |            |
@@ -76,7 +76,7 @@
 |   박소영        |   znlfl2@snu.ac.kr                |            |            |            |
 |  박민철         |   parkmc1227@gmail.com                |            |            |            |
 |  백수지         |   sjvaque@snu.ac.kr                |   react         |   android         |   django         |
-|  권현구         |    harryk0702@gmail.com               |            |            |            |
+|  권현구         |    harryk0702@gmail.com               |   iOS         |   spring         |    django        |
 |  박찬영         |    vitacpark@snu.ac.kr               |            |            |            |
 |  배준범         |    jbjb7263@naver.com               |            |            |            |
 |  이현우         |    dlgusdn0414@snu.ac.kr               |            |            |            |
@@ -112,7 +112,7 @@
 |  김도윤         |    doyoon0616@snu.ac.kr               |            |            |            |
 |  이상우         |    rain030411@gmail.com               |            |            |            |
 |   이희승        |    max980203@snu.ac.kr               |            |            |            |
-|  이지현         |    strider13@snu.ac.kr               |            |            |            |
+|  이지현         |    strider13@snu.ac.kr               |    iOS     |    react        |     spring       |
 |  박지훈         |    parkted@snu.ac.kr               |            |            |            |
 |  오하준         |    ohajun@snu.ac.kr               |            |            |            |
 |  이미르         |    danzzydala@gmail.com               |            |            |            |
@@ -128,12 +128,13 @@
 |   손유진        |   qeugene2328@gamil.com                |            |            |            |
 |  김민성         |  kms2786210@naver.com                 |            |            |            |
 |   최재열        |   andrew04247@gmail.com                |            |            |            |
-|  김상래         |    popatry@snu.ac.kr               |            |            |            |
+|  김상래         |    popatry@snu.ac.kr               | iOS           |  react          |  django          |
 |  최준우         |    junwoo682@snu.ac.kr               |            |            |            |
 | 이민제          |    dlalswp25@naver.com               |            |            |            |
 |  김지현         |    brownie1465@snu.ac.kr               |            |            |            |
 |  김정윤         |   kjeongyoon0206@gmail.com                |            |            |            |
 |   최성준        |   csjun@snu.ac.kr                |            |            |            |
+
 
 
 
