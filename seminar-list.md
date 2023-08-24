@@ -69,7 +69,7 @@
 |  윤정필         |    jpyoon0519@snu.ac.kr               |            |            |            |
 |   최서현        |    lily_choi7@snu.ac.kr               |   react         |   android         |   spring         |
 | 정진혁          |    wlsgur263@snu.ac.kr               |            |            |            |
-|  김상협         |    drchasekim@gmail.com               |            |            |            |
+|  김상협         |    drchasekim@gmail.com               |   react      |    android    |   spring  |
 |  송유민         |    yms1204@snu.ac.kr               |     react       |   iOS         |   django         |
 |  박지상         |   jace.jisang.park@gmail.com                |            |            |            |
 |  장하경         |   4722lego@gmail.com                |            |            |            |
