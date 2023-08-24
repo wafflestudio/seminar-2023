@@ -64,7 +64,7 @@
 |  최유찬         |    cyc9820@gmail.com               |            |            |            |
 |  김남규         |    knk715@snu.ac.kr               |            |            |            |
 |  정민욱         |    jmuk911@gmail.com               |            |            |            |
-|  전종원         |    cjw107@snu.ac.kr               |            |            |            |
+|  전종원         |    cjw107@snu.ac.kr               |   iOS        |   django        |   react        |
 |   김한들        |    del2090@snu.ac.kr               |            |            |            |
 |  윤정필         |    jpyoon0519@snu.ac.kr               |            |            |            |
 |   최서현        |    lily_choi7@snu.ac.kr               |            |            |            |
