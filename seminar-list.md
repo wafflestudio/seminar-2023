@@ -62,7 +62,7 @@
 |   김민재        |    kkomul1@snu.ac.kr               |            |            |            |
 |  황두현         |    ghkdengus97@gmail.com               |   Spring     |   Django    |    android   |
 |  최유찬         |    cyc9820@gmail.com               |            |            |            |
-|  김남규         |    knk715@snu.ac.kr               |            |            |            |
+|  김남규         |    knk715@snu.ac.kr               |   spring   |   django   |   react   |
 |  정민욱         |    jmuk911@gmail.com               |            |            |            |
 |  전종원         |    cjw107@snu.ac.kr               |   iOS        |   django        |   react        |
 |   김한들        |    del2090@snu.ac.kr               |   iOS         |   Django         |   react         |
