@@ -75,7 +75,7 @@
 |  장하경         |   4722lego@gmail.com                |            |            |            |
 |   박소영        |   znlfl2@snu.ac.kr                |            |            |            |
 |  박민철         |   parkmc1227@gmail.com                |            |            |            |
-|  백수지         |   sjvaque@snu.ac.kr                |            |            |            |
+|  백수지         |   sjvaque@snu.ac.kr                |   react         |   android         |   django         |
 |  권현구         |    harryk0702@gmail.com               |   iOS         |   spring         |    django        |
 |  박찬영         |    vitacpark@snu.ac.kr               |            |            |            |
 |  배준범         |    jbjb7263@naver.com               |            |            |            |
