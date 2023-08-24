@@ -41,7 +41,7 @@
 |   김태훈        |     terrypotterk@gmail.com              |      iOS      |      android      |      spring      |
 |   이강현        |     yee12300@snu.ac.kr              |            |            |            |
 |   양석훈        |     sukhuny@snu.ac.kr              |            |            |            |
-|   오수현        |     sh020119@snu.ac.kr              |            |            |            |
+| 오수현        | sh020119@snu.ac.kr         | react | android | django |
 |   한상우        |    buzz2604@gmail.com               |            |            |            |
 |   김기훈        |    maknoon45@snu.ac.kr               |            |            |            |
 |   조성해        |   jsh990324@snu.ac.kr                |            |            |            |
@@ -134,6 +134,7 @@
 |  김지현         |    brownie1465@snu.ac.kr               |            |            |            |
 |  김정윤         |   kjeongyoon0206@gmail.com                |            |            |            |
 |   최성준        |   csjun@snu.ac.kr                |            |            |            |
+
 
 
 
