@@ -1,6 +1,7 @@
 # 와플스튜디오 2023 세미나 레포지토리
 
 - [세미나 수강 목록](./seminar-list.md)
+- 
 <br><br>![wafflestudio_logo](waffle_logo.png)<br><br>
 2023 세미나는 다음 학기부터 개발 프로젝트에 참여할 수 있는 __21.5기 Programmers의 양성__ 및 __기존 부원의 실력 향상__ 을 목표로 합니다.
 - React
