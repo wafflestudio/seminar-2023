@@ -18,7 +18,7 @@
   <tr>
     <td>0</td>
     <td>REST API와 Django를 공부하는 법</td>
-    <td>9월 8일 (화) 오후 7시</td>
+    <td>9월 8일 (금) 오후 7시</td>
     <td><a href="https://map.naver.com/p/entry/place/1754510954?placePath=%2Fhome&c=15.00,0,0,0,dh">서울대입구 스프랑라운지</a></td>
     <td></td>
     <td><a href="./seminar0/seminar-2022-django-00.pdf">링크</a></td>
