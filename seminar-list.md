@@ -89,7 +89,7 @@
 |   조현우        |   henry.chohw04@gmail.com                |      react    |    ios      |      android      |
 |  최영주         |   myday05@snu.ac.kr                |            |            |            |
 |   김민형        |    ytzka14@snu.ac.kr               |      react      |     django       |     android      |
-|  배진형         |  jonnyjh3455@gmail.com                 |            |            |            |
+|  배진형         |  jonnyjh3455@gmail.com                 |    android       |      django      |      frontend      |
 |  강성민         |  kan5995@naver.com                 |            |            |            |
 |  전수빈         |  nname@snu.ac.kr                 |  Spring          |  android          |  Django          |
 |  윤유상         |    fyoon46@gmail.com               |            |            |            |
