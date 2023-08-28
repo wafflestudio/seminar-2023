@@ -38,7 +38,7 @@
 |    이수민       |     cirtuare@gmail.com              |    iOS        |     android      |   react    |
 |   전준아        |     junahjeon2002@snu.ac.kr         |   android  |      spring   |    django     |
 |   이한나        |     dlgkssk38@snu.ac.kr              |   spring    |   django   |    ios     |
-|   김윤식        |      yoonshik1205@gmail.com             |            |            |            |
+|   김윤식        |      yoonshik1205@gmail.com             | django | spring | react |
 |   김태훈        |     terrypotterk@gmail.com              |      iOS      |      android      |      spring      |
 |   이강현        |     yee12300@snu.ac.kr              |   spring   |   react    |   django   |
 |   양석훈        |     sukhuny@snu.ac.kr              |        react    | android           |  django          |
