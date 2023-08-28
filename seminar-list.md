@@ -98,7 +98,7 @@
 | 서주원          |   juwon0718@naver.com                |   django      |   spring       |   android      |
 |  이수인         |   silee1103@snu.ac.kr                |     django       |     spring       |   android         |
 |   박채연        |   kidsland09@naver.com                |    react   |   spring  |    django  |
-|  백창인         |  nuagenic@gmail.com                 |            |            |            |
+|  백창인         |  nuagenic@gmail.com                 |   django      |  react      |     iOS     |
 |  최승원         |   csw020730@gmail.com                |            |            |            |
 |  조민경         |   oke08034@snu.ac.kr                |   Spring   |   django   |   android  |
 |  나예경         |   nyk7535@naver.com                |     spring       |     django       |      react      |
