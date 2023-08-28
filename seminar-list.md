@@ -117,7 +117,7 @@
 |  박지훈         |    parkted@snu.ac.kr               |  django          |  react          |  android          |
 |  오하준         |    ohajun@snu.ac.kr               |            |            |            |
 |  이미르         |    danzzydala@gmail.com               |    spring   |    ios     |  android    |
-|  최은우         |    soarhigh03@gmail.com               |            |            |            |
+|  최은우         |    soarhigh03@gmail.com               |  django  |  spring  |  react  |
 | 김문겸          |    moongyum011@naver.com               |    Django    |   Spring    | React   |
 |  이수혁         |    isuh88@snu.ac.kr               |   spring   |   react    |  android   |
 |   이윤수        |     yunsu0915@snu.ac.kr              |      spring      |     react       |     android       |
