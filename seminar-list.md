@@ -93,7 +93,7 @@
 |  배진형         |  jonnyjh3455@gmail.com                 |            |            |            |
 |  강성민         |  kan5995@naver.com                 |    android     |  django       |  react     |
 |  전수빈         |  nname@snu.ac.kr                 |  Spring          |  android          |  Django          |
-|  윤유상         |    fyoon46@gmail.com               |            |            |            |
+|  윤유상         |    fyoon46@gmail.com               |   django   |    react    |   android   |
 |  손정우         |   jeongwooson1218@gmail.com                |   django         |  react          |   android        |
 | 서주원          |   juwon0718@naver.com                |   django      |   spring       |   android      |
 |  이수인         |   silee1103@snu.ac.kr                |     django       |     spring       |   android         |
