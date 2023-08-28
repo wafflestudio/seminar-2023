@@ -126,7 +126,7 @@
 |  박시은         |    susanpark0@snu.ac.kr               |     android       |    spring        |    react        |
 |   윤동현        |   keroro19671967@gmail.com      |   spring        |   django        |   react        |
 |   손영준        |  glenn.syj@gmail.com                 |    android    |   react     |     spring     |
-|   손유진        |   qeugene2328@gamil.com                |            |            |            |
+|   손유진        |   qeugene2328@gamil.com                |       spring     |   react         |  android          |
 |  김민성         |  kms2786210@naver.com                 |      react      |      android      |      spring      |
 |   최재열        |   andrew04247@gmail.com                |    Spring     |   Django   |  React  |
 |  김상래         |    popatry@snu.ac.kr               | iOS           |  react          |  django          |
