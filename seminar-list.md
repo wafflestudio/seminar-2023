@@ -79,7 +79,7 @@
 |  백수지         |   sjvaque@snu.ac.kr                |   react         |   android         |   django         |
 |  권현구         |    harryk0702@gmail.com               |   iOS         |   spring         |    django        |
 |  박찬영         |    vitacpark@snu.ac.kr               |      spring      |     django       |      react      |
-|  배준범         |    jbjb7263@naver.com               |            |            |            |
+|  배준범         |    jbjb7263@naver.com               |   django         |   android         | spring         |
 |  이현우         |    dlgusdn0414@snu.ac.kr               |  spring      |  react    |  android    |
 |  박수민         |    parksm06g@gmail.com               |            |            |            |
 |   윤서담        |    sdc2717@snu.ac.kr               |   django         |   iOS         |   react         |
