@@ -134,7 +134,7 @@
 | 이민제          |    dlalswp25@naver.com               |            |            |            |
 |  김지현         |    brownie1465@snu.ac.kr               |            |            |            |
 |  김정윤         |   kjeongyoon0206@gmail.com                |            |            |            |
-|   최성준        |   csjun@snu.ac.kr                |            |            |            |
+|   최성준        |   csjun@snu.ac.kr                | android    |  react    |   spring   |
 
 
 
