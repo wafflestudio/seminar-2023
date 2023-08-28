@@ -50,7 +50,7 @@
 |   전인준        |   bonjourinjoon@gmail.com                |            |            |            |
 |   김도연        |   gazi2002@snu.ac.kr                |  android  |   spring   |   django  |
 |   임혜진        |  hjlim7831@gmail.com                 |  spring  | django | android |
-|   송원영        |   rachelsong10@snu.ac.kr                |            |            |            |
+|   송원영        |   rachelsong10@snu.ac.kr                |     django       |    spring        |  android          |
 |   정우진        |    woojin5555@gmail.com               |     React       |     Django     |      Spring      |
 |  임지한         |    jhlim101@snu.ac.kr               |            |            |            |
 |  남기태         |   kevin9922@snu.ac.kr                |  android   |   spring   |    react   |
