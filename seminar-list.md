@@ -111,7 +111,7 @@
 |  전성진         |     samuel11271127@gmail.com              | React | Django | Spring |
 |  김지원         |    jeewonbob@gmail.com               |            |            |            |
 |  김도윤         |    doyoon0616@snu.ac.kr               |   spring   |    django    |    react        |
-|  이상우         |    rain030411@gmail.com               |            |            |            |
+|  이상우         |    rain030411@gmail.com               |      django      |     spring    |     react   |
 |   이희승        |    max980203@snu.ac.kr               |            |            |            |
 |  이지현         |    strider13@snu.ac.kr               |    iOS     |    react        |     spring       |
 |  박지훈         |    parkted@snu.ac.kr               |  django          |  react          |  android          |
