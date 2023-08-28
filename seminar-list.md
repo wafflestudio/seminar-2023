@@ -104,7 +104,7 @@
 |  나예경         |   nyk7535@naver.com                |     spring       |     django       |      react      |
 |   강우진        |    elryu0107@gmail.com               |    django        |     react     |     iOS     |
 |   이선재        |    satelite2517@gmail.com               |spring            |django            |android            |
-| 김시현          |   dbsejrdn@snu.ac.kr                |            |            |            |
+| 김시현          |   dbsejrdn@snu.ac.kr                |   Django         |   spring         |   react        |
 | 허유민          |    yumin224@snu.ac.kr               |  react    |   spring   |   django     |
 |  강민성         |    darkester608@gmail.com               |   django    |   Android    | React    |
 |  김희서         |    graceheeseo@gmail.com               |            |            |            |
