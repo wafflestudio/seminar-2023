@@ -29,7 +29,7 @@
 |     김하람      |       gim222932@gmail.com            |   react         |    android        |   spring         |
 |    이다은       |       dawnayi2002@gmail.com            |      django      |    react        |      iOS      |
 |    최재웅       |      jwchoi.tech@gmail.com            |     react       |       android     |      spring      |
-|   구현우        |      jrns1@naver.com             |            |            |            |
+|   구현우        |      jrns1@naver.com             |   django   |   react    |    iOS     |
 |    정연석       |      danny020720@gmail.com             |      django      |      spring      |      android      |
 |    김한       |       superhan488@snu.ac.kr            |     iOS       |      django      |      react      |
 |    이현오       |     oasis2098@snu.ac.kr              |   django   |   spring   |  android   |
