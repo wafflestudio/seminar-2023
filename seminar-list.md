@@ -73,7 +73,7 @@
 |  김상협         |    drchasekim@gmail.com               |   react      |    android    |   spring  |
 |  송유민         |    yms1204@snu.ac.kr               |     react       |   iOS         |   django         |
 |  박지상         |   jace.jisang.park@gmail.com                |   spring   |   react    |   kotlin   |
-|  장하경         |   4722lego@gmail.com                |            |            |            |
+|  장하경         |   4722lego@gmail.com                |   django   |   android   |    react   |
 |   박소영        |   znlfl2@snu.ac.kr                |            |            |            |
 |  박민철         |   parkmc1227@gmail.com                |  react  |  django   |  android  |
 |  백수지         |   sjvaque@snu.ac.kr                |   react         |   android         |   django         |
