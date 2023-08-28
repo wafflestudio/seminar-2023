@@ -1,3 +1,4 @@
+
 # 세미나 수강 목록
 
 세미나는 react, django, spring, android, iOS 다섯 가지의 세미나가 있습니다.
@@ -52,7 +53,7 @@
 |   송원영        |   rachelsong10@snu.ac.kr                |            |            |            |
 |   정우진        |    woojin5555@gmail.com               |     React       |     Django     |      Spring      |
 |  임지한         |    jhlim101@snu.ac.kr               |            |            |            |
-|  남기태         |   kevin9922@snu.ac.kr                |            |            |            |
+|  남기태         |   kevin9922@snu.ac.kr                |  android   |   spring   |    react   |
 |  조석희         |   louischo453@gmail.com                |      react      |      android      |      django      |
 |   이민석        |   ehdtodvodl@gmail.com                |  android   |   django    |   spring  |
 |  이규원         |   leekyw0323@snu.ac.kr                |            |            |            |
@@ -134,6 +135,7 @@
 |  김지현         |    brownie1465@snu.ac.kr               |            |            |            |
 |  김정윤         |   kjeongyoon0206@gmail.com                |            |            |            |
 |   최성준        |   csjun@snu.ac.kr                |            |            |            |
+
 
 
 
