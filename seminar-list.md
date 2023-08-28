@@ -121,7 +121,7 @@
 | 김문겸          |    moongyum011@naver.com               |            |            |            |
 |  이수혁         |    isuh88@snu.ac.kr               |   spring   |   react    |  android   |
 |   이윤수        |     yunsu0915@snu.ac.kr              |      spring      |     react       |     android       |
-|  김서연         |     kkimseoyeon@naver.com              |            |            |            |
+|  김서연         |     kkimseoyeon@naver.com              | django    | spring   |  react   |
 |   안시영        |  pineldeer@snu.ac.kr                 |     Android        |   React      |  Django          |
 |  박시은         |    susanpark0@snu.ac.kr               |     android       |    spring        |    react        |
 |   윤동현        |   keroro19671967@gmail.com      |   spring        |   django        |   react        |
