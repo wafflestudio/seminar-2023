@@ -59,7 +59,7 @@
 |  심영인         |   sspjyins@snu.ac.kr                |   Spring         |    Django        |   android         |
 |  황경서         |   rudtj0801@snu.ac.kr                |            |            |            |
 |  김하늘         |   kimhaneal11@naver.com                |            |            |            |
-|   김민재        |    kkomul1@snu.ac.kr               |            |            |            |
+|   김민재        |    kkomul1@snu.ac.kr               |    android    |   Django      |    React     |
 |  황두현         |    ghkdengus97@gmail.com               |   Spring     |   Django    |    android   |
 |  최유찬         |    cyc9820@gmail.com               |            |            |            |
 |  김남규         |    knk715@snu.ac.kr               |   spring   |   django   |   react   |
