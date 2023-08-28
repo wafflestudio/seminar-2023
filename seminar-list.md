@@ -82,7 +82,7 @@
 |  배준범         |    jbjb7263@naver.com               |            |            |            |
 |  이현우         |    dlgusdn0414@snu.ac.kr               |  spring      |  react    |  android    |
 |  박수민         |    parksm06g@gmail.com               |            |            |            |
-|   윤서담        |    sdc2717@snu.ac.kr               |            |            |            |
+|   윤서담        |    sdc2717@snu.ac.kr               |   django         |   iOS         |   react         |
 |   정시훈        |    gssihunjung@gmail.com               |            |            |            |
 |  강시온         |    sion45840@snu.ac.kr               |            |            |            |
 |   임찬영        |   dlacksdud2@snu.ac.kr                |   spring   |    react  |  django  |
