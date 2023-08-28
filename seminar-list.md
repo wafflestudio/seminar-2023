@@ -44,7 +44,7 @@
 |   양석훈        |     sukhuny@snu.ac.kr              |        react    | android           |  django          |
 | 오수현        | sh020119@snu.ac.kr         | react | android | django |
 |   한상우        |    buzz2604@gmail.com               |   spring    |   django  |   react   |
-|   김기훈        |    maknoon45@snu.ac.kr               |            |            |            |
+|   김기훈        |    maknoon45@snu.ac.kr               |   django   |   react    |    ios     |
 |   조성해        |   jsh990324@snu.ac.kr                |  spring          |   django         |     android       |
 |   송우현        |   1000balls@gmail.com                |   react   |   android   |  django   |
 |   전인준        |   bonjourinjoon@gmail.com                |    django        |  spring          |      react      |
