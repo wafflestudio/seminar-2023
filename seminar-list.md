@@ -83,7 +83,7 @@
 |  이현우         |    dlgusdn0414@snu.ac.kr               |  spring      |  react    |  android    |
 |  박수민         |    parksm06g@gmail.com               |            |            |            |
 |   윤서담        |    sdc2717@snu.ac.kr               |   django         |   iOS         |   react         |
-|   정시훈        |    gssihunjung@gmail.com               |            |            |            |
+|   정시훈        |    gssihunjung@gmail.com               |  django      |   android     | react   |
 |  강시온         |    sion45840@snu.ac.kr               |            |            |            |
 |   임찬영        |   dlacksdud2@snu.ac.kr                |   spring   |    react  |  django  |
 |   김건희        |   gunhee20011113@gmail.com                |  spring          |     django       |      iOS      |
