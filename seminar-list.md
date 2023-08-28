@@ -96,7 +96,7 @@
 |  윤유상         |    fyoon46@gmail.com               |            |            |            |
 |  손정우         |   jeongwooson1218@gmail.com                |   django         |  react          |   android        |
 | 서주원          |   juwon0718@naver.com                |            |            |            |
-|  이수인         |   silee1103@snu.ac.kr                |            |            |            |
+|  이수인         |   silee1103@snu.ac.kr                |     django       |     spring       |   android         |
 |   박채연        |   kidsland09@naver.com                |    react   |   spring  |    django  |
 |  백창인         |  nuagenic@gmail.com                 |            |            |            |
 |  최승원         |   csw020730@gmail.com                |            |            |            |
