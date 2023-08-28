@@ -91,7 +91,7 @@
 |  최영주         |   myday05@snu.ac.kr                |            |            |            |
 |   김민형        |    ytzka14@snu.ac.kr               |      react      |     django       |     android      |
 |  배진형         |  jonnyjh3455@gmail.com                 |            |            |            |
-|  강성민         |  kan5995@naver.com                 |            |            |            |
+|  강성민         |  kan5995@naver.com                 |    android     |  django       |  react     |
 |  전수빈         |  nname@snu.ac.kr                 |  Spring          |  android          |  Django          |
 |  윤유상         |    fyoon46@gmail.com               |            |            |            |
 |  손정우         |   jeongwooson1218@gmail.com                |            |            |            |
