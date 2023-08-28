@@ -56,7 +56,7 @@
 |  남기태         |   kevin9922@snu.ac.kr                |  android   |   spring   |    react   |
 |  조석희         |   louischo453@gmail.com                |      react      |      android      |      django      |
 |   이민석        |   ehdtodvodl@gmail.com                |  android   |   django    |   spring  |
-|  이규원         |   leekyw0323@snu.ac.kr                |            |            |            |
+|  이규원         |   leekyw0323@snu.ac.kr                |   django   |   spring   |   android   |
 |  심영인         |   sspjyins@snu.ac.kr                |   Spring         |    Django        |   android         |
 |  황경서         |   rudtj0801@snu.ac.kr                |django |spring|android|
 |  김하늘         |   kimhaneal11@naver.com                |   Android         |   Django         |   React         |
