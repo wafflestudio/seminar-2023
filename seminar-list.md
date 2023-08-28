@@ -52,7 +52,7 @@
 |   임혜진        |  hjlim7831@gmail.com                 |  spring  | django | android |
 |   송원영        |   rachelsong10@snu.ac.kr                |     django       |    spring        |  android          |
 |   정우진        |    woojin5555@gmail.com               |     React       |     Django     |      Spring      |
-|  임지한         |    jhlim101@snu.ac.kr               |            |            |            |
+|  임지한         |    jhlim101@snu.ac.kr               |     django      |     iOS      |     android      |
 |  남기태         |   kevin9922@snu.ac.kr                |  android   |   spring   |    react   |
 |  조석희         |   louischo453@gmail.com                |      react      |      android      |      django      |
 |   이민석        |   ehdtodvodl@gmail.com                |  android   |   django    |   spring  |
