@@ -81,7 +81,7 @@
 |  박찬영         |    vitacpark@snu.ac.kr               |      spring      |     django       |      react      |
 |  배준범         |    jbjb7263@naver.com               |   django         |   android         | spring         |
 |  이현우         |    dlgusdn0414@snu.ac.kr               |  spring      |  react    |  android    |
-|  박수민         |    parksm06g@gmail.com               |            |            |            |
+|  박수민         |    parksm06g@gmail.com               |   spring        |   django        |   react        |
 |   윤서담        |    sdc2717@snu.ac.kr               |   django         |   iOS         |   react         |
 |   정시훈        |    gssihunjung@gmail.com               |  django      |   android     | react   |
 |  강시온         |    sion45840@snu.ac.kr               |  django  |  spring  | react   |
