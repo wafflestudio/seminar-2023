@@ -18,7 +18,7 @@
   <tr>
     <td>0</td>
     <td></td>
-    <td>9월 9일 (일) 오후 3시</td>
+    <td>9월 9일 (토) 오후 3시</td>
     <td></td>
     <td></td>
     <td><a href="./seminar0/seminar-2022-django-00.pdf">링크</a></td>
