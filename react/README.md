@@ -18,13 +18,13 @@
   <tr>
     <td>0</td>
     <td></td>
-    <td>9월 8일 (금) 오후 8시</td>
+    <td>9월 1일 (금) 오후 8시</td>
     <td></td>
     <td></td>
-    <td><a href="./seminar0/seminar-2022-django-00.pdf">링크</a></td>
-    <td><a href="https://github.com/wafflestudio/seminar-2022-django-assignment0">링크</a></td>
-    <td><a href="https://snu-ac-kr.zoom.us/j/98971848946?pwd=V0J4ZXl2N0thaFMxSWU1K0puUlE2dz09">링크</a></td>
-    <td><a href="https://www.youtube.com/watch?v=T1MfnMLwgAo&list=PLoHXQ9xKafZMxix8XP22W5zlR6JcI-a1r">링크</a></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   </table>
 
