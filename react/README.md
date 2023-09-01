@@ -1,37 +1,64 @@
 # Seminar 2023 : React 강좌
 
-> instructor: 안중원 [@joongwon](https://github.com/joongwon)
+> instructor: [@joongwon](https://github.com/joongwon)
 
-## 수업 일정 및 자료
-<table>
-  <tr>
-    <td>회차</td>
-    <td>제목</td>
-    <td>시간</td>
-    <td>장소</td>
-    <td>사전 준비</td>
-    <td>자료</td>
-    <td>과제</td>
-    <td>zoom</td>
-    <td>영상</td>
-  </tr>
-  <tr>
-    <td>0</td>
-    <td></td>
-    <td>9월 1일 (금) 오후 8시</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  </table>
+> content: React with Typescript
 
-  ## 링크
+---
 
-- [구글 드라이브](https://drive.google.com/drive/folders/1BP5PxhAJtZUfFPXRHe_E0T7rY0IM4npE?usp=sharing)
-- [출결표](https://docs.google.com/spreadsheets/d/1FGmSCwnbz0vlOmjtrsOdYU6cuH8jN7MoBtFI9hZdi1E/edit#gid=0)
-- [과제 제출표](https://docs.google.com/spreadsheets/d/1Of5sGYHasMMtOVZgUQBF5aVVtHH0AHllrrTuVOCJJaM/edit#gid=0)
+## 주요 수정 로그
+* 8/25: 문서 생성
 
-## 공지사항
+## 세미나 일정
+
+| 세미나 번호                        | 주제                                                    | 날짜 및 시간                  |
+|----------------------------|-------------------------------------------------------|--------------------------|
+| [0](./0)     | HTML, CSS, JS                                         | 2023.09.01 20:00 |
+| 0.5 | Typescript | 2023.09.08 20:00 |
+| 1     | React, 함수 컴포넌트, state, 배포                                         | 2023.09.15 20:00 |
+| 1.5     | 함수형(?) 프로그래밍, CSS 레이아웃                                         | 2023.09.22 20:00 |
+| 2     | 컴포넌트 생애주기, 훅, 컨텍스트, 라우팅                                        | 2023.09.29 20:00 |
+| 3 | 비동기, HTTP 통신 | 2023.10.13 20:00 |
+| 4 | React 심화, 성능, CSS 편하게 쓰기 | 2023.10.27 20:00 |
+| 5 | CSR vs SSR, SPA vs MPA vs SSR, Next.js | 2023.11.10 20:00 |
+
+## 준비사항
+
+* [해당 문서](./requirement.md) 참조
+
+## 참고할만한 학습 링크
+
+* [해당 문서](./study-links.md) 참조
+
+## 세미나 주의사항
+
+### 질문 절차
+
+1. 구글링
+    - 구글링으로 **바로** 나오는 질문을 올리지 마세요. 세미나장과 조교는 구글링 대신해주는 사람이 아닙니다. (30분동안 못 찾으면 올려도 됨. 삽질ㄴㄴ)
+2. 세미나 기존 이슈 검색
+    - 이미 나온 해결책이 안 통하는 경우에만 새 질문으로 올려주세요
+3. 깃허브 디스커션에 질문
+    - 아래와 같이 백틱 3개로 감싸면 코드를 색칠할 수 있으니 절대로 코드 스크린샷을 업로드하지 마세요
+````markdown
+```javascript
+function App() {
+  return (
+    <p>Hello,</p>
+    <p>world!</p> // <-- 여기에 오류가 나요ㅠㅠ
+  )
+}
+```
+````
+
+### 출결
+
+- 출결은 슬랙에 올라오는 구글 폼을 통해 확인합니다.
+  - 출석 코드를 함께 제출해야 하는데, 이는 세미나가 끝날 때 알려드리겠습니다.
+- 3회 이상 무단 결석하는 경우 탈락 처리합니다.
+  - 세미나 참석이 어려운 경우 슬랙 DM 등으로 24시간 이전에 미리 알려주세요.
+  - 무단이 아니더라도 결석이 너무 잦으면 세미나장 재량으로 탈락 처리할 수 있습니다.
+
+### 과제 제출
+
+[자세한 안내서](hw-guide.md)가 있으니 참고하세요.
