@@ -21,9 +21,9 @@
     <td>9월 8일 (금) 오후 7시</td>
     <td><a href="https://map.naver.com/p/entry/place/1754510954?placePath=%2Fhome&c=15.00,0,0,0,dh">서울대입구 스프링라운지</a></td>
     <td></td>
-    <td><a href="https://github.com/wafflestudio/seminar-2023-android-assignment/tree/main/assignment-0"></a>사전 과제</td>
-    <td><a href="https://github.com/wafflestudio/seminar-2023/blob/main/android/seminar_0/Seminar%200.pdf"></a>세미나 0 자료</td>
-    <td>세미나 0 과제<a href="https://github.com/wafflestudio/seminar-2023-android-assignment/tree/main/assignment-1"></a></td>
+    <td><a href="https://github.com/wafflestudio/seminar-2023-android-assignment/tree/main/assignment-0">사전 과제</a></td>
+    <td><a href="https://github.com/wafflestudio/seminar-2023/blob/main/android/seminar_0/Seminar%200.pdf">세미나 0 자료</a></td>
+    <td><a href="https://github.com/wafflestudio/seminar-2023-android-assignment/tree/main/assignment-1">세미나 0 과제</a></td>
     <td><a href=""></a></td>
   </tr>
   </table>
