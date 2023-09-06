@@ -240,7 +240,6 @@ p {
 
 
 <div style="display: grid; grid-template-columns: 1fr 0.6fr">
-
 <div>
 
 *무엇을 꾸밀 것인가?*
