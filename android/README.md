@@ -24,7 +24,7 @@
     <td><a href="https://github.com/wafflestudio/seminar-2023/blob/main/android/seminar_0/Seminar%200.pdf">세미나 0 자료</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-android-assignment/tree/main/assignment-1">과제 1</a></td>
     <td><a href=""></a></td>
-    <td><a href="https://youtu.be/TtHzBIfc46o">세미나 0 영상</a></td>
+    <td><a href="https://www.youtube.com/playlist?list=PLoHXQ9xKafZOtyvtbPm8-si0x2xbgfB7T">세미나 0 영상</a></td>
   </tr>
   </table>
 
