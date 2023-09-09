@@ -31,6 +31,7 @@
   ```
   git clone https://github.com/waldo/waffle-react-hw0 waldo/hw0
   cd waldo/hw0
+  git switch hw0
   npx serve -l 3000
   # 크롬을 통해 http://localhost:3000으로 접속
   ```
