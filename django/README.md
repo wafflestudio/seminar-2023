@@ -27,7 +27,7 @@
   <tr>
     <td>1</td>
     <td></td>
-    <td>9월 23일 (토) 오후 3시</td>
+    <td>9월 24일 (일) 오후 3시</td>
     <td>서울대 301동 203호</td>
     <td></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/01">링크</a></td>
