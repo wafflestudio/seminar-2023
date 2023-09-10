@@ -22,13 +22,13 @@
     <td><a href="https://www.icloud.com/keynote/0a9vwAXNX6-OoAm5HAxjQsbiw#django_21.5_00">링크</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/00">링크</a></td>
     <td><a href="https://snu-ac-kr.zoom.us/j/93637182243?pwd=RjFLZlVLMjRYbXVFNGVmKzlOLzZ3QT09">링크</a></td>
-    <td>TBD</td>
+    <td><a href="https://www.youtube.com/watch?v=F0bRIHs5mjA&list=PLzNDswlnDlcPhEyp7D6VFj04ve6cYgAXA&index=1">링크</a></td>
   </tr>
   <tr>
     <td>1</td>
     <td></td>
     <td>9월 23일 (토) 오후 3시</td>
-    <td></td>
+    <td>서울대 301동 203호</td>
     <td></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/01">링크</a></td>
     <td></td>
@@ -38,7 +38,7 @@
     <td>2</td>
     <td></td>
     <td>10월 7일 (토) 오후 3시</td>
-    <td></td>
+    <td>서울대 301동 203호</td>
     <td></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/02">링크</a></td>
     <td></td>
@@ -48,7 +48,7 @@
     <td>3</td>
     <td></td>
     <td>10월 28일 (토) 오후 3시</td>
-    <td></td>
+    <td>서울대 301동 203호</td>
     <td></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/03">링크</a></td>
     <td></td>
@@ -58,7 +58,7 @@
     <td>4</td>
     <td></td>
     <td>11월 11일 (토) 오후 3시</td>
-    <td></td>
+    <td>서울대 301동 203호</td>
     <td></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/04">링크</a></td>
     <td></td>
@@ -68,7 +68,7 @@
     <td>5</td>
     <td></td>
     <td>11월 25일 (토) 오후 3시</td>
-    <td></td>
+    <td>서울대 301동 203호</td>
     <td></td>
     <td>없음!</td>
     <td></td>
