@@ -30,7 +30,7 @@ section.qsmall > blockquote {
 
 </style>
 
-# 와플스튜디오 프론트엔드 세미나 - 0.5
+# 와플스튜디오 <br>프론트엔드 세미나 - 0.5
 
 ---
 
@@ -112,11 +112,8 @@ function add(a, b) {
 add(0.5, 1,5);
 ```
 
-JS
-> (조용히 1.5를 리턴)
-
-TS
-> Expected 2 arguments, but got 3.
+* JS: (조용히 1.5를 리턴)
+* TS: Expected 2 arguments, but got 3.
 
 ---
 
@@ -573,7 +570,7 @@ btn.on('click', () => {
 [1, 2, 3].map(n => n * 3); // [3, 6, 9]
 ```
 
-* `(this: T[], f: T => U) => U`
+* `<T, U>(this: T[], f: (x: T) => U) => U[]`
 
 ---
 
@@ -583,7 +580,7 @@ btn.on('click', () => {
 [1, 2, 3, 4, 5].filter(n => n % 2 === 0); // [2, 4]
 ```
 
-* `(this: T[], f: T => boolean) => T[]`
+* `<T>(this: T[], f: (x: T) => boolean) => T[]`
 
 ---
 
@@ -593,7 +590,7 @@ btn.on('click', () => {
 [1, 2, 3, 4, 5].some(n => n % 2 === 0); // true
 ```
 
-* `(this: T[], f: T => boolean) => boolean`
+* `<T>(this: T[], f: (x: T) => boolean) => boolean`
 
 ---
 
@@ -604,9 +601,9 @@ btn.on('click', () => {
 ```
 
 * `(this: T[], f: (a: T, b: T) => T) => T`
+* `(this: T[], f: (a: U, b: T) => U, init: U) => U`
 
 ---
 
 # Q&A
 
----
