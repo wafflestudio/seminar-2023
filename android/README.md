@@ -30,7 +30,7 @@
     <td>1</td>
     <td>View Binding, RecyclerView, ViewModel, MVVM</td>
     <td>9월 24일 (일) 오전 11시</td>
-    <td><a href="">301동 203호</a></td>
+    <td>301동 203호</td>
     <td><a href=""></a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023/blob/android/main/android/seminar_1/Seminar%201.pdf">세미나 1 자료</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-android-assignment/tree/main/assignment-2">과제 2</a></td>
