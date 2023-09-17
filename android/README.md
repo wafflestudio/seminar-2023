@@ -39,7 +39,7 @@
   </tr>
   <tr>
     <td>2</td>
-    <td>Gradle, Network, DI, Async Programming, Coroutine</td>
+    <td>Gradle, Network, DI, Async Programming, Coroutine (기초)</td>
     <td>10월 6일 (금) 오후 7시</td>
     <td><a href="https://map.naver.com/p/entry/place/1754510954?placePath=%2Fhome&c=15.00,0,0,0,dh">서울대입구 스프링라운지</a></td>
     <td><a href=""></a></td>
@@ -51,7 +51,7 @@
   <tr>
     <td>3</td>
     <td>Fragment, SharedPreference</td>
-    <td>10월 20일 (금) 오후 7시</td>
+    <td>10월 27일 (금) 오후 7시</td>
     <td><a href="https://map.naver.com/p/entry/place/1754510954?placePath=%2Fhome&c=15.00,0,0,0,dh">서울대입구 스프링라운지</a></td>
     <td><a href=""></a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023/blob/android/main/android/seminar_3/Seminar%203.pdf">세미나 3 자료</a></td>
