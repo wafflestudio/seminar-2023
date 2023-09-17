@@ -26,6 +26,17 @@
     <td><a href=""></a></td>
     <td><a href=""></a></td>
   </tr>
+  <tr>
+    <td>1</td>
+    <td>View Binding, RecyclerView, ViewModel, MVVM</td>
+    <td>9월 24일 (일) 오전 11시</td>
+    <td><a href="https://map.naver.com/p/entry/place/1754510954?placePath=%2Fhome&c=15.00,0,0,0,dh">서울대입구 스프링라운지</a></td>
+    <td><a href=""></a></td>
+    <td><a href="">세미나 0 자료</a></td>
+    <td><a href="https://github.com/wafflestudio/seminar-2023-android-assignment/tree/main/assignment-2">과제 2</a></td>
+    <td><a href=""></a></td>
+    <td><a href=""></a></td>
+  </tr>
   </table>
 
 ## 공지사항
