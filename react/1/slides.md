@@ -311,17 +311,18 @@ const App = () => {
 
 예제: [counter example 튜토리얼](./counter-example)
 
-```js
+```ts
 const [value, setValue] = useState("Hello, world!");
+const [value, setValue] = useState<string>("Hello, world!");
 ```
 
 ---
 
 # State
 
-```jsx
+```tsx
 const Counter = () => {
- const [count, setCount] = useState(0);
+ const [count, setCount] = useState<number>(0);
  return (
    <div>
      <h1>value: {count}</h1>
@@ -354,7 +355,7 @@ const Counter = () => {
 # Props
 
 ```jsx
-const Child = (props) => {
+const Child = (props: { prop1: number, prop2: string }) => {
  return (
    <div>
      prop1: {props.prop1},
@@ -373,7 +374,12 @@ const Example = () => {
 # Props
 
 ```jsx
-const Child = ({ prop1, prop2 }) => {
+type ChildProps = {
+  prop1: number;
+  prop2: string;
+};
+
+const Child = ({ prop1, prop2 }: ChildProps) => {
  return (
    <div>
      prop1: {prop1},
@@ -479,8 +485,8 @@ https://mashup-todolist.surge.sh/ 를 적당히 따라 만들어 보겠습니다
 
 ```jsx
 const InputExample = () => {
-  const [name, setName] = useState("");
-  const handleChange = (e) => {
+  const [name, setName] = useState<string>("");
+  const handleChange: ChangeEventHandler<HTMLInputElement> = (e) => {
     setName(e.target.value);
   };
   return <input value={name} onChange={handleChange}/>;
