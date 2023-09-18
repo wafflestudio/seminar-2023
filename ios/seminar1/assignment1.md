@@ -29,6 +29,7 @@ Seminar1 Assignment
   - 힌트: `memo` 필드가 선택적으로 보이기 때문에,  `title`과 `memo`를 `UIStackView` 안에 넣으면 UIKit이 Auto Layout을 자동으로 관리해줘서 편리해요.
   - 힌트: 셀별로 높이가 동적으로 변화하는 테이블뷰를 구현해야 하는데, `UITableView.automaticDimension`를 키워드로 해서 검색해보세요.
 - [ ] 왼쪽 동그라미 이미지를 탭하여 완료 상태를 변경할 수 있으며, 완료된 미리 알림의 `title` 필드는 어두운 색으로 변경됩니다.
+- [ ] 키보드를 아래쪽으로 드래그하면 interactive하게 키보드가 내려가도록 해주세요.
   - 힌트: 동그라미 이미지는 SF Symbol을 사용하여 추가할 수 있습니다. `UIImageView SF Symbol`이라고 구글링해보세요. 제가 사용한 심볼 이미지는 각각 `circle`, `circle.inset.filled` 입니다.
 - [ ] 셀을 왼쪽으로 스와이프해서 삭제할 수 있습니다.
 - [ ] 앱을 종료하고 다시 시작해도 마지막으로 저장된 미리 알림 항목들이 표시되도록 구현해주세요.
