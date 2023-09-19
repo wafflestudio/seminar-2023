@@ -13,7 +13,7 @@ export default defineConfig({
   retries: CI ? 2 : 0,
   workers: CI ? 4 : undefined,
   reporter: CI ? 'dot' : 'html',
-  timeout: 2000,
+  timeout: CI ? 5000 : 2000,
   use: {
     video: 'retain-on-failure',
     baseURL: `http://localhost:${PORT}`,
