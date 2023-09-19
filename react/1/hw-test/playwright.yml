@@ -26,11 +26,21 @@ jobs:
         run: npx serve -s dist -l 5173 &
 
       # 그런 다음, Playwright를 설치하고 돌린다
-      - name: Clone Test
-        run: git clone https://github.com/wafflestudio/seminar-2023.git
       - name: Install Playwright Browsers
         run: npx playwright@1.38.0 install --with-deps
+      - name: Clone Test
+        run: git clone https://github.com/wafflestudio/seminar-2023.git
       - name: Run Playwright tests
         run: |
+          cd ./seminar-2023
           cd ./react/1/hw-test
+          yarn
           yarn test
+
+      # 테스트 결과를 저장한다
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 1
