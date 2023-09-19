@@ -73,9 +73,9 @@
     - 힌트: 전역 변수로 다음 id로 쓸 값을 저장하거나, Date.now(), Math.random() 등의 함수를 활용하는 방법이 있다.
     - 백엔드 서버와 연결한 이후에는 이 문제에 대해 고민할 필요 없으니 적당히 해결하면 된다.
   - 아래와 같이 `data-testid` 속성을 설정한다.
-    | 우하단 녹색 버튼 | 모달 (하얀 영역 wrapper) | 모달의 작성 버튼| 모달의 취소 버튼 | 이미지 인풋 | 과자이름 인풋 | 평점 인풋 | 평점 인풋 하단 오류 메세지 | 내용 인풋 |
-    | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-    | `write-review` | `write-review-modal` | `submit-review` | `cancel-review` | `image-input` | `name-input` | `rating-input` | `rating-input-message` | `content-input` |
+    | 우하단 녹색 버튼 | 모달 (하얀 영역 wrapper) | 모달의 작성 버튼| 모달의 취소 버튼 | 이미지 인풋 | 과자이름 인풋 | 과자이름 인풋 하단 오류 메세지 | 평점 인풋 | 평점 인풋 하단 오류 메세지 | 내용 인풋 | 내용 인풋 하단 오류 메세지 |
+    | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+    | `write-review` | `write-review-modal` | `submit-review` | `cancel-review` | `image-input` | `name-input` | `name-input-message` | `rating-input` | `rating-input-message` | `content-input` | `content-input-message` |
 - 리뷰 수정 및 삭제
   - 리뷰 상자에 커서를 올리면 수정 버튼과 삭제 버튼이 나타난다.
     - 힌트: CSS에서 `:hover` 슈도 클래스를 사용하면 조건부 렌더링 없이도 구현할 수 있다.
@@ -89,9 +89,9 @@
     - 다시 삭제 버튼을 누르면 해당 리뷰가 삭제된다.
     - 취소 버튼을 누르면 모달이 닫힌다.
   - 아래와 같이 `data-testid` 속성을 설정한다.
-    | 리뷰 상자 | 수정 버튼 | 수정 시 내용 인풋 | 삭제 버튼 | 삭제 모달의 취소 버튼 | 삭제 모달의 삭제 버튼 |
-    | --- | --- | --- | --- | --- | --- |
-    | `review` | `modify-review` | `modify-review-content-input` | `delete-review` | `delete-review-cancel` | `delete-review-delete` |
+    |리뷰 상자| 수정 버튼 | 수정 시 내용 인풋 | 수정 저장 버튼 | 수정 취소 버튼 | 삭제 버튼 | 삭제 모달의 취소 버튼 | 삭제 모달의 삭제 버튼 |
+    | --- | --- | --- | --- | --- | --- | --- | --- |
+    | `review` | `edit-review` | `edit-review-content-input` | `edit-review-save` | `edit-review-cancel` | `delete-review` | `delete-review-cancel` | `delete-review-delete` |
 - 디자인 및 레이아웃
   - 기본적으로 이미지와 비슷하게 맞춘다.
   - 폰트, 색상, 테두리 모양, 여백 등은 더 예쁘게 조정해도 좋다.
