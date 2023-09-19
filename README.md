@@ -3,7 +3,7 @@
 <br><br>![wafflestudio_logo](waffle_logo.png)<br><br>
 2023 세미나는 다음 학기부터 개발 프로젝트에 참여할 수 있는 __21.5기 Programmers의 양성__ 및 __기존 부원의 실력 향상__ 을 목표로 합니다.
 - React
-  - JavaScript
+  - TypeScript
 - Django
   - Python
 - Kotlin Spring MVC + JPA
@@ -36,7 +36,7 @@
 | Spring   | 수요일 | 오후 7시 | 정원식 | 
 | iOS      | 일요일 | 오후 2시 | 박신홍 | 
 | Android  | 금요일 | 오후 7시 | 양주현 |
-| React    | 금요일 | 오후 8시 | 안중원 |
+| React    | 화요일 | 오후 8시 | 안중원 |
 
 <br>
 

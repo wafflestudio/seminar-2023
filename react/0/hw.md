@@ -1,9 +1,11 @@
 # React 과제 0
 
-* 기한: 9/15 금요일 밤 00:00
+* 기한: 9/15 금요일 밤 24:00 (토요일 넘어갈 때)
 
 과제가 둘 있습니다. 채점은 빡세게 안 합니다. 하지만 지금 해놓지 않으면 나중에 개고생 하십니다.
 지금이 학기중에 가장 의지와 시간이 가득한 때 아닙니까? 열심히 해보시기 바랍니다.
+
+과제 제출 방법은 [가이드](../hw-guide.md)를 참고하세요
 
 # 과제 0A
 
@@ -31,6 +33,7 @@
   ```
   git clone https://github.com/waldo/waffle-react-hw0 waldo/hw0
   cd waldo/hw0
+  git switch hw0
   npx serve -l 3000
   # 크롬을 통해 http://localhost:3000으로 접속
   ```
