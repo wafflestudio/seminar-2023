@@ -67,10 +67,13 @@ ul {
 
 - Virtual DOM
 - 단방향 데이터 흐름
-- 컴포넌트: 관심사의 분리
-- 데이터를 넣으면, 지정한 UI를 조립
-- 여러 부분을 분할해서 사용
+- 컴포넌트
+  - 관심사의 분리
+  - 선언형 코드
+  - 데이터를 넣으면, 지정한 UI를 조립
+  - 여러 부분을 분할해서 사용
 - JSX
+- 불변성
 
 ---
 
@@ -78,19 +81,20 @@ ul {
 Document Object Model (문서 객체 모델)
 - HTML 문서에 접근하기 위한 일종의 인터페이스
 - 브라우저가 DOM tree 를 생성
+- 리액트 이전에는 항상 DOM을 직접 다뤄야했다
 
 ![](img/domtree.gif)
 
 ---
 
-# Virtual DOM
+# 가상 DOM
 
 - 기존의 프레임워크
-  - 데이터가 바뀌면 화면에서 대응되는 부분 변화
+  - 데이터가 바뀌면 화면에서 대응되는 부분을 **직접** 바꿔줌
 
-- React
-  - 데이터가 바뀌면 가상 DOM을 완전히 새로 그린다
-  - 이후 바뀐 부분을 실제 DOM에 반영
+- 리액트
+  - 데이터가 바뀌면 바뀐 부분의 가상 DOM을 새로 만든다
+  - 이후 리액트가 자동으로 바뀐 부분을 실제 DOM에 반영
 
 ---
 
@@ -296,7 +300,7 @@ const App = () => {
 - state
   - 동적인 데이터
   - 지역 변수 비슷한 것
-  - useState 함수를 통해 사용
+  - useState/useReducer 함수를 통해 사용
 
 - props
   - 부모가 자식에게 넘겨주는 값
@@ -305,7 +309,7 @@ const App = () => {
 ---
 
 # State
-- 앱 또는 컴포넌트의 "생태"
+- 앱 또는 컴포넌트의 "상태"
 - 데이터, 모달이 열려 있는지, 어떤 값이 선택되었는지 등 모든 게 "상태"
 - "상태"에 따라 값을 렌더
 
@@ -322,7 +326,7 @@ const [value, setValue] = useState<string>("Hello, world!");
 
 ```tsx
 const Counter = () => {
- const [count, setCount] = useState<number>(0);
+ const [count, setCount] = useState(0);
  return (
    <div>
      <h1>value: {count}</h1>
@@ -331,6 +335,35 @@ const Counter = () => {
      </button>
    </div>
  );
+}
+```
+
+---
+
+# State와 불변성
+
+- 리액트는 "바뀐" 부분만 업데이트한다
+- 바뀌었는지 확인하는 법: `===`
+  - 숫자나 문자열이면 상관없다
+  - 오브젝트, 배열 등은 내용물이 바뀌어도 업데이트가 안 된다
+- 내용물을 바꾸지 않는 문법만 사용하길 권장
+
+```tsx
+const DoubleCounter = () => {
+  const [count, setCount] = useState({ a: 0, b: 0 });
+  return (
+    <div>
+      <p>a = {count.a}</p>
+      <p>b = {count.b}</p>
+      <button onClick={() => {
+        count.a++;
+        setCount(count);
+      }}>a++</button>
+      <button onClick={() => {
+        setCount({ ...count, b: count.b + 1 });
+      }}>b++</button>
+    </div>
+  );
 }
 ```
 
@@ -417,8 +450,8 @@ props ~ 파라미터
 
 ---
 
-# Test
-- 터미널에서 `npx run dev` 실행
+# 실행해보기
+- 터미널에서 `npm run dev` 실행
 
 ---
 
@@ -453,7 +486,7 @@ https://mashup-todolist.surge.sh/ 를 적당히 따라 만들어 보겠습니다
 
 - 투두 목록
   - 각 투두의 데이터: 내용, 완료 여부, id
-  - ```json
+  - ```js
     {
       id: 1,
       status: "done",
@@ -485,7 +518,7 @@ https://mashup-todolist.surge.sh/ 를 적당히 따라 만들어 보겠습니다
 
 ```jsx
 const InputExample = () => {
-  const [name, setName] = useState<string>("");
+  const [name, setName] = useState("");
   const handleChange: ChangeEventHandler<HTMLInputElement> = (e) => {
     setName(e.target.value);
   };
