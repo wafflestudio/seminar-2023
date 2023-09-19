@@ -21,4 +21,18 @@ ul {
 }
 </style>
 
-# Waffle Studio<br>Frontend Seminar - 1.5
+# Waffle Studio<br>Frontend Seminar - 1.5<br/>
+
+### \*강의자료 work in progress 입니다.
+
+---
+
+<!-- @joongwon part -->
+
+# CSS Layout
+
+---
+
+<!-- @woohm402 part -->
+
+# Testing
