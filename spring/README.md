@@ -32,9 +32,9 @@
     <td>9월 20일 (수) 오후 7시</td>
     <td>서울대 301동 203호</td>
     <td></td>
-    <td>링크</td>
-    <td>링크</td>
-    <td>링크</td>
+    <td><a href="./week1/week1.pdf">링크</a></td>
+    <td><a href="https://github.com/wafflestudio/seminar-2023-springboot-assignment">링크</a></td>
+    <td><a href="https://snu-ac-kr.zoom.us/j/98971848946?pwd=V0J4ZXl2N0thaFMxSWU1K0puUlE2dz09">링크</a></td>
     <td>링크</td>
   </tr>
   <tr>
