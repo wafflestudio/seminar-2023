@@ -1,6 +1,8 @@
 import test, { Page, expect } from '@playwright/test';
 import { TEST_ID } from './_testids';
 
+const mockImage = 'https://wafflestudio.com/images/icon_intro.svg';
+
 test('우하단의 녹색 버튼을 누르면 리뷰 쓰기 모달이 뜬다', async ({ page }) => {
   await page.goto('/');
   await page.getByTestId(TEST_ID['우하단 녹색 버튼']).click();
@@ -23,7 +25,7 @@ test('리뷰의 내용을 작성하여 작성 버튼을 누르면 맨 위에 리
   await page.goto('/');
   await page.getByTestId(TEST_ID['우하단 녹색 버튼']).click();
   const reviewModal = page.getByTestId(TEST_ID['리뷰 작성 모달']);
-  await fillCreateReviewModal(page, { image: 'image', name: 'snack', rating: '4', content: 'content' });
+  await fillCreateReviewModal(page, { image: mockImage, name: 'snack', rating: '4', content: 'content' });
   await reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 작성 버튼']).click();
   await expect(reviewModal).not.toBeVisible();
   await expect(page.getByTestId(TEST_ID['리뷰 목록']).getByTestId(TEST_ID['리뷰'])).toHaveCount(3);
@@ -31,7 +33,7 @@ test('리뷰의 내용을 작성하여 작성 버튼을 누르면 맨 위에 리
   await expect(createdReview).toContainText('snack');
   await expect(createdReview).toContainText('content');
   await expect(createdReview).toContainText('4.0');
-  await expect(createdReview.locator('img')).toHaveAttribute('src', 'image');
+  await expect(createdReview.locator('img')).toHaveAttribute('src', mockImage);
 });
 
 test('리뷰의 내용을 작성하여 작성 버튼을 눌렀을 때 평점이 오류면 안된다', async ({ page }) => {
@@ -39,7 +41,7 @@ test('리뷰의 내용을 작성하여 작성 버튼을 눌렀을 때 평점이 
   await page.goto('/');
   await page.getByTestId(TEST_ID['우하단 녹색 버튼']).click();
   const reviewModal = page.getByTestId(TEST_ID['리뷰 작성 모달']);
-  await fillCreateReviewModal(page, { image: 'image', name: 'snack', rating: '6', content: 'content' });
+  await fillCreateReviewModal(page, { image: mockImage, name: 'snack', rating: '6', content: 'content' });
   await expect(reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 평점 오류 메시지'])).toHaveText('');
   await reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 작성 버튼']).click();
   await expect(reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 평점 오류 메시지'])).toHaveText(errorMessage);
