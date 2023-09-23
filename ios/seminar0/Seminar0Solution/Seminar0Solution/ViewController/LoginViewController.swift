@@ -75,6 +75,15 @@ class LoginViewController: UIViewController {
     @objc private func loginButtonTapped() {
         guard let username = usernameField.text,
               let email = emailField.text else { return }
+
+        if username.count < 3 {
+            // show alert here
+            let alert = UIAlertController(title: "에러", message: "username은 세 글자 이상이어야 합니다.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "넹", style: .default, handler: nil))
+            self.present(alert, animated: true)
+            return
+        }
+
         let userInfo = UserInfo(username: username, email: email)
         repository.setUserInfo(userInfo)
         let toVC = UserInfoViewController(repository: repository)

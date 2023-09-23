@@ -45,6 +45,15 @@ class EditUserInfoViewController: UIViewController {
     @objc private func doneButtonTapped() {
         userInfo.username = usernameField.text ?? ""
         userInfo.email = emailField.text ?? ""
+
+        if userInfo.username.count < 3 {
+            // show alert here
+            let alert = UIAlertController(title: "에러", message: "username은 세 글자 이상이어야 합니다.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "넹", style: .default, handler: nil))
+            self.present(alert, animated: true)
+            return
+        }
+
         delegate?.editUserInfoViewController(self, didUpdateUserInfoTo: userInfo)
         dismiss(animated: true)
     }
