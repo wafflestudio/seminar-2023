@@ -58,7 +58,12 @@ test('리뷰의 내용을 작성하여 작성 버튼을 눌렀을 때 과자이�
   await page.goto('/');
   await page.getByTestId(TEST_ID['우하단 녹색 버튼']).click();
   const reviewModal = page.getByTestId(TEST_ID['리뷰 작성 모달']);
-  await fillCreateReviewModal(page, { name: 'asdfasdfasdfasdfasdfasdf', rating: '4', content: 'conte' });
+  await fillCreateReviewModal(page, {
+    image: mockImage,
+    name: 'asdfasdfasdfasdfasdfasdf',
+    rating: '4',
+    content: 'conte',
+  });
   await expect(reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 과자이름 오류 메시지'])).toHaveText('');
   await reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 작성 버튼']).click();
   await expect(reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 과자이름 오류 메시지'])).toHaveText(errorMessage);
@@ -75,7 +80,7 @@ test('리뷰의 내용을 작성하여 작성 버튼을 눌렀을 때 내용이 
   await page.goto('/');
   await page.getByTestId(TEST_ID['우하단 녹색 버튼']).click();
   const reviewModal = page.getByTestId(TEST_ID['리뷰 작성 모달']);
-  await fillCreateReviewModal(page, { name: 'asdf', rating: '4', content: '    cont    ' });
+  await fillCreateReviewModal(page, { image: mockImage, name: 'asdf', rating: '4', content: '    cont    ' });
   await expect(reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 내용 오류 메시지'])).toHaveText('');
   await reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 작성 버튼']).click();
   await expect(reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 내용 오류 메시지'])).toHaveText(errorMessage);
@@ -87,11 +92,29 @@ test('리뷰의 내용을 작성하여 작성 버튼을 눌렀을 때 내용이 
   await expect(page.getByTestId(TEST_ID['리뷰 목록']).getByTestId(TEST_ID['리뷰'])).toHaveCount(2);
 });
 
+test('오류 내용이 여러개일 경우 여러 오류가 모두 보인다', async ({ page }) => {
+  await page.goto('/');
+  await page.getByTestId(TEST_ID['우하단 녹색 버튼']).click();
+  const reviewModal = page.getByTestId(TEST_ID['리뷰 작성 모달']);
+  await fillCreateReviewModal(page, { image: mockImage });
+  await reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 작성 버튼']).click();
+
+  await expect(reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 평점 오류 메시지'])).toHaveText(
+    '평점은 1 ~ 5 사이의 숫자로 써주세요',
+  );
+  await expect(reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 과자이름 오류 메시지'])).toHaveText(
+    '첫글자와 끝글자가 공백이 아닌 1~20자 문자열로 써주세요',
+  );
+  await expect(reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 내용 오류 메시지'])).toHaveText(
+    '첫글자와 끝글자가 공백이 아닌 5~1000자 문자열로 써주세요',
+  );
+});
+
 test('한 번 오류가 났어도 고치면 작성된다', async ({ page }) => {
   await page.goto('/');
   await page.getByTestId(TEST_ID['우하단 녹색 버튼']).click();
   const reviewModal = page.getByTestId(TEST_ID['리뷰 작성 모달']);
-  await fillCreateReviewModal(page, { name: 'asdf', rating: '4', content: '' });
+  await fillCreateReviewModal(page, { image: mockImage, name: 'asdf', rating: '4', content: '' });
   await reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 작성 버튼']).click();
   await fillCreateReviewModal(page, { content: '과자과자고' });
   await reviewModal.getByTestId(TEST_ID['리뷰 작성 모달 작성 버튼']).click();
@@ -101,6 +124,7 @@ test('한 번 오류가 났어도 고치면 작성된다', async ({ page }) => {
   await expect(createdReview).toContainText('asdf');
   await expect(createdReview).toContainText('과자과자고');
   await expect(createdReview).toContainText('4.0');
+  await expect(createdReview.locator('img')).toHaveAttribute('src', mockImage);
 });
 
 test('리뷰의 내용을 작성하여 작성 버튼을 누르면 맨 위에 리뷰가 추가된다 (이미지 미입력)', async ({ page }) => {
