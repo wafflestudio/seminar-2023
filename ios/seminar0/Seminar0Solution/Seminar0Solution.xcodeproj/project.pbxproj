@@ -58,6 +58,7 @@
 			children = (
 				CE550B502AA3974D00DCD5A9 /* LoginViewController.swift */,
 				CE0E0BB52ABEF13000AAAF29 /* UserInfoViewController.swift */,
+				CE0E0BBA2ABEF6F500AAAF29 /* EditUserInfoViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -73,7 +74,6 @@
 		CE550B402AA3974D00DCD5A9 = {
 			isa = PBXGroup;
 			children = (
-				CE0E0BBA2ABEF6F500AAAF29 /* EditUserInfoViewController.swift */,
 				CE550B4B2AA3974D00DCD5A9 /* Seminar0Solution */,
 				CE550B4A2AA3974D00DCD5A9 /* Products */,
 			);
