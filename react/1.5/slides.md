@@ -158,7 +158,7 @@ integration test 는 테스트 수행이 오래 걸리기 때문에 엄청나게
 
 ### 엘리먼트를 어떻게 지정할까?
 
-브라우저는 열었습니다. "제출" 버튼 클릭을 테스트하고 싶습니다. 어떻게 해야 할까요?
+브라우저는 열었습니다. "+" 버튼 클릭을 테스트하고 싶습니다. 어떻게 해야 할까요?
 
 - 화면 왼쪽에서 500px, 위에서 300px 위치를 클릭한다
 - `id` 프로퍼티가 `submit-button`인 엘리먼트를 클릭한다
@@ -175,11 +175,7 @@ integration test 는 테스트 수행이 오래 걸리기 때문에 엄청나게
 
 하지만 엘리먼트의 위치나 돔 구조에 결합된 테스트는 관리하기 어렵습니다. 가령 "화면 왼쪽에서 500px을 클릭했을 때" 로 해 버리면, css가 조금 바뀌면 테스트도 다 고쳐줘야 합니다. 나머지도 비슷한 문제가 있습니다.
 
-모든 루키분들이 어떻게 스타일을 짜고 어떻게 돔 구조를 설계하든 테스트가 잘 돌아가게 하려면, `data-testid` 프로퍼티를 이용해야 합니다.
-
-```tsx
-<div data-testid="asdf"></div>
-```
+id 나 class 같은 것들을 이용해서도 요소를 특정할 수 있지만, 의미가 명확하지 않고 원치 않은 기능이 생겨버릴 수도 있습니다. (특히 `id` 프로퍼티의 경우)
 
 ---
 
@@ -187,7 +183,11 @@ integration test 는 테스트 수행이 오래 걸리기 때문에 엄청나게
 
 ### `data-testid`
 
-id 나 class 같은 것들을 이용해서도 요소를 특정할 수 있지만, 의미가 명확하지 않고 원치 않은 기능이 생겨버릴 수도 있습니다. (특히 `id` 프로퍼티의 경우)
+어떻게 스타일을 짜고 어떻게 돔 구조를 설계하든 테스트가 잘 돌아가게 하려면, `data-testid` 프로퍼티를 이용해야 합니다.
+
+```tsx
+<div data-testid="asdf"></div>
+```
 
 `data-*` 속성들은 일반적으로 브라우저가 무시하는 속성입니다. 따라서 이 속성을 이용하면, 테스트를 위한 엘리먼트를 마음대로 지정할 수 있습니다.
 
@@ -197,7 +197,7 @@ id 나 class 같은 것들을 이용해서도 요소를 특정할 수 있지만,
 
 # Integration Test with Playwright
 
-### 엘리먼트를 어떻게 지정할까?
+### `data-testid`
 
 ```ts
 expect(page.getByTestId("title")).toHaveText("와플스튜디오");
@@ -223,7 +223,9 @@ expect(page.getByTestId("title")).toHaveText("와플스튜디오");
 
 ## Live Example
 
-![height:360px](img/playwright-result.png)
+![height:180px](img/playwright-result.png)
+
+![height:180px](img/test-failure.png)
 
 ---
 
@@ -235,19 +237,15 @@ expect(page.getByTestId("title")).toHaveText("와플스튜디오");
 
 ---
 
-## 토막 상식: 로컬 개발환경 vs CI 테스트환경
+## CI (Continuous Integration: 지속적인 통합)
 
-1. 로컬 개발환경
+CI 도구 (CircleCI, TravisCI, Github Actions 등) 가 자동으로 내 코드를 기준으로 자동화 테스트, 린트 체크 등을 수행한다
 
-   - 로컬에서 `yarn start`와 같은 명령어를 통해 서버를 띄우고 `http://localhost:{포트}` 에 접속하고,
-   - webstorm 이나 vscode 를 이용해서 코드를 수정하면서 개발
+## GitHub Actions
 
-2. CI 테스트환경
-   - `Continuous Integration`: 지속적인 통합
-   - 코드를 푸시하면, CI 도구가 자동으로 내 코드를 기준으로 자동화 테스트 수행
-     - 우리는 github actions 를 쓸 거예요
-
-엄밀한 정의는 아니지만, 쉽게 말하면 **_내컴퓨터 vs 내컴퓨터아님_**
+- GitHub에서 제공하는 CI 도구
+- repository 루트의 `.github/workflows/` 폴더에 yml 파일을 추가하면 자동으로 동작한다
+- CI 파일도 미리 만들어드렸습니다 (과제 1의 경우 [`playwright.yml`](https://github.com/wafflestudio/seminar-2023/blob/main/react/1/hw-test/playwright.yml))
 
 ---
 
@@ -268,7 +266,7 @@ expect(page.getByTestId("title")).toHaveText("와플스튜디오");
 
 ## CI 테스트환경 가이드
 
-1. 과제 스펙에 있는 대로, `.github/workflows/playwright.yml` 셋업
+1. 과제 스펙에 있는 대로, 만들어드린 yml 파일을 `.github/workflows/playwright.yml` 로 복사
 2. 과제 브랜치 (이번에는 `hw1`) -> `main` 으로 PR 생성
 3. 푸시하는 대로 github actions 가 테스트를 계속 돌릴거예요
 4. 통과하게 만들어주시면 됩니다
@@ -278,16 +276,6 @@ expect(page.getByTestId("title")).toHaveText("와플스튜디오");
 | ![Alt text](img/ci-failure.png) | ![Alt text](img/ci-success.png) |
 
 계속 실패 뜨는게 거슬린다면, `playwright.yml`은 로컬 테스트환경에서 개발 다 끝나고 마지막에 세팅해주셔도 좋습니다.
-
----
-
-# 과제 할 때 어떻게 하면 되나요?
-
-## 테스트 실패 시 디버깅 방법
-
-테스트가 실패했을 때 `http://localhost:9323` 으로 접속하라는 메세지가 뜰 거고, 접속하면 이렇게 뭐가 잘못됐는지 나올거예요.
-
-![Alt text](img/test-failure.png)
 
 ---
 
