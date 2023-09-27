@@ -33,7 +33,7 @@
     <td>301동 203호</td>
     <td><a href=""></a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023/blob/main/android/seminar_1/Seminar%201.pdf">세미나 1 자료</a></td>
-    <td><a href="https://github.com/wafflestudio/seminar-2023-android-assignment/tree/main/assignment-2">과제 2</a></td>
+    <td><a href="https://github.com/wafflestudio/seminar-2023-android-assignment/blob/assignment2/assignment-2/README.md">과제 2</a></td>
     <td><a href=""></a></td>
     <td><a href="https://www.youtube.com/watch?v=khYqlWKj0IE">세미나 1 영상</a></td>
   </tr>
