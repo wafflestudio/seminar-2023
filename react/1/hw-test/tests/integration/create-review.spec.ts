@@ -33,7 +33,7 @@ test('리뷰의 내용을 작성하여 작성 버튼을 누르면 맨 위에 리
   await expect(createdReview).toContainText('snack');
   await expect(createdReview).toContainText('content');
   await expect(createdReview).toContainText('4.0');
-  await expect(createdReview.locator('img')).toHaveAttribute('src', mockImage);
+  await expect(createdReview.getByTestId('snack-image')).toHaveAttribute('src', mockImage);
 });
 
 test('리뷰의 내용을 작성하여 작성 버튼을 눌렀을 때 평점이 오류면 안된다', async ({ page }) => {
@@ -124,7 +124,7 @@ test('한 번 오류가 났어도 고치면 작성된다', async ({ page }) => {
   await expect(createdReview).toContainText('asdf');
   await expect(createdReview).toContainText('과자과자고');
   await expect(createdReview).toContainText('4.0');
-  await expect(createdReview.locator('img')).toHaveAttribute('src', mockImage);
+  await expect(createdReview.getByTestId('snack-image')).toHaveAttribute('src', mockImage);
 });
 
 test('리뷰의 내용을 작성하여 작성 버튼을 누르면 맨 위에 리뷰가 추가된다 (이미지 미입력)', async ({ page }) => {
