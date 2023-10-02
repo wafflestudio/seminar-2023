@@ -19,7 +19,7 @@ test('수정 버튼을 누르면 리뷰의 내용을 수정할 수 있다 (수�
     '오동통통한 면과 동봉된 다시마가 맛있습니다',
   );
   await reviewItem.getByTestId(TEST_ID['리뷰 수정 인풋']).fill('수정된 리뷰');
-  await page.getByTestId(TEST_ID['리뷰 수정 취소 버튼']).click();
+  await reviewItem.getByTestId(TEST_ID['리뷰 수정 취소 버튼']).click();
 
   // 취소하면 수정한 게 날아간다
   await reviewItem.getByTestId(TEST_ID['리뷰 수정 버튼']).click();
