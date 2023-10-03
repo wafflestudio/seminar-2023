@@ -227,6 +227,12 @@ function App() {
 - 의존성 배열에 함수가 들어가면, 렌더링할 때마다 함수가 새로 생성되어 의도한 최적화가 이루어지지 못함
 - useCallback을 통해 해결
 
+```ts
+const handleClick = useCallback(() => {
+setCount(count + 1);
+}, [count])
+```
+
 ---
 
 # useMemo와 useCallback이 언제 필요할까?
@@ -631,7 +637,7 @@ export default App;
 
 - react-dom 외에도 React Native, SSR 등 여러 형태로 라우팅이 가능한 라이브러리
 - SPA로 만들 때는 브라우저 라우터를 쓴다
-- *routes*: 각 URL에 어떤 컴포넌트를 보여줄지 설정하는 베열
+- *routes*: 각 URL에 어떤 컴포넌트를 보여줄지 설정하는 배열
   - path: URL의 형태를 나타내는 문자열
   - element: 보여줄 JSX
   - children: 하위 URL에 보여줄 라우트를 설정할 수 있다. (선택)
@@ -671,7 +677,7 @@ const router = createBrowserRouter([
 # &lt;RouterProvider router={*router*} />
 
 - 실제 라우팅을 하기 위한 진입점
-- index.tsx에 `<App />` 대신 라우터를 넣어준다
+- main.tsx에 `<App />` 대신 라우터를 넣어준다
 
 ```ts
 ReactDOM.createRoot(document.getElementById("root")!).render(
