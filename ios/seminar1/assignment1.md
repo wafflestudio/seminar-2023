@@ -40,6 +40,18 @@ Seminar1 Assignment
   - [참고 자료](https://medium.com/@yatimistark/removing-storyboard-from-app-xcode-14-swift-5-2c707deb858)
 - [ ] 모든 뷰에는 오토 레이아웃이 적용되어 있어야 합니다.
 
+## 동적으로 높이가 변하는 셀을 구현하려면?
+
+`UITableView.automaticDimension`을 사용하면 셀이 렌더링되는 시점에 UIKit이 해당 셀에 얼만큼의 높이를 부여할지 정하게 됩니다. 이번 과제를 예로 들면, `title`과 `memo`가 포함된 `UIStackView`의 크기가 셀의 높이에 결정적인 요인이 되겠죠? 하지만 UIKit이 `UIStackView`의 높이를 제대로 계산할 수 있게 하려면, `UITableViewCell.contentView`의 4방향 anchor가 내부 Subview들과 어떻게든 맞닿아 있어야 해요. 그래야만 UIKit이 제약 조건들의 해를 잘 구해서 높이를 결정할 수 있거든요.
+
+두 번째로 유의할 점은, 위 방식대로 구현하면 셀이 렌더링되는 시점에는 높이가 잘 반영이 되지만, 셀이 이미 렌더링된 이후에 높이가 변하는 경우(e.g. `memo` 텍스트 필드가 보이거나 숨겨지는 경우)에는 높이를 제대로 업데이트해주지 않아요. 이 문제를 해결하려면 아래 두 가지 방법이 있습니다.
+1. [reloadRows(at:with:)](https://developer.apple.com/documentation/uikit/uitableview/1614935-reloadrows)를 호출하여 해당 셀을 다시 렌더링하기
+   - 자매품: `beginUpdates()`, `endUpdates()`, `performBatchUpdates(_:completion)`
+2. iOS 16에서 추가된 self-resizing 방법을 이용하기 ([영상 링크](https://developer.apple.com/videos/play/wwdc2022/10068/?time=1145))
+   - 요약하자면 높이를 업데이트해야 할 때마다 Cell 안에서 `invalidateIntrinsicContentSize()`를 호출하라는 내용입니다.
+
+어떤 방식을 사용할지는 여러분의 자유이지만, 후자 방식이 훨씬 직관적이고 사용하기 편리할 것 같네요! :)
+
 ## 기타 유의사항
 - 코드를 깔끔하게 관리해주세요. 하나의 함수/파일/클래스는 하나의 일만 해야 합니다.
 - 스펙 설명이 모호한 부분이 있다면 iOS 미리 알림 앱의 동작을 따라 구현해주세요.
