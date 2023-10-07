@@ -29,9 +29,9 @@
     <td>무조건 도움되는 Git / virtualenv</td>
     <td>10월 7일 (토) 오후 3시</td>
     <td>서울대 301동 203호</td>
-    <td></td>
+    <td><a href="">링크</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/01">링크</a></td>
-    <td></td>
+    <td><a href="https://snu-ac-kr.zoom.us/j/92954909420?pwd=TEdXaXgvNFFwUzV1M25WTnZLdkRRdz09">링크</a></td>
     <td></td>
   </tr>
   <tr>
