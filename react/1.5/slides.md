@@ -21,15 +21,197 @@ ul {
 }
 </style>
 
-# Waffle Studio<br>Frontend Seminar - 1.5<br/>
+# Waffle Studio<br>Frontend Seminar - 1.5
 
-### \*강의자료 work in progress 입니다.
+---
+
+# 목차
+
+- CSS 레이아웃
+  - `position`
+  - Flow
+    - Normal Flow
+    - Flexbox
+    - Grid
+- Testing
+  - 강의는 우현민 님의 영상으로 대체합니다
 
 ---
 
 <!-- @joongwon part -->
 
-# CSS Layout
+<!-- _class: lead -->
+
+# CSS 레이아웃
+
+---
+
+# `position`
+
+`position`은 이 요소의 위치를 계산하는 기준점을 지정한다.
+
+구체적인 위치는 지정된 원점을 기준으로 `top`, `right`, `bottom`, `left` 값에 따라 결정된다.
+
+---
+
+# `position: static, relative`
+
+`static`과 `relative`는 자신만의 공간을 차지한다.
+
+- `static`: default 값. 여러분이 생각하는 그 자연스러운 위치에 놓입니다.
+- `relative`: 자연스러운 위치를 기준으로 offset을 지정할 수 있다. 다른 요소들은 *마치 이 요소가 제자리에 있는 것처럼* 배치된다.
+
+---
+
+# `position: absolute, fixed`
+`absolute`과 `fixed`는 부모 요소를 기준으로 위치를 지정한다.
+다른 요소들은 *마치 이 요소가 없는 것처럼* 배치된다.
+- `absolute`: `position`이 지정된 가장 가까운 부모 요소가 기준.
+  - 보통 `absolute`를 넣기 위해 적당한 부모 요소에 `relative`를 지정합니다.
+- `fixed`: 전체 화면이 기준.
+
+---
+
+<!-- _class: lead -->
+# Flow
+
+---
+
+# Flow
+- 이론상 요소들의 (거의) 모든 위치는 width height top right bottom left로 지정할 수 있다.
+- 실제로 2022년에 많은 수강생 분들이 과제1에서 `position: absolute` 먹이고 `%`와 `px`만으로 레이아웃을 만들었습니다.
+- 그런 노가다를 W3C에서 그대로 놔뒀을리 없음 &rarr; 여러가지 Flow로 유연한 레이아웃을 만들자!
+
+---
+
+# Normal Flow
+특별히 지정하지 않았을 때의 기본 flow.
+모든 요소는 **block** 또는 **inline**이며, 좌에서 우로 위에서 아래로 자연스럽게 요소가 배치된다.
+
+| 특징 | block | inline |
+|------|-------|--------|
+| 크기 | 좌우로 최대한 늘어남 | 딱 내용을 감쌀 수 있는 크기. 자유롭게 조절이 안 됨 |
+| 위치 | 새로운 줄에 배치됨 | 이전 내용의 바로 오른쪽에 배치됨. 넘치면 다음 줄로 넘어감 |
+
+---
+
+# Flexbox
+요소를 **1차원**으로 배치한다.
+- default는 모든 자식이 내용에 딱 맞는 크기로 가로로 배치되는 레이아웃.
+
+<div style=display:flex;align-items:flex-start>
+
+```css
+.flex {
+    display: flex;
+}
+```
+
+![w:600](img/flex_terms.png)
+
+</div>
+---
+
+# Flexbox - 부모 설정
+```css
+.flex {
+    display: flex;
+    flex-direction: row; /* main 축의 가로세로. */
+    flex-wrap: wrap; /* 넘치는 요소를 줄바꿈. */
+    /* flex-flow: row wrap; */
+}
+```
+
+---
+
+# Flexbox - 자식 설정
+- `flex`: 지정한 숫자로 이 요소가 Flexbox에서 차지하는 비중이 정해짐
+- e. g. 자식들의 `flex` 값이 1, 2, 1, 3이면, 너비가 1:2:1:3이 된다.
+    - 예를 들어 두 번째 요소는 전체 너비의 2/7을 차지한다.
+
+---
+
+# Flexbox - 정렬
+부모 요소에 CSS로 지정해서 자식 요소를 정렬
+```css
+.flex {
+    align-items: center; /* cross 축 정렬 */
+    justify-content: flex-end; /* main 축 정렬 */
+}
+```
+
+---
+# Flexbox - 실제 사용 예
+
+- 개발자도구 :+1:
+![w:200](img/flex-example.png) ![w:200](images/flex-devtool.png)
+
+- flex 안에 flex를 넣으면 2차원 배치도 웬만큼 됩니다.
+- 한 줄 안에서 가로로 배치하고 여러 줄을 다시 세로로 늘어놓는 식
+
+---
+# Grid
+요소를 **2차원**으로 배치한다.
+```css
+.grid {
+    display: grid;
+}
+```
+
+---
+# Grid - 부모 설정
+우선 가로 세로로 요소를 몇 개씩 배치할지 정한다.
+```css
+.grid {
+    display: grid;
+    grid-template-columns: 200px 1fr 2fr;
+    gap: 10px;
+    grid-auto-rows: 100px;
+}
+```
+
+---
+# Grid - 자식 설정
+각 자식의 위치를 grid 내의 좌표로 설정할 수 있다.
+
+<div style=display:flex;align-items:flex-start;justify-content:space-between>
+
+```css
+.gc {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+}
+```
+![](img/grid-devtool.png)
+
+</div>
+
+---
+# Grid - `grid-template-areas`
+grid의 영역에 이름을 붙이고 배치할 수 있다?!
+```css
+.grid {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar content"
+        "footer footer";
+    grid-template-columns: 100px 1fr;
+    gap: 20px;
+}
+
+header { grid-area: header; }
+article { grid-area: content; }
+aside { grid-area: sidebar; }
+footer { grid-area: footer; }
+```
+
+---
+
+# Grid - 실제 사용 예
+
+![w:600](img/grid-example.png)
+
 
 ---
 
@@ -158,7 +340,7 @@ integration test 는 테스트 수행이 오래 걸리기 때문에 엄청나게
 
 ### 엘리먼트를 어떻게 지정할까?
 
-브라우저는 열었습니다. "제출" 버튼 클릭을 테스트하고 싶습니다. 어떻게 해야 할까요?
+브라우저는 열었습니다. "+" 버튼 클릭을 테스트하고 싶습니다. 어떻게 해야 할까요?
 
 - 화면 왼쪽에서 500px, 위에서 300px 위치를 클릭한다
 - `id` 프로퍼티가 `submit-button`인 엘리먼트를 클릭한다
@@ -175,11 +357,7 @@ integration test 는 테스트 수행이 오래 걸리기 때문에 엄청나게
 
 하지만 엘리먼트의 위치나 돔 구조에 결합된 테스트는 관리하기 어렵습니다. 가령 "화면 왼쪽에서 500px을 클릭했을 때" 로 해 버리면, css가 조금 바뀌면 테스트도 다 고쳐줘야 합니다. 나머지도 비슷한 문제가 있습니다.
 
-모든 루키분들이 어떻게 스타일을 짜고 어떻게 돔 구조를 설계하든 테스트가 잘 돌아가게 하려면, `data-testid` 프로퍼티를 이용해야 합니다.
-
-```tsx
-<div data-testid="asdf"></div>
-```
+id 나 class 같은 것들을 이용해서도 요소를 특정할 수 있지만, 의미가 명확하지 않고 원치 않은 기능이 생겨버릴 수도 있습니다. (특히 `id` 프로퍼티의 경우)
 
 ---
 
@@ -187,7 +365,11 @@ integration test 는 테스트 수행이 오래 걸리기 때문에 엄청나게
 
 ### `data-testid`
 
-id 나 class 같은 것들을 이용해서도 요소를 특정할 수 있지만, 의미가 명확하지 않고 원치 않은 기능이 생겨버릴 수도 있습니다. (특히 `id` 프로퍼티의 경우)
+어떻게 스타일을 짜고 어떻게 돔 구조를 설계하든 테스트가 잘 돌아가게 하려면, `data-testid` 프로퍼티를 이용해야 합니다.
+
+```tsx
+<div data-testid="asdf"></div>
+```
 
 `data-*` 속성들은 일반적으로 브라우저가 무시하는 속성입니다. 따라서 이 속성을 이용하면, 테스트를 위한 엘리먼트를 마음대로 지정할 수 있습니다.
 
@@ -197,7 +379,7 @@ id 나 class 같은 것들을 이용해서도 요소를 특정할 수 있지만,
 
 # Integration Test with Playwright
 
-### 엘리먼트를 어떻게 지정할까?
+### `data-testid`
 
 ```ts
 expect(page.getByTestId("title")).toHaveText("와플스튜디오");
@@ -223,7 +405,9 @@ expect(page.getByTestId("title")).toHaveText("와플스튜디오");
 
 ## Live Example
 
-![height:360px](img/playwright-result.png)
+![height:180px](img/playwright-result.png)
+
+![height:180px](img/test-failure.png)
 
 ---
 
@@ -235,19 +419,15 @@ expect(page.getByTestId("title")).toHaveText("와플스튜디오");
 
 ---
 
-## 토막 상식: 로컬 개발환경 vs CI 테스트환경
+## CI (Continuous Integration: 지속적인 통합)
 
-1. 로컬 개발환경
+CI 도구 (CircleCI, TravisCI, Github Actions 등) 가 자동으로 내 코드를 기준으로 자동화 테스트, 린트 체크 등을 수행한다
 
-   - 로컬에서 `yarn start`와 같은 명령어를 통해 서버를 띄우고 `http://localhost:{포트}` 에 접속하고,
-   - webstorm 이나 vscode 를 이용해서 코드를 수정하면서 개발
+## GitHub Actions
 
-2. CI 테스트환경
-   - `Continuous Integration`: 지속적인 통합
-   - 코드를 푸시하면, CI 도구가 자동으로 내 코드를 기준으로 자동화 테스트 수행
-     - 우리는 github actions 를 쓸 거예요
-
-엄밀한 정의는 아니지만, 쉽게 말하면 **_내컴퓨터 vs 내컴퓨터아님_**
+- GitHub에서 제공하는 CI 도구
+- repository 루트의 `.github/workflows/` 폴더에 yml 파일을 추가하면 자동으로 동작한다
+- CI 파일도 미리 만들어드렸습니다 (과제 1의 경우 [`playwright.yml`](https://github.com/wafflestudio/seminar-2023/blob/main/react/1/hw-test/playwright.yml))
 
 ---
 
@@ -268,7 +448,7 @@ expect(page.getByTestId("title")).toHaveText("와플스튜디오");
 
 ## CI 테스트환경 가이드
 
-1. 과제 스펙에 있는 대로, `.github/workflows/playwright.yml` 셋업
+1. 과제 스펙에 있는 대로, 만들어드린 yml 파일을 `.github/workflows/playwright.yml` 로 복사
 2. 과제 브랜치 (이번에는 `hw1`) -> `main` 으로 PR 생성
 3. 푸시하는 대로 github actions 가 테스트를 계속 돌릴거예요
 4. 통과하게 만들어주시면 됩니다
@@ -278,16 +458,6 @@ expect(page.getByTestId("title")).toHaveText("와플스튜디오");
 | ![Alt text](img/ci-failure.png) | ![Alt text](img/ci-success.png) |
 
 계속 실패 뜨는게 거슬린다면, `playwright.yml`은 로컬 테스트환경에서 개발 다 끝나고 마지막에 세팅해주셔도 좋습니다.
-
----
-
-# 과제 할 때 어떻게 하면 되나요?
-
-## 테스트 실패 시 디버깅 방법
-
-테스트가 실패했을 때 `http://localhost:9323` 으로 접속하라는 메세지가 뜰 거고, 접속하면 이렇게 뭐가 잘못됐는지 나올거예요.
-
-![Alt text](img/test-failure.png)
 
 ---
 

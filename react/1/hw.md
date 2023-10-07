@@ -1,7 +1,10 @@
 # React 과제 1
 
-* 수정(9/23): 이미지 관련 스펙이 수정되었습니다.
-* 기한: 10/3 화요일 밤 24:00 (수요일 넘어갈 때)
+- 수정(9/23): 이미지 관련 스펙이 수정되었습니다.
+- 수정(10/1): 리뷰 이미지 스펙에 `data-testid` 속성이 추가되었습니다.
+- 수정(10/4): 과제 기한이 연장되었습니다.
+  
+- 기한: 10/5 목요일 밤 24:00 (금요일 넘어갈 때)
 
 ## 과제 목적
 
@@ -89,9 +92,9 @@
     - 다시 삭제 버튼을 누르면 해당 리뷰가 삭제된다.
     - 취소 버튼을 누르면 모달이 닫힌다.
   - 아래와 같이 `data-testid` 속성을 설정한다.
-    |리뷰 상자| 수정 버튼 | 수정 시 내용 인풋 | 수정 저장 버튼 | 수정 취소 버튼 | 삭제 버튼 | 삭제 모달의 취소 버튼 | 삭제 모달의 삭제 버튼 |
-    | --- | --- | --- | --- | --- | --- | --- | --- |
-    | `review` | `edit-review` | `edit-review-content-input` | `edit-review-save` | `edit-review-cancel` | `delete-review` | `delete-review-cancel` | `delete-review-delete` |
+    | 리뷰 상자 | 리뷰 상자의 과자 이미지 | 수정 버튼 | 수정 시 내용 인풋 | 수정 저장 버튼 | 수정 취소 버튼 | 삭제 버튼 | 삭제 모달의 취소 버튼 | 삭제 모달의 삭제 버튼 |
+    | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+    | `review` | `snack-image` | `edit-review` | `edit-review-content-input` | `edit-review-save` | `edit-review-cancel` | `delete-review` | `delete-review-cancel` | `delete-review-delete` |
 - 디자인 및 레이아웃
   - 기본적으로 이미지와 비슷하게 맞춘다.
   - 폰트, 색상, 테두리 모양, 여백 등은 더 예쁘게 조정해도 좋다.
