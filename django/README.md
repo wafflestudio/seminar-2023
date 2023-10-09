@@ -32,7 +32,7 @@
     <td><a href="https://github.com/wafflestudio/seminar-2023/blob/main/django/01/01.pdf">링크</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/01">링크</a></td>
     <td><a href="https://snu-ac-kr.zoom.us/j/92954909420?pwd=TEdXaXgvNFFwUzV1M25WTnZLdkRRdz09">링크</a></td>
-    <td></td>
+    <td><a href="https://www.youtube.com/watch?v=wSSOCOcvQew&list=PLzNDswlnDlcPhEyp7D6VFj04ve6cYgAXA&index=2">링크</a></td>
   </tr>
   <tr>
     <td>2</td>
@@ -80,4 +80,4 @@
 
 - [플립 러닝 코드잇 링크](https://www.codeit.kr/paths/python-fullstack-developer?categoryId=6482cda0014b184405fe33b1)
 - [자료 모음](https://drive.google.com/drive/folders/1ce8bqn45MqV25voD-6mMKFIRdwZo_h79?usp=drive_link)
-- [출결표](https://docs.google.com/spreadsheets/d/1FGmSCwnbz0vlOmjtrsOdYU6cuH8jN7MoBtFI9hZdi1E/edit?usp=sharing)
+- [출결표](https://docs.google.com/spreadsheets/d/1FGmSCwnbz0vlOmjtrsOdYU6cuH8jN7MoBtFI9hZdi1E/edit#gid=0)
