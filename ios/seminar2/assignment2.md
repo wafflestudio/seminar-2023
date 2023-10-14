@@ -13,7 +13,7 @@ Seminar2 Assignment
 
 [TMDB API](https://developer.themoviedb.org/reference/intro/getting-started)를 활용하여 아래와 같이 동작하는 앱을 만들어주세요.
 
-<video width="393" alt="Netflix" src="./static/demo.mov">
+<video width="393" alt="Netflix" src="https://github.com/wafflestudio/seminar-2023/assets/33917774/a7f43d28-5538-42d9-bca6-aacb79bff759"></video>
 
 ### New & Hot 화면
 - [ ] `UITabBarController`를 사용하여 하단에 탭을 만들어주세요. 이번 과제에서는 하나의 탭만 존재하지만, 다음 과제에서 새로운 탭이 추가될 예정입니다.
@@ -25,7 +25,7 @@ Seminar2 Assignment
 - [ ] 각 영화는 키워드 목록을 갖고 있습니다. [Keywords API](https://developer.themoviedb.org/reference/movie-keywords)를 활용해서 영화의 키워드를 보여주세요.
   - [ ] 한 번에 모든 영화의 모든 키워드를 불러오는 방식으로 구현해서는 안됩니다. 셀이 렌더링되는 시점에 API 호출을 시작해주세요.
   - [ ] 키워드 목록이 불러와지면 그만큼 셀의 높이가 더 커져야 합니다 (영상 참고).
-  - [ ] 한 영화에 대해서 불러온 키워드 목록은 메모리상에 캐싱되어야 합니다. 즉, 이미 렌더링한 적이 있었던 셀에 대해서는 API를 중복 호출하지 않도록 해주세요
+  - [ ] 한 영화에 대해서 불러온 키워드 목록은 메모리상에 캐싱되어야 합니다. 즉, 이미 렌더링한 적이 있었던 셀에 대해서는 API를 중복 호출하지 않도록 해주세요(=딜레이 없이 즉시 표시되어야 합니다).
   - [ ] Keyword API를 호출하는 도중에 사용자가 스크롤을 해서 셀이 재사용되었을 때, 진행중이던 Task는 적절히 취소되어야 합니다.
 - [ ] 스크롤할 때 이미지 렌더링, API 호출 등으로 인한 버벅임이 없어야 합니다.
 - [ ] 스크롤할 때 셀 재사용, 비동기 호출로 인해 셀의 내용이 갑자기 바뀌거나 정합성이 깨지는 경우가 없어야 합니다.
