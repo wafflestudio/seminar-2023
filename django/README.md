@@ -37,7 +37,7 @@
   <tr>
     <td>2</td>
     <td>디버깅: 버그를 보고 당황하지 않는 법 / 라이브러리 잘 활용하기</td>
-    <td>10월 28일 (토) 오후 3시</td>
+    <td>10월 28일 (토) 오후 3시 30분</td>
     <td>서울대 301동 203호</td>
     <td></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/02">링크</a></td>
