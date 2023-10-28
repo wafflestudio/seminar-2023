@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Post(models.Model):
@@ -8,10 +9,12 @@ class Post(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey("auth.User", on_delete=models.CASCADE)
 
+    def get_absolute_url(self):
+        return reverse("post_detail", kwargs={"pk": self.pk})
+
     class Meta:
         verbose_name = "글"
         verbose_name_plural = "글 목록"
-
 
 class Comment(models.Model):
     description = models.TextField()
