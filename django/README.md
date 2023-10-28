@@ -36,7 +36,7 @@
   </tr>
   <tr>
     <td>2</td>
-    <td>디버깅: 버그를 보고 당황하지 않는 법 / 라이브러리 잘 활용하기</td>
+    <td>제로부터 블로그 만들기 (Django Templates)</td>
     <td>10월 28일 (토) 오후 3시 30분</td>
     <td>서울대 301동 203호</td>
     <td></td>
@@ -46,12 +46,12 @@
   </tr>
   <tr>
     <td>3</td>
-    <td>제로부터 블로그 API 만들기 / TDD: 테스트와 함께 노답 코드 리팩토링하기</td>
+    <td>제로부터 블로그 API 만들기 (Django Rest Framework)</td>
     <td>11월 11일 (토) 오후 3시</td>
     <td>서울대 301동 203호</td>
-    <td></td>
+    <td><a href="https://narayo9-snu.notion.site/59e0021641a846bebff8b9b71f54dcec?pvs=4">링크</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/03">링크</a></td>
-    <td></td>
+    <td><a href="https://snu-ac-kr.zoom.us/j/94671721419">링크</a></td>
     <td></td>
   </tr>
   <tr>
