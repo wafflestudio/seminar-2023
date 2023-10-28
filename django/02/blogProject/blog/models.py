@@ -17,7 +17,7 @@ class Post(models.Model):
         verbose_name_plural = "글 목록"
 
 class Comment(models.Model):
-    description = models.TextField()
+    description = models.CharField(max_length=300)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
