@@ -42,7 +42,7 @@
     <td><a href="https://narayo9-snu.notion.site/59e0021641a846bebff8b9b71f54dcec?pvs=4">링크</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/02">링크</a></td>
     <td><a href="https://snu-ac-kr.zoom.us/j/94671721419">링크</a></td>
-    <td></td>
+    <td><a href="https://www.youtube.com/watch?v=hlsiLNPyWhM&list=PLzNDswlnDlcPhEyp7D6VFj04ve6cYgAXA&index=3">링크</a></td>
   </tr>
   <tr>
     <td>3</td>
