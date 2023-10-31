@@ -601,79 +601,131 @@ function getPosts() {
 # Q&A
 
 ---
-<!-- class: _lead -->
+<!-- _class: lead -->
 # HTTP 통신
 
 ---
-# HTTP 기초
-클라이언트 - 서버 구조
-CRUD
-JSON
-API
-HTTP API
-RESTful API
-잠시 리액트는 (또) 접어두고, 이론 공부를 먼저 하
-겠습니다
-주의: “HTTP를 이용한 ajax 통신” 에서 보통 이렇게 한다는 뜻이고, 다른 경우
+<!-- _class: lead -->
+## HTTP 기초
+
+- 클라이언트 - 서버 구조
+- CRUD
+- JSON
+- API
+- HTTP API
+- RESTful API
+잠시 리액트는 (또) 접어두고, 이론 공부를 먼저 하겠습니다
 
 ---
 # [배경지식] CRUD: 데이터를 어떻게 다룰까?
+
+<div class=vs>
+
 [글 작성] Create
 [글 열람] Read
 [글 수정] Update
 [글 삭제] Delete
 
+![](img/crud.png)
+</div>
+
 ---
 # [배경지식] JSON: 데이터를 어떻게 보낼까?
-JavaScript Object Notation
-“key - value 쌍”
-key는 무조건 string
-value는
-null
-string
-boolean
-number
-value의 Array
-key-value 쌍 (재귀적 정의)
+
+- JavaScript Object Notation
+- “key - value 쌍”
+
+<div class=vs style=font-size:1.5rem>
+
+- key는 무조건 `string`
+- value는 
+  - null
+  - string
+  - boolean
+  - number
+  - value[]
+  - key - value 쌍
+
+```json
+{
+  "age": 21,
+  "major": "CSE",
+  "language": ["c", "c++", "rust", "javascript"],
+  "framework": {
+    "frontend": ["react", "vanilla"],
+    "backend": ["fastify"],
+    "iOS": null
+  }
+}
+```
+
+</div>
+
 JSON 외에 HTML이나 text 등도 보낼 수 있음
 
 ---
 # [배경지식] 클라이언트 - 서버 구조
-지금까지는 앱이 메인이 되어 초기 데이터 등을 가지고 있었음
-새로고침하면 데이터가 날아가는 문제; 데이터가 저장이 안
-당연히 현실에 이런 서비스는 거의 없음
-대부분이 채택하는 자연스러운 흐름:
-누군가가 데이터를 가지고 있고, 프론트는 거기서 데이터를 불러와서 사용!
-백엔드 세미나 들으시는 분들이 서버랑 데이터베이스를 담당
-보통 클라이언트는 요청만, 서버는 응답만
+
+- 지금까지는 앱이 메인이 되어 초기 데이터 등을 가지고 있었음
+  - 새로고침하면 데이터가 날아가는 문제; 데이터가 저장이 안 된다?
+  - 당연히 현실에 이런 서비스는 거의 없음
+- 대부분이 채택하는 자연스러운 흐름:
+  - 누군가가 데이터를 가지고 있고, 프론트는 거기서 데이터를 불러와서 사용!
+  - 백엔드 세미나 들으시는 분들이 서버랑 데이터베이스를 담당
+  - 보통 클라이언트는 요청만, 서버는 응답만
+
+<div style=position:absolute;right:80px;bottom:0>
+
+![](img/s-c.png)
+
+</div>
 
 ---
-# [배경지식] 클라이언트 - 서버 구조 (OT때 했던 내용
-)
+# [배경지식] 클라이언트 - 서버 구조
+
 특성 메소드로
 특정 url로
 특정 데이터를 전송
 
+<div style=position:absolute;right:80px;bottom:0>
+
+![](img/s-cex.png)
+
+</div>
+
 ---
-# HTTP ([~~참고~~](https://velog.io/@teddybearjung/HTTP-%EA%B5%AC%EC%A1%B0-%EB%B0%8F-%ED%95%B5%EC%8B%AC-%EC%9A%94%EC%86%8C))
+# HTTP ([참고](https://velog.io/@teddybearjung/HTTP-%EA%B5%AC%EC%A1%B0-%EB%B0%8F-%ED%95%B5%EC%8B%AC-%EC%9A%94%EC%86%8C))
+
 HyperText Transfer Protocol
 대표적인 통신 규약
 request + response
 
 ---
 # HTTP request
+
 start line / headers / body
-start line
-메소드 (GET / POST / …)
-target uri
-HTTP version
-헤더
-사용자 정보
-브라우저 정보
-쿠키 정보
-등등 다양한 헤더값
-바디
-전송할 메인 데이터
+
+<div style=font-size:1.3rem>
+
+- start line
+  - 메소드 (GET / POST / …)
+  - target uri
+  - HTTP version
+- headers
+  - 사용자 정보
+  - 브라우저 정보
+  - 쿠키 정보
+  - 등등 다양한 메타데이터
+- body
+  - 전송할 메인 데이터
+
+</div>
+
+<div style=position:absolute;right:80px;bottom:80px>
+
+![](img/req.png)
+
+</div>
 
 ---
 # HTTP request - method
@@ -683,180 +735,240 @@ PUT: 수정
 DELETE: 삭제
 PATCH: 부분 수정
 등등 ([참고](https://developer.mozilla.org/ko/docs/Web/HTTP/Methods))
-그림 오류: 리퀘스트랑 리스폰스랑 반대입니다
 
 ---
 # HTTP response
+
 status line / headers / body
-status line
-Status Code
-Status Text
-HTTP version
-헤더
-사용자 정보
-브라우저 정보
-쿠키 정보
-등등 다양한 헤더값
-바디
-응답할 메인 데이터
+
+<div style=font-size:1.3rem>
+
+- status line
+  - Status Code
+  - Status Text
+  - HTTP version
+- headers
+  - 사용자 정보
+  - 브라우저 정보
+  - 쿠키 정보
+  - 등등 다양한 메타데이터
+- body
+  - 응답할 메인 데이터
+
+</div>
 
 ---
-# HTTP response - status code ([~~위키백과~~](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C)[)](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C)
+# HTTP response - status code ([위키백과](https://ko.wikipedia.org/wiki/HTTP_%EC%83%81%ED%83%9C_%EC%BD%94%EB%93%9C))
+
 1XX
+- 진행중
 2XX
+- 성공
 3XX
+- 추가 작업 필요 (리다이렉트 등)
 4XX
+- 잘못된 요청. 제일 자주 보게 될 오류 코드
 5XX
-진행중
-성공
-추가 작업 필요 (리다이렉트 등)
-잘못된 요청. 제일 자주 보게 될 오류 코드
-서버 에러. 5XX가 났다면 보통 서버 개발자를 때려야 합니다.
+- 서버 에러. 5XX가 났다면 보통 서버 개발자를 때려야 합니다.
 
 ---
 # HTTP with postman
 Postman 직접 한번 써보겠습니다
+- URL: https://jsonplaceholder.typicode.com/todos
+
 
 ---
 # REST API: HTTP API 디자인 패턴
-●
-●
-●
-●
-클라이언트, 서버 및 리소스로 구성되었으며 요청이 HTTP를 통해 관리되는 클라이언트-서버 아키텍처
-[스테이트리스](https://www.redhat.com/ko/topics/cloud-native-apps/stateful-vs-stateless)[(stateless)](https://www.redhat.com/ko/topics/cloud-native-apps/stateful-vs-stateless)[ ](https://www.redhat.com/ko/topics/cloud-native-apps/stateful-vs-stateless)클라이언트-서버 커뮤니케이션: 요청 간에 클라이언트 정보가 저장되지 않으며, 각 요청이 분리되어 있고 서로 연결되어 있지 않음
-클라이언트-서버 상호 작용을 간소화하는 캐시 가능 데이터
-정보가 표준 형식으로 전송되도록 하기 위한 구성 요소 간 통합 인터페이스. 여기에 필요한 것은 다음과 같습니다.
-○
-○
-○
-○
-요청된 리소스가 식별 가능하며 클라이언트에 전송된 표현과 분리되어야 합니다.
-수신한 표현을 통해 클라이언트가 리소스를 조작할 수 있어야 합니다(이렇게 할 수 있는 충분한 정보가 표현에 포함되어 있기 때문).
-클라이언트에 반환되는 자기 기술적(self-descriptive) 메시지에 클라이언트가 정보를 어떻게 처리해야 할지 설명하는 정보가 충분히 포함되어야 합니다.
-하이퍼미디어: 클라이언트가 리소스에 액세스한 후 하이퍼링크를 사용해 현재 수행 가능한 기타 모든 작업을 찾을 수 있어야 합니다.
-●
-●
-요청된 정보를 검색하는 데 관련된 서버(보안, 로드 밸런싱 등을 담당)의 각 유형을 클라이언트가 볼 수 없는 계층 구조로 체계화하는 계층화된 시스템.
-코드 온디맨드(선택 사항): 요청을 받으면 서버에서 클라이언트로 실행 가능한 코드를 전송하여 클라이언트 기능을 확장할 수 있는 기능.
+
 우리가 보는 건 대부분 REST 방식으로 디자인된 HTTP API입니다
 
 ---
 # REST방식으로 디자인된 HTTP의 특징
-Connectionless
-- Request 날릴 때 연결하고, Response가 오면 연결이 끊어짐
-Stateless
-클라이언트 정보에 대한 상태가 없음
-로그인을 유지하고 싶으면? Session or Cookie
+
+- Connectionless
+  - Request 날릴 때 연결하고, Response가 오면 연결이 끊어짐
+
+- Stateless
+  - 클라이언트 정보에 대한 상태가 없음
+  - 로그인을 유지하고 싶으면? Session or Cookie
 
 ---
 # [배경지식] API: 데이터를 어떻게 보내라는 약속
+
 Application Programming Interface
-함수 파라미터, 컴포넌트 Props같은 느낌인
-데 좀더 캡슐화가 잘 돼 있는
-css 속성 표 같은 것도 넓은 의미에서 API
-문서
+
+- 이를 테면 여러분이 만든 함수를 동료가 사용한다고 할 때,
+  함수 파라미터와 동작, 리턴값에 알려주고 이렇게저렇게 쓰기로 약속을 합니다.
+- 그러면 동료는 함수 내용을 몰라도 함수를 쓸 수 있어요.
+- 그런 약속이 바로 **API**!
 
 ---
 # [배경지식] API: 데이터를 어떻게 보내라는 약속
-이쪽 동네에서는 API라고 하면 보통 HTTP API를 의미
-어느 url로 어떤 요청을 보내면, 어떤 일이 일어나고 어떤 응답이 오나요?
-서버 개발자가 하는 일이 이걸 만드는 것
-서버와 클라이언트가 편히 소통할 수 있도록, 팀에서 이 부분을 잘 약속해두는 게 중요함
-예시: <https://ah9mefqs2f.execute-api.ap-northeast-2.amazonaws.com/docs/static/index.html>
+- 이쪽 동네에서는 API라고 하면 보통 HTTP API를 의미
+- 어느 url로 어떤 요청을 보내면, 어떤 일이 일어나고 어떤 응답이 오나요?
+- 서버 개발자가 하는 일이 이걸 만드는 것
+- 서버와 클라이언트가 편히 소통할 수 있도록, 팀에서 이 부분을 잘 약속해두는 게 중요함
+
+예시: https://petstore.swagger.io
 
 ---
 # 가령 우리 세미나 과제라면?
-메뉴 추가 부분에 대한 간단한 예시
-1. 마운트 시 메뉴 목록을 불러오는 API를 호출 (비동기)
+
+1. 마운트 시 리뷰 목록을 불러오는 API를 호출 (비동기)
 2. response가 오면 state에 저장
-하고 대기하다가 사용자가 학생을 추가하면
-1. 학생 추가 API 호출 (비동기)
+
+하고 대기하다가 사용자가 리뷰를 작성하면
+1. 리뷰 작성 API 호출 (비동기)
 2. response가 오면, 응답 코드를 확인
-a. 성공 시 (201)
-i.
-ii. response가 오면 state에 저장
-b. 실패 시 (400)
-i. 적당히 처리
-모달을 닫고, 학생 목록 불러오는 API를 호출
+  a. 성공 시 (201)
+    i. 모달을 닫고, 리뷰 목록 불러오는 API를 호출
+    ii. response가 오면 state에 저장
+  b. 실패 시 (400)
+    i. 오류 메시지 출력
+
 예시입니다. 구현 방식은 자유입니다.
 
 ---
 # 흐름 정리
 보통 클라이언트와 서버가 데이터를 주고받음
-정말정말정말 다양한 방법이 있지만 이 중 대부분이 차용하는 흐름은 아래와 같고, 우리도 이 방식을 공
-부함
-서버랑 DB가 CRUD방식으로 데이터를 다루고
-클라이언트가 서버에 RESTful하게 디자인된 HTTP API를 날려서 상호작용을 함
-물론 앱에 따라 DB가 없을 수도 있고, 클라가 없을 수도 있고, http 말고 websocket api를 사용할 수도 있
-음
+다양한 방법이 있지만 이 중 **대부분이 차용**하는 흐름은 아래와 같고, 우리도 이 방식을 공부함
+- 서버랑 DB가 CRUD 방식으로 데이터를 다루고
+- 클라이언트가 서버에 RESTful하게 디자인된 HTTP API를 날려서 상호작용을 함
+
+물론 앱에 따라 DB가 없을 수도 있고, 클라가 없을 수도 있고, http 말고 websocket api를 사용할 수도 있음
 
 ---
 # Q&A
 
 ---
+
+<!-- _class: lead -->
 # axios
-아 그래서 통신 어떻게 하는 건
-데
-[추천](https://react.vlpt.us/integrate-api/01-basic.html)[ ](https://react.vlpt.us/integrate-api/01-basic.html)[튜토리얼](https://react.vlpt.us/integrate-api/01-basic.html)[ ](https://react.vlpt.us/integrate-api/01-basic.html)[-](https://react.vlpt.us/integrate-api/01-basic.html)[ ](https://react.vlpt.us/integrate-api/01-basic.html)통신
+아 그래서 통신 어떻게 하는 건데
 
 ---
-# 그래서 이론을 머리아프게 배웠는데 서버랑 통신하
-는 걸 대체 어떻게 구현할까?
-다양한 방법이 있음
-fetch
-XMLHttpRequest
-axios
-JQuery.ajax.
-Qwest.
-SuperAgent.
-Http-client.
+# 그래서 이론을 머리아프게 배웠는데 서버랑 통신하는 걸 대체 어떻게 구현할까?
 
----
-# axios
-자바스크립트 프로젝트용 http 비동기 통신 라이브러리
-정말 간편하게 다룰 수 있음
-비동기니 http니 개념은 어려웠지만, 막상 사용법은 간단
+다양한 방법이 있음; 우리는 fetch와 axios를 살펴볼 예정
+- fetch
+- XMLHttpRequest
+- axios
+- JQuery.ajax
+- Qwest
+- SuperAgent
+- Http-client
 
 ---
 # axios
-HTTP API를 날리고, 결과에 따라 반환값을 resolve하거나 에러를 reject함
+
+- Javascript http 비동기 통신 라이브러리
+  - 콜백을 사용하는 XMLHttpRequest를 Promise로 감싼 구현
+- 비동기니 http니 개념은 어려웠지만, 막상 사용법은 간단함
+
+---
+# axios
+HTTP 요청을 날리고, 응답 코드에 따라 반환값을 resolve하거나 에러를 reject함
 2XX (성공) 일 경우 resolve
-2XX (성공) 이 아닐 경우 reject
+그외에는 reject
 
 ---
 # axios 사용법
-바디 자
-리
-[참고](https://wonit.tistory.com/305)[ ](https://wonit.tistory.com/305)[블로그](https://wonit.tistory.com/305)
-헤더 자
-리
-axios.메소드(url, ...);
-해당 요청을 처리한 Promise를 반환함
-[이런](https://github.com/axios/axios/blob/7d6bddba2d8de29c263feaef4c40daa50cb4b176/index.d.ts#L83-L90)[ ](https://github.com/axios/axios/blob/7d6bddba2d8de29c263feaef4c40daa50cb4b176/index.d.ts#L83-L90)[형태로](https://github.com/axios/axios/blob/7d6bddba2d8de29c263feaef4c40daa50cb4b176/index.d.ts#L83-L90)
+
+`axios.메소드(url, body, options);`
+
+```js
+axios.get("https://jsonplaceholder.typicode.com/todos/1")
+  .then((res) => console.log(res.data));
+  .catch((err) => console.error(err));
+
+axios.post("https://localhost:8080/todos",
+  { todo: "세미나 자료 만들기" },
+  {
+    header: {
+      "Authorization": "Bearer some.token",
+    },
+  })
+  .then(...);
+```
+
+서버에서 온 응답을 JSON으로 파싱한 Promise 리턴
 우리가 원하는 값은 response.data 안에 존재
-오른쪽에 보이는 건 타입스크립트 문법인데 그러려니 하고 넘어가주
 
 ---
-# react에서 axios 사용하는 법
+# fetch
+
+- 기본적으로 웹 브라우저에 내장된 함수
+- 옛날엔 지원이 잘 안 돼서 항상 axios 썼지만
+  지금은 꽤 쓸만하다
+
+---
+# fetch
+HTTP 요청을 날리고, 응답을 **항상 resolve**
+응답 코드가 2XX가 아니더라도 그대로 리턴한다
+
+---
+# fetch 사용법
+
+`fetch(url, options);`
+
+```js
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((res) => res.json());
+  .then((json) => console.log(json));
+  .catch((err) => console.error(err));
+
+fetch("https://localhost:8080/todos",
+  {
+    method: "POST",
+    body: JSON.stringify({ todo: "세미나 자료 만들기" }),
+    header: {
+      "Authorization": "Bearer some.token",
+    },
+  })
+  .then(...);
+```
+
+서버에서 온 응답을 Promise로 리턴
+요청할 때는 JSON.stringify(data), 응답을 받으면 res.json()를 해줘야 한다.
+API 요청을 다 함수로 감싸서 쓴다면 크게 번거롭지는 않을 것
+
+---
+# react에서 fetch 사용하는 법
 Live Tutorial
 
----
-# react + axios (Best Practice)
-데이터를 받아와서 state에 저장
-이 예제에서는 버튼 클릭 시 데이터를 가져옴
-이벤트 리스터나 useEffect() 에서 가져오는 게
-앱이 마운트될 때 등에 자동으로 가져오려
-POST나 DELETE 등도 비슷한 구조
+```js
+import React, { useState } from 'react'
+
+function App() {
+  const [num, setNum] = useState("");
+  const [content, setContent] = useState("");
+  return (
+    <div>
+      <input type="number" onChange={e => setNum(e.target.value)} value={num} />
+      <button onClick={() => {
+          if (num === '') return;
+          fetch(`https://jsonplaceholder.typicode.com/todos/${num}`)
+            .then((r) => r.json())
+            .then((j) => setContent(j.title));
+        }}>load</button>
+      <pre>{content}</pre>
+    </div>
+  )
+}
+
+export default App
+```
 
 ---
-# axios 각종 팁
-axios.defaults
-axios 요청의 디폴트 값을 세팅할 수 있음
-헤더나 base url등에 사용 가능
-axios.create
-디폴트 값을 세팅한 axios 인스턴스 생성
-다양한 디폴트값을 가진 인스턴스들이 필요할 때 사용
+# react + fetch (Best Practice)
+- 데이터를 받아와서 state에 저장
+  - 이 예제에서는 버튼 클릭 시 데이터를 가져옴
+  - 이벤트 리스너나 useEffect() 에서 가져오는 게 일반적
+    - 앱이 마운트될 때 등에 자동으로 가져오려고
+  - POST나 DELETE 등도 비슷한 구조
+
+---
+# http 각종 팁
 네트워크 탭 (Live Tutorial)
 개발자 도구의 네트워크 탭을 보면 통신하는 내용이 다 뜸
 디버깅할 때 아주 유용
@@ -864,8 +976,8 @@ axios.create
 ---
 # 흐름 정리
 리액트 앱에서 서버랑 통신하는 걸 어떻게 구현하지?
-다양한 방법이 있지만 요즘 대부분의 리액트 프로젝트는 axios를 채택
-axios.메소드(파라미터들) <- 이 방식으로 사용
+다양한 방법이 있지만 요즘 대부분의 리액트 프로젝트는 axios를 채택?
+사실 잘 모르지만 fetch로 충분
 
 ---
 # Q&A
@@ -882,35 +994,41 @@ CORS
 서버와 통신을 하게 되면 알아야 하는 것들
 
 ---
-# [~~쿠키~~](https://developer.mozilla.org/ko/docs/Web/HTTP/Cookies)
-서버에 의해 브라우저에 저장되는 정
-set-cookie 헤더 이용
-보통 로그인 정보 유지 등에 자주 사용됨
-성능 및 보안 문제로 요즘은 엄청 많이는 사용하지 않는 추세
-통신 한번 할 때마다 쿠키 정보를 항상 넘기기 때문
-쿠키에 최대한 작은 정보를 넣어두려 함
-expire date를 설정할 수 있어서, n시간 동안 보지 않기 팝업 에 자주 사
-요즘 유행하는 대체품: [LocalStorage](https://developer.mozilla.org/ko/docs/Web/API/Window/localStorage)
+# [쿠키](https://developer.mozilla.org/ko/docs/Web/HTTP/Cookies)
+서버에 의해 브라우저에 저장되는 정보
+- set-cookie 헤더 이용
+- 보통 로그인 정보 유지 등에 자주 사용됨
+- 성능 및 보안 문제로 요즘은 엄청 많이는 사용하지 않는 추세
+  - 통신 한번 할 때마다 쿠키 정보를 항상 넘기기 때문
+  - 쿠키에 최대한 작은 정보를 넣어두려 함
+- expire date를 설정할 수 있어서, n시간 동안 보지 않기 팝업에
+  자주 사용
+- 요즘 유행하는 대체품: [LocalStorage](https://developer.mozilla.org/ko/docs/Web/API/Window/localStorage)
+
+<div style=position:absolute;top:0;right:0>
+
+![](img/cookie.png)
+
+</div>
 
 ---
 # 세션
-서버에서 임시로 사용자 브라우저에 대한 정보를 저장 (쿠키
-로그인 정보 유지 등에 사용 (세션 로그인 방식)
-이 경우에, 클라이언트가 쿠키에 세션 ID를 가지고 있어야
+서버에서 임시로 사용자 브라우저에 대한 정보를 저장 (쿠키와 반대)
+- 로그인 정보 유지 등에 사용 (세션 로그인 방식)
+- 이 경우에, 클라이언트가 쿠키에 세션 ID를 가지고 있어야 한다
 
 ---
-# 인증
+# 인증 (authentication)
 서버의 요구: “너 누구야! 네가 정말 OOO이라는 걸 증명해봐!”
-브라우저에서 보내는 정보는 얼마든지 조작될 수 있기 때문에, 이는 서버 입장에서 상당한 고민거
-리
-그렇다고 비밀번호를 매번 보낼 수는 없음 (비밀번호는 탈취되면 진짜 망함)
+- 브라우저에서 보내는 정보는 얼마든지 조작될 수 있기 때문에, 이는 서버 입장에서 상당한 고민거리
+- 그렇다고 비밀번호를 매번 보낼 수는 없음 (비밀번호는 탈취되면 진짜 망함)
 1. 비밀번호 대신 로그인할 때 토큰을 발급해주고 그걸 사용 →JWT 토큰: 임시 열쇠(24시간 후 자동
 으로 망가짐)
 2. 서버의 세션에 브라우저 정보를 저장 → 쿠키에 세션ID를 저장하고 요청할 때마다 같이 보내게 함
 3. 등등 [아주](https://developer.mozilla.org/ko/docs/Web/HTTP/Authentication)[ ](https://developer.mozilla.org/ko/docs/Web/HTTP/Authentication)[다양한](https://developer.mozilla.org/ko/docs/Web/HTTP/Authentication)[ ](https://developer.mozilla.org/ko/docs/Web/HTTP/Authentication)[방법](https://developer.mozilla.org/ko/docs/Web/HTTP/Authentication)이 존재
 
 ---
-# 인가
+# 인가 (authorization)
 매 요청마다 자기가 누군지 증명하라고 요구하는 건 비효율적이다.
 “인증”은 한번만 하고, 그 다음부터는 “아는 얼굴이니까 무슨 권한 있는지만 확인할게~”
 1. JWT 토큰: 토큰에 저장된 사용자 ID와 권한 정보 활용
@@ -918,59 +1036,59 @@ expire date를 설정할 수 있어서, n시간 동안 보지 않기 팝업 에 
 
 ---
 # 인증 - JWT 토큰 방식
-Json Web Token
-JWT: Json 객체를 암호화하는 표준
-JWT 토큰 방식: 유저를 식별할 수 있는 정보를 담고 있는 암호화된 토큰으로 사용자를 인증
-장점
-사용자 정보를 서버가 유지하지 않아도 됨 (RESTful)
-단점
-서버 개발자의 실수에 의해, 본인이 아닌데도 토큰을 조작하여 생성할 수 있음
-로그아웃 처리가 불가능함
-세션 로그인 방식이면 서버에 저장된 해당 유저 세션을 날리면 그게 로그아웃 (깔끔)
-JWT 토큰은 발행할 때 만료시간을 정할 수는 있어도 강제로 만료시킬 수는 없는데, 로그아웃을 어떻게
-처리하지?
+- Json Web Token
+- JWT: Json 객체를 암호화하는 표준
+- JWT 토큰 방식: 유저를 식별할 수 있는 정보를 담고 있는 암호화된 토큰으로 사용자를 인증
+- 장점
+  - 사용자 정보를 서버가 유지하지 않아도 됨 (RESTful)
+- 단점
+  - 서버 개발자의 실수에 의해, 본인이 아닌데도 토큰을 조작하여 생성할 수 있음
+  - 로그아웃 처리가 불가능함
+    - 세션 로그인 방식이면 서버에 저장된 해당 유저 세션을 날리면 그게 로그아웃 (깔끔)
+    - JWT 토큰은 발행할 때 만료시간을 정할 수는 있어도 강제로 만료시킬 수는 없는데, 로그아웃을 어떻게 처리하지?
 
 ---
 # 웹 보안 (1) XSS / CSRF 공격
 웹은 개발자 도구 뜯으면 api든 source든 다 나올 정도로 개방적임
-[XSS](https://noirstar.tistory.com/266)[ ](https://noirstar.tistory.com/266)[(Cross-Site](https://noirstar.tistory.com/266)[ ](https://noirstar.tistory.com/266)[Scripting)](https://noirstar.tistory.com/266)
-사용자가 사이트를 신뢰한다는 걸 이용
-사용자의 사이트에 악의적인 자바스크립트 코드를 삽입하여 지속적인 리디렉션을 유발하거나 쿠키를 탈취
-https, CORS 등으로 어느 정도 해결
-[CSRF](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=nahejae533&logNo=221000385231&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)[ ](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=nahejae533&logNo=221000385231&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)[(Cross-site](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=nahejae533&logNo=221000385231&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)[ ](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=nahejae533&logNo=221000385231&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)[request](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=nahejae533&logNo=221000385231&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)[ ](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=nahejae533&logNo=221000385231&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)[forgery)](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=nahejae533&logNo=221000385231&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)
-사용자가 브라우저를 신뢰한다는 걸 이용
-악의적인 스크립트를 올려 사용자가 그걸 실행하게
-[옥션](https://namu.wiki/w/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C%EC%82%AC%ED%83%9C#s-2.1.2)[ ](https://namu.wiki/w/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C%EC%82%AC%ED%83%9C#s-2.1.2)[해킹](https://namu.wiki/w/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C%EC%82%AC%ED%83%9C#s-2.1.2)[ ](https://namu.wiki/w/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C%EC%82%AC%ED%83%9C#s-2.1.2)[사건](https://namu.wiki/w/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C%EC%82%AC%ED%83%9C#s-2.1.2)[ ](https://namu.wiki/w/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C%EC%82%AC%ED%83%9C#s-2.1.2)(2008) 에 이용된 수법
-CSRF Token과 CORS 등으로 어느 정도 해결
+- [XSS (Cross-Site Scripting)](https://noirstar.tistory.com/266)
+  - 사용자가 사이트를 신뢰한다는 걸 이용
+  - 사용자의 사이트에 악의적인 자바스크립트 코드를 삽입하여 지속적인 리디렉션을 유발하거나 쿠키를 탈취
+  - https, CORS 등으로 어느 정도 해결
+- [CSRF (Cross-site request forgery)](https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=nahejae533&logNo=221000385231&parentCategoryNo=&categoryNo=&viewDate=&isShowPopularPosts=false&from=postView)
+  - 사용자가 브라우저를 신뢰한다는 걸 이용
+  - 악의적인 스크립트를 올려 사용자가 그걸 실행하게
+  - [옥션 해킹사건](https://namu.wiki/w/%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%20%EC%9C%A0%EC%B6%9C%EC%82%AC%ED%83%9C#s-2.1.2)(2008) 에 이용된 수법
+  - CSRF Token과 CORS 등으로 어느 정도 해결
 
 ---
 # 웹 보안 (2) HTTPS
 HTTPS: HyperText Transfer Protocol over Secure Socket Layer
-SSL을 이용해서 전송되는 데이터를 암호화
-HTTP보다 안전하고 복잡함
-대부분 사이트는 HTTPS를 이용하기를 권장
+- SSL을 이용해서 전송되는 데이터를 암호화
+- HTTP보다 안전하고 복잡함
+- 대부분 사이트는 HTTPS를 이용하기를 권장
 
 ---
 # 웹 보안 (3) CORS
 서버와 같이 일하다 보면, 서버에 request를 날렸을 때 저런 알 수 없는 에러가 나는 경우가 있음
 
+![](img/cors.png)
+
 ---
 # 웹 보안 (3) CORS
-[SOP](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy)[ ](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy)[(Same](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy)[ ](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy)[Origin](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy)[ ](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy)[Policy)](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy)[:](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy)[ ](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy)같은 출처 (origin: host + port)에서만 리소스 공유를 허용하겠다!
-잠재적으로 해로울 수 있는 문서들을 배제하여, 공격 (해킹) 경로를 줄이는 역할
+[SOP (Same Origin Policy)](https://developer.mozilla.org/ko/docs/Web/Security/Same-origin_policy): 같은 출처 (origin: host + port)에서만 리소스 공유를 허용하겠다!
+- 잠재적으로 해로울 수 있는 문서들을 배제하여, 공격 (해킹) 경로를 줄이는 역할
 하지만, SOP를 무작정 지키기엔, 다른 출처의 리소스 사용은 흔하디 흔한 일
-CORS (Cross-Origin Resource Sharing): 다른 출처의 리소스 사용을 허용하기 위한 규칙 체제
-HTTP response에 Access-Control-Allow-Origin 헤더를 포함함으로서 다른 출처의 리소스를 사용할 수 있게 하는
-건데
-에러 나면 구글링할 것도 없이 서버 개발자한테 내 도메인 열어달라고 요청하면 됨
+- CORS (Cross-Origin Resource Sharing): 다른 출처의 리소스 사용을 허용하기 위한 규칙 체제
+- HTTP response에 Access-Control-Allow-Origin 헤더를 포함함으로서 다른 출처의 리소스를 사용할 수 있게 하는 건데
+- 에러 나면 구글링할 것도 없이 서버 개발자한테 내 도메인 열어달라고 요청하면 됨
 
 ---
 # 흐름 정리
 쿠키와 세션이란?
 인증이란?
 웹 보안
-대표적인 공격 방식: XSS, CSRF
-방지를 위한 보안 방식: SOP + CORS, CSRF Token 등
+- 대표적인 공격 방식: XSS, CSRF
+- 방지를 위한 보안 방식: SOP + CORS, CSRF Token 등
 
 ---
 # Q&A
@@ -982,50 +1100,13 @@ HTTP response에 Access-Control-Allow-Origin 헤더를 포함함으로서 다른
 a. 자바스크립트에서는 Promise로 비동기를 구현한다!
 1. 비동기 작업 중, 서버와 HTTP 통신을 어떻게 하냐!
 a. HTTP 통신이 뭐냐!
-b. 통신할 때는 axios 써라!
+b. 통신할 때는 fetch/axios 써라!
 1. 기타 서버랑 연결을 할 때 신경써야 되는 게 있냐!
 a. 당연하지! 쿠키 세션 인증 XSS CSRF SOP CORS 등등등등등
 
 ---
-# 전체 Q&A
-
----
 # 과제
 
----
-# 세미나 3 과제
-기한: 11월 5일 자정(23:59)
-[피그마](https://www.figma.com/file/1epI2tF5Lh8EG43zyYVQyn/react-assignment?node-id=2236%3A370)
-[스펙](https://github.com/wafflestudio/seminar-2022/blob/main/react/seminar-3/assignment-3.md)[ ](https://github.com/wafflestudio/seminar-2022/blob/main/react/seminar-3/assignment-3.md)[문서](https://github.com/wafflestudio/seminar-2022/blob/main/react/seminar-3/assignment-3.md)
-모든 정보는 여기 있으니, 꼭 꼼꼼하게 읽어주세요!
-“코드 퀄리티”가 스펙에 추가되었습니다. useState랑 camelCase 꼭 지켜주세요..
-목적
-비동기 처리에 익숙해진다
-서버와 통신을 할 수 있게 된다
-특이사항
-배운 거에 비해 과제는 쉽습니다
-근데 왠지 질문은 지금까지 과제 중에 제일 많을 것 같습니다
-비동기에 대한 감을 얼마나 빨리 잡냐가 관건
-
----
-# 참고: API
-API Documentation
-제가 만든 거라 오류가 좀 있을 수 있습니다
-과제 하시다가 이거 이상하다 아무리 봐도 내 잘못 아니고 서버 오류다 싶으시면 편하게 제보 부
-탁드립니다
-JWT 인증 방식 사용합니다 (Bearer 토큰): 2시간 동안 유지됩니다
-다음 과제에서는 JWT에서 보안을 챙기기 위해 token 유효기간을 10분으로 줄이고, refresh token을 도입합
-니다
-계정은
-아이디 & 비밀번호: 본인 github username
-Postman 써볼겸 패스워드 바로 바꾸시길 추천드립니다.
-당연히 본인 계정만 로그인하셔야 합니다
-모든 영역에서 보안 수준이 낮습니다 (당장 데이터 다 날아가도 이상하지 않습니다), 중요한 정보는 절대 저
-
----
-# [https://jihyehwang09.github.io/2019/01/29/javascript15](https://jihyehwang09.github.io/2019/01/29/javascript15/)[/](https://jihyehwang09.github.io/2019/01/29/javascript15/)[ ](https://jihyehwang09.github.io/2019/01/29/javascript15/)참고
-참고: Bearer 토큰 이용법
-매 request마다
-헤더에 이걸 넣어 보내시면 됩니
-다
-
+- 백엔드와 연결하는 과제를 낼 예정
+- 백엔드 서버도 만들고 과제 스펙도 정리해서 내도록 하겠습니다
+- 아마 과제2 마감 후에 낼듯
