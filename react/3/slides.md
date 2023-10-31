@@ -18,6 +18,7 @@ ul {
 }
 section > div.vs {
   display: flex;
+  gap: 0.5rem;
 }
 section > div.vs > * {
   flex: 1;
@@ -307,253 +308,134 @@ while (eventQueue.waitForEvent()) {
 
 ---
 # 이벤트 루프
-클릭하면해줘(() => {
-(뭔가 보여줌)
-스크립트 시작
-스트립트 종료
-(콜백 리턴)
-})
-이 사이에서는 이벤트 루프가 대기
-중
-클릭 이벤트
-뭔가 보여줌
-뭐 상태 초기화하고()
-DOM에도 뭐 좀 뿌리겠죠()
-(스크립트는 여기서 종료)
-콜백 리턴
-while (eventQueue.waitForEvent()) {
-const event = eventQueue.dequeue();
-eventHandler(event);
-다시 이벤트 루프가 돌아갑니다
-}
-시간
 
----
-# Console
-대충 도우미 스레드
-이벤트 루프 예제
-Event Queue
-click
-timeOut
+<div class=vs>
 
----
-# Console
-대충 도우미 스레드
-이벤트 루프 예제
-Event Queue
-click
-timeOut
-console.log("가져올게용");
-fetch(URL)
-.then(res => res.json())
-.then(json => console.log(json));
-console.log("가져오고 있겠죠?");
+```js
+/* init data */
 
----
-# Console
-대충 도우미 스레드
-● “가져올게용”
-이벤트 루프 예제
-Event Queue
-click
-timeOut
-console.log("가져올게용");
-fetch(URL)
-.then(res => res.json())
-.then(json => console.log(json));
-console.log("가져오고 있겠죠?");
+/* show something */
 
----
-# Console
-대충 도우미 스레드
-● “가져올게용”
-● fetch(URL)
-이벤트 루프 예제
-Event Queue
-click
-timeOut
-console.log("가져올게용");
-fetch(URL)
-.then(res => res.json())
-.then(json => console.log(json));
-console.log("가져오고 있겠죠?");
+addEventListener("click", () => {
 
----
-# Console
-대충 도우미 스레드
-● “가져올게용”
-● fetch(URL)
-● “가져오고 있겠죠?”
-이벤트 루프 예제
-Event Queue
-click
-timeOut
-console.log("가져올게용");
-fetch(URL)
-.then(res => res.json())
-.then(json => console.log(json));
-console.log("가져오고 있겠죠?");
+  /* update something */
 
----
-# Console
-대충 도우미 스레드
-● “가져올게용”
-● fetch(URL)
-● “가져오고 있겠죠?”
-이벤트 루프 예제
-Event Queue
-click
-뭔가 처리중
-…
+});
+```
 
----
-# Console
-대충 도우미 스레드
-● “가져올게용”
-● “가져오고 있겠죠?”
-이벤트 루프 예제
-Event Queue
-fetch(URL)
-click
-뭔가 처리중
-…
+* (스크립트 시작)
+* 초기화
+* 화면에 뭔가 띄움
+* (스크립트 종료)
+* (이벤트 루프 도는 중...)
+* \*클릭\* - (콜백 시작)
+* 화면이 뭔가 바뀜
+* (콜백 종료)
+* (이벤트 루프 도는 중...)
 
----
-# Console
-대충 도우미 스레드
-● “가져올게용”
-● “가져오고 있겠죠?”
-이벤트 루프 예제
-Event Queue
-fetch(URL)
-res => res.json()
-
----
-# Console
-대충 도우미 스레드
-● “가져올게용”
-● res.json()
-● “가져오고 있겠죠?”
-이벤트 루프 예제
-Event Queue
-
----
-# Console
-대충 도우미 스레드
-● “가져올게용”
-● “가져오고 있겠죠?”
-이벤트 루프 예제
-Event Queue
-res.json()
-
----
-# Console
-대충 도우미 스레드
-● “가져올게용”
-● “가져오고 있겠죠?”
-이벤트 루프 예제
-Event Queue
-res.json()
-json => console.log(json)
-
----
-# Console
-대충 도우미 스레드
-● “가져올게용”
-이벤트 루프 예제
-● “
-가져오고 있겠죠?”
-● { json 쏼라쏼라 }
-Event Queue
-
----
-# JS 쓰레드
-보조 쓰레드
-console.log("가져올게용");
-이벤트 루프 예제
-fetch(URL)
-console.log("가져오고 있겠죠?");
-정리하면 코드를 나눠서 실행하는 느낌
-입니다
-res.json()
-console.log(json)
+</div>
 
 ---
 # Q&A
 
+
 ---
-# 콜백:
-전통적인
-비동기 처리
-콜백 방식
-콜백 지옥
-내부적으로 비동기가 왜 필요한지 알아봤고,
-자스에서 비동기 처리가 가능은 하다는 걸 이해
-했고,
-이걸 어떻게 코드로 구현할까?
+
+<!-- _class: lead -->
+
+# 콜백: 전통적인 비동기 처리
+
+- 콜백 방식
+- 콜백 지옥
+
+내부적으로 비동기가 왜 필요한지 알아봤고, 자스에서 비동기 처리가 가능은 하다는 걸 이해했고, 이걸 어떻게 코드로 구현할까?
 
 ---
 # Callback Function이란?
-const studentList = [];
-studentList.map((item) => {
-return item.id;
+
+<div class=vs><div>
+
 인수로 넘겨주는 실행 가능한 함수
-});
 여러분은 이미 콜백을 알고 있습니다
-\- fetch
+- `fetch`
+- `setTimeout`
+- `map`, `forEach`, `filter` 등도 콜백 함수를 사용
+
+</div>
+
+```js
+const studentList = [...];
+
+studentList.map((item) => {
+  return item.id;
+});
+
 studentList.forEach((item) => {
-console.log(item);
+  console.log(item);
 });
-\- setTimeOut
+
 addEventListener("keydown", (e) => {
-\- map, forEach, filter 등도 콜백 함수를 사용
-if (e.key === "Enter") {
-console.log("do something");
-}
+  if (e.key === "Enter") {
+    console.log("do something");
+  }
 });
+```
+
+</div>
 
 ---
-# [setTimeout](https://developer.mozilla.org/ko/docs/Web/API/setTimeout)[:](https://developer.mozilla.org/ko/docs/Web/API/setTimeout)[ ](https://developer.mozilla.org/ko/docs/Web/API/setTimeout)두 번째 인자로 받은 숫자(ms)만큼 기다렸다가 첫 번째 인자로 받은
-함수를 실행
-setTimeout(() => {
-console.log("3초 후에 안녕하세요");
-}, 3000);
-콜백을 이용한 비동기 처리
-비동기
+# 콜백을 이용한 비동기 처리
+
+## 비동기
+
 1. 서버한테 API 보내고 내 할 일 하기
-2. 1분 이따 서버한테 응답 오면 거기에 맞춰서
-하던 일이랑 서버한테 응답 온거랑 해서 어
-떻게 잘 처리
-그게 언제인지 모르겠으니,
-끝나면 알아서 이 콜백을 실행해라! 라는 아이디
-어
+2. **1분 이따 서버한테 응답 오면** 거기에 맞춰서 하던 일이랑 서버한테 응답 온거랑 해서 어떻게 잘 처리
+
+그게 언제인지 모르겠으니, 끝나면 알아서 이 콜백을 실행해라! 라는 아이디어
 
 ---
-# [setTimeout](https://developer.mozilla.org/ko/docs/Web/API/setTimeout)[:](https://developer.mozilla.org/ko/docs/Web/API/setTimeout)[ ](https://developer.mozilla.org/ko/docs/Web/API/setTimeout)두 번째 인자로 받은 숫자(ms)만큼 기다렸다가 첫 번째 인자로 받은
-함수를 실행
-setTimeout(() => {
-console.log("3초 후에 안녕하세요");
-}, 3000);
-콜백을 이용한 비동기 처리
+# 콜백을 이용한 비동기 처리
+
 1. 비동기 작업 호출하면서, 끝났을 때 실행할 콜백 함수를 pass
 2. 콜백이 실행되면 내가 미리 구현해둔 디자인에 따라 이렇게 저렇게
-a. 오른쪽 위 코드는 비동기적으로 3초를 기다린 후에 넘겨준 콜백을 실행하는 예시
-콜백으로 비동기 코드를 구현할 수 있
-다!
+
+```js
+setTimeout(() => {
+  console.log("3초 후에 안녕하세요");
+}, 3000);
+```
+
+콜백으로 비동기 코드를 구현할 수 있다!
 
 ---
 # 콜백 방식 예시
+
 만약 fetch를 콜백 방식을 이용해 구현한다면?
-myFetch는 실제로 있는 함수는 아닙니다.
-콜백으로 짠다면 이렇게 하면 되겠구나!
+- myFetch는 실제로 있는 함수는 아닙니다.
+- 콜백으로 짠다면 이렇게 하면 되겠구나!
+
+```js
+myFetch("https://jsonplaceholder.typicode.com/posts/1", (res) => {
+  console.log(1, res);
+});
+```
 
 ---
 # 콜백 지옥
+
+<div class=vs><div>
+
 하나 정도는 괜찮은데, 두 개 이상 겹친다면?
-post를 순서대로 하나씩 불러와보자
+링크를 순서대로 하나씩 불러와보자
 여기에 각 step에 대한 에러 핸들링까지 추가되면?
 코드 가독성이 폭락
 뭔가가 더 필요하다!
+
+</div>
+
+![](img/hell.png)
+
+</div>
 
 ---
 # 주요 흐름 정리
@@ -564,95 +446,149 @@ post를 순서대로 하나씩 불러와보자
 # Q&A
 
 ---
-# https://velog.io/@cadenzah/What-is-a-
-Promise
-Promise
-Promise란
-async와 await
-자바스크립트에서 비동기 처리를 하기 위한 가장 보편적
+<!-- _class: lead -->
+
+# Promise
+
+- Promise란
+- async와 await
+
+https://velog.io/@cadenzah/What-is-a-Promise
+자바스크립트에서 비동기 처리를 하기 위한 가장 일반적인 문법
 
 ---
 # Promise
+
 비동기 처리에 사용되는 특별한 객체
 비동기 함수로부터 동기적으로 반환됨
-\- resolve와 reject를 인자로 받는 콜백 함수를 인자로 받아 생성됨
-생성 시 특정 작업을 수행한 뒤 resolve나 reject해 주겠다고 “약속”
-\- resolve된 값은 (프로미스 객체).then() 함수로 접근 가능
-\- reject된 값은 (프로미스 객체).catch() 함수로 접근 가능
+- resolve와 reject를 인자로 받는 콜백 함수를 인자로 받아 생성됨
+- 생성 시 특정 작업을 수행한 뒤 resolve나 reject해 주겠다고 “약속”
+- resolve된 값은 (프로미스 객체).then() 함수로 접근 가능
+- reject된 값은 (프로미스 객체).catch() 함수로 접근 가능
 
 ---
-# 다시 등장한 [setTimeout](https://developer.mozilla.org/ko/docs/Web/API/setTimeout)[:](https://developer.mozilla.org/ko/docs/Web/API/setTimeout)[ ](https://developer.mozilla.org/ko/docs/Web/API/setTimeout)두 번째 인자로 받은 숫자(ms)만큼 기다렸다가 첫 번째 인자로 받은 함수를 실
-행
-Promise 직접 생성하는 법
-Promise 객체를 생성하면서,
-resolve와 reject를 인자로 받아서 resolve나 reject를 하는 함수를 콜백으로
-넘겨줌
-setTimeout은 그냥 비동기인 걸 보여주려고 넣은 거고, 당연히 필수 아
-님
-<b>const myFunc =</b>사<b><sup>(</sup></b>실<b><sup>resolve, r</sup></b>를<b><sup>eje</sup></b>직<b><sup>ct</sup></b>접<b><sup>)</sup></b> 생<b>= ></b>성<b><sup>{</sup></b>할 일도 거의 없음
-Promise
-setTimeout(() => {
-resolve("Hello");
-}, 3000);
+# Promise 직접 생성하는 법
+
+콜백 함수를 넘겨 Promise 객체를 만들 수 있다.
+콜백 함수는 작업을 수행하고, 완료할 때 resolve를 호출하고, 실패하면 reject를 호출한다.
+(사실 직접 생성할 일은 잘 없다)
+
+```js
+const delayCallback = (resolve, reject) => {
+  setTimeout(() => resolve("result"), 3000);
 };
-3초 후에 Hello가 출력
-됨
-const getMyPromise = () => new Promise(myFunc);
+
+const getMyPromise = () => new Promise(delayCallback);
+
 getMyPromise().then((data) => console.log(data));
+```
 
 ---
 # Promise 사용 예시
-대부분의 상황에서 Promise를 직접 생성하지 않고, Promise를 리턴받아서 사용만
-함
-\- Promise를 리턴하는 함수들은 내부적으로 resolve/reject가 잘 구현돼 있음 (가령
-fetch)
-\- resolve된 것(성공): .then() 으로 확인
-\- reject된 것(실패): .catch() 로 확인
-처음에 감을 잡기가 쉽지 않음
+
+대부분의 상황에서 Promise를 직접 생성하지 않고, Promise를 리턴받아서 사용만함
+- Promise를 리턴하는 함수들은 내부적으로 resolve/reject가 잘 구현돼 있음 (가령 fetch)
+- resolve된 것(성공): .then() 으로 확인
+- reject된 것(실패): .catch() 로 확인
 
 ---
 # Promise 사용 예시 (1) - then, catch
 Live Tutorial
+
+아까보다 낫나요?
+최소한 위에서 밑으로 내려가잖아요
+
+```
 fetch('https://this-is-fake-url')
 .then(res => console.log('success'))
 .catch(res => console.log('fail'));
-아까보다 낫나요?
-최소한 위에서 밑으로 내려가잖아요
+```
 
 ---
 # Promise 사용 예시 (2) - chaining
-Live Tutorial
-아까보다 낫나요?
-최소한 위에서 밑으로 내려가잖아요
+
+<div style=font-size:1rem>
+
+```js
+fetch("https://jsonplaceholder.typicode.com/posts/1")
+  .then((res) => {
+    console.log(1, res);
+    return fetch("https://jsonplaceholder.typicode.com/posts/2");
+  })
+  .then((res) => {
+    console.log(2, res);
+    return fetch("https://jsonplaceholder.typicode.com/posts/3");
+  })
+  .then((res) => {
+    console.log(3, res);
+    return fetch("https://jsonplaceholder.typicode.com/posts/4");
+  })
+  .then((res) => {
+    console.log(4, res);
+  });
+```
+
+</div>
 
 ---
 # async / await
+
 Promise를 쉽게, 우리가 일반적으로 쓰던 동기 코드처럼 작성하는 문법
-함수가 끝날 때까지 정지
-함수 선언 부: async
-\- Promise의 앞 부분: await
-에러 캐치는 보통 try/catch 사용
-\- async 함수는 항상 Promise를 리턴
+
+<div class=vs>
+
+- 비동기 작업이 끝나면 값을 리턴함
+- 함수 선언부: async
+- Promise의 앞 부분: await
+- 에러 캐치는 보통 try/catch 사용
+- async 함수는 항상 Promise를 리턴
+
+```js
+async function task() {
+  const res1 = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+  console.log(1, res1);
+
+  const res2 = await fetch("https://jsonplaceholder.typicode.com/posts/2");
+  console.log(2, res2);
+
+  const res3 = await fetch("https://jsonplaceholder.typicode.com/posts/3");
+  console.log(3, res3);
+
+  const res4 = await fetch("https://jsonplaceholder.typicode.com/posts/4");
+  console.log(4, res4);
+
+}
+```
+
+</div>
 
 ---
 # async / await
-두 코드의 동작은 동일합
-니다
+
+두 코드의 동작은 동일합니다
+
+<div class=vs>
+
+```js
 async function getPosts() {
-try {
+  try {
+    const res = await fetch("URL");
+    const json = await res.json();
+    console.log(json);
+  } catch (error) {
+    console.error(error);
+  }
+}
+```
+
+```js
 function getPosts() {
-return fetch("URL")
-const res = await fetch("URL");
-const json = await res.json();
-console.log(json);
-} catch (error) {
-.then(res => res.json())
-.then(json => console.log(json))
-.catch(err => console.error(err));
+   return fetch("URL")
+     .then(res => res.json())
+     .then(json => console.log(json))
+     .catch(err => console.error(err));
 }
-console.error(error);
-}
-}
+```
 
 ---
 # 흐름 정리
@@ -665,6 +601,7 @@ console.error(error);
 # Q&A
 
 ---
+<!-- class: _lead -->
 # HTTP 통신
 
 ---
@@ -807,7 +744,7 @@ Postman 직접 한번 써보겠습니다
 ---
 # REST방식으로 디자인된 HTTP의 특징
 Connectionless
-\- Request 날릴 때 연결하고, Response가 오면 연결이 끊어짐
+- Request 날릴 때 연결하고, Response가 오면 연결이 끊어짐
 Stateless
 클라이언트 정보에 대한 상태가 없음
 로그인을 유지하고 싶으면? Session or Cookie
