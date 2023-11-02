@@ -1,0 +1,20 @@
+{
+  "name": "hw-test",
+  "version": "1.0.0",
+  "description": "hw1 testcode",
+  "main": "index.js",
+  "author": "woohm402 <woohm404@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "@playwright/test": "1.38.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
+}
