@@ -1,0 +1,46 @@
+name: e2e tests (playwright)
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.17.0'
+
+      # 먼저 현재 프로젝트를 빌드하고 서버를 연다
+      - name: Install Dependencies
+        run: yarn
+      - name: Build
+        run: yarn build
+      - name: Remove everything except dist/ folder
+        run: ls | grep -v dist | xargs rm -rf
+      - name: Run Server
+        run: npx serve -s dist -l 5173 &
+
+      # 그런 다음, Playwright를 설치하고 돌린다
+      - name: Install Playwright Browsers
+        run: npx playwright@1.38.0 install --with-deps
+      - name: Clone Test
+        run: git clone https://github.com/wafflestudio/seminar-2023.git
+      - name: Run Playwright tests
+        run: |
+          cd ./seminar-2023
+          cd ./react/2/hw-test
+          yarn
+          yarn test
+
+      # 테스트 결과를 저장한다
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: test-results
+          path: ./seminar-2023/react/2/hw-test/test-results
+          retention-days: 1
