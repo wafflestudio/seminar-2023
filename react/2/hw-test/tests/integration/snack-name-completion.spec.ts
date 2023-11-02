@@ -69,9 +69,9 @@ async function setupSnacks(page: Page) {
   const img_kokal =
     'https://contents.lotteon.com/itemimage/20231019072739/LM/88/01/06/28/61/90/3_/00/1/LM8801062861903_001_1.jpg/dims/optimize/dims/resizemc/400x400';
   const img_kobuk =
-    'https://i.namu.wiki/i/9wnvUaEa1EkDqG-M0Pbwfdf19FJQQXV_-bnlU2SYaNcG05y2wbabiIrfrGES1M4xSgDjY39RwOvLNggDd3Huuw.webp';
+    'https://wafflestudio.com/images/icon_intro.svg?auto=format&fit=max&w=256';
   const img_banana =
-    'https://i.namu.wiki/i/VXnKu8kicQpubRWW0UcYtTrDumV5V00aR5rOS3-wtfozhaV7cCeDl7wYGsJXUDhsVxFE2qeBH2AKHV69tEBu6w.webp';
+    'https://wafflestudio.com/images/icon_intro.svg?auto=format&fit=max&w=256';
 
   await page.goto('/snacks/new');
 

@@ -4,7 +4,7 @@ import { TEST_ID } from './_testids';
 const img_kokal =
   'https://contents.lotteon.com/itemimage/20231019072739/LM/88/01/06/28/61/90/3_/00/1/LM8801062861903_001_1.jpg/dims/optimize/dims/resizemc/400x400';
 const img_kobuk =
-  'https://i.namu.wiki/i/9wnvUaEa1EkDqG-M0Pbwfdf19FJQQXV_-bnlU2SYaNcG05y2wbabiIrfrGES1M4xSgDjY39RwOvLNggDd3Huuw.webp';
+  'https://wafflestudio.com/images/icon_intro.svg?auto=format&fit=max&w=256';
 
 test('새 과자 버튼을 누르면 /snacks/new 페이지로 이동한다', async ({ page }) => {
   await page.goto('/');

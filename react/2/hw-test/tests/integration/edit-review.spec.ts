@@ -77,7 +77,7 @@ async function setupReviews(page: Page) {
   const img_kokal =
     'https://contents.lotteon.com/itemimage/20231019072739/LM/88/01/06/28/61/90/3_/00/1/LM8801062861903_001_1.jpg/dims/optimize/dims/resizemc/400x400';
   const img_kobuk =
-    'https://i.namu.wiki/i/9wnvUaEa1EkDqG-M0Pbwfdf19FJQQXV_-bnlU2SYaNcG05y2wbabiIrfrGES1M4xSgDjY39RwOvLNggDd3Huuw.webp';
+    'https://wafflestudio.com/images/icon_intro.svg?auto=format&fit=max&w=256';
   const kokal = '꼬깔콘 고소한맛';
   const kobuk = '꼬북칩 초코츄러스맛';
 
