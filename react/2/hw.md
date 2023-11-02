@@ -111,6 +111,7 @@ UI는 아래 이미지를 참고한다:
 | 리뷰 쓰기 모달           | 이름 입력창     | 이름 오류 메시지          | 별점 입력창       | 별점 오류 메시지            |
 | ------------------ | ---------- | ------------------ | ------------ | -------------------- |
 | write-review-modal | name-input | name-input-message | rating-input | rating-input-message |
+
 | 내용 입력창        | 내용 오류 메시지             | 작성 버튼         | 취소 버튼         |
 | ------------- | --------------------- | ------------- | ------------- |
 | content-input | content-input-message | submit-review | cancel-review |
@@ -121,6 +122,7 @@ UI는 아래 이미지를 참고한다:
 | 리뷰 목록 | 리뷰 항목  | 리뷰 수정 버튼    | 리뷰 삭제 버튼      | 리뷰 수정 저장 버튼      |
 | --------  | ------ | ----------- | ------------- | ---------------- |
 | review-list | review | edit-review | delete-review | edit-review-save |
+
 | 리뷰 수정 취소 버튼        | 리뷰 수정 입력창                 | 과자 이름      | 과자 이미지      | 평점     |
 | ------------------ | ------------------------- | ---------- | ----------- | ------ |
 | edit-review-cancel | edit-review-content-input | snack-name | snack-image | rating |
