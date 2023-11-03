@@ -50,6 +50,20 @@ section > div.vs > * {
 
 <div style="display:flex;font-size:1.0rem"><div style="flex:1">
 
+## 비동기 통신
+
+- 이론
+    - 이벤트 루프
+    - blocking vs non-blocking
+    - 동기 vs 비동기
+- 전통적인 비동기 처리: 콜백
+    - 콜백 지옥
+- Promise를 이용한 비동기 처리
+    - Promise의 원리
+    - async / await로 Promise 다루기
+
+</div><div style="flex:1">
+
 ## HTTP 통신
 
 - HTTP 기초
@@ -66,20 +80,6 @@ section > div.vs > * {
     - 인증
     - CSRF
     - CORS
-
-</div><div style="flex:1">
-
-## 비동기 통신
-
-- 이론
-    - 이벤트 루프
-    - blocking vs non-blocking
-    - 동기 vs 비동기
-- 전통적인 비동기 처리: 콜백
-    - 콜백 지옥
-- Promise를 이용한 비동기 처리
-    - Promise의 원리
-    - async / await로 Promise 다루기
 
 </div></div>
 
@@ -843,7 +843,7 @@ Application Programming Interface
 ---
 
 <!-- _class: lead -->
-# axios
+# axios / fetch
 아 그래서 통신 어떻게 하는 건데
 
 ---
