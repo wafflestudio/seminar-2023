@@ -62,7 +62,7 @@
   <tr>
     <td>4</td>
     <td>Custom View, Jetpack Compose (기초)</td>
-    <td>11월 3일 (금) 오후 7시</td>
+    <td>11월 10일 (금) 오후 7시</td>
     <td><a href="https://map.naver.com/p/entry/place/1754510954?placePath=%2Fhome&c=15.00,0,0,0,dh">서울대입구 스프링라운지</a></td>
     <td><a href=""></a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023/blob/android/main/android/seminar_4/Seminar%204.pdf">세미나 4 자료</a></td>
@@ -73,7 +73,7 @@
   <tr>
     <td>5</td>
     <td>RxKotlin(기초), build system, Deployment</td>
-    <td>11월 17일 (금) 오후 7시</td>
+    <td>11월 24일 (금) 오후 7시</td>
     <td><a href="https://map.naver.com/p/entry/place/1754510954?placePath=%2Fhome&c=15.00,0,0,0,dh">서울대입구 스프링라운지</a></td>
     <td><a href=""></a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023/blob/android/main/android/seminar_5/Seminar%205.pdf">세미나 5 자료</a></td>
