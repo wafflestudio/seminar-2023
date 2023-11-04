@@ -3,7 +3,7 @@ import { TEST_ID } from './_testids';
 
 const kokal = '꼬깔콘 고소한맛';
 
-test('우하단의 녹색 버튼을 누르면 리뷰 쓰기 모달이 뜬다', async ({ page }) => {
+test('새 리뷰 버튼을 누르면 리뷰 쓰기 모달이 뜬다', async ({ page }) => {
   await page.goto('/');
   await page.getByTestId(TEST_ID['우하단 녹색 버튼']).click();
   await page.getByTestId(TEST_ID['새 리뷰 버튼']).click();
