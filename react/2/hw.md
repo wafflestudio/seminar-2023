@@ -4,6 +4,7 @@
 - (10/13) 제출 방법 추가
 - (11/02) 과자 정보에 제조사가 포함된다는 내용 삭제 (포함되지 않음)
 - (11/02) 테스트 및 관련 스펙 추가, 제출 기한 연장
+- (11/04) 누락된 testid 추가
 
 ## 과제 목적
 
@@ -112,9 +113,9 @@ UI는 아래 이미지를 참고한다:
 | ------------------ | ---------- | ------------------ | ------------ | -------------------- |
 | write-review-modal | name-input | name-input-message | rating-input | rating-input-message |
 
-| 내용 입력창        | 내용 오류 메시지             | 작성 버튼         | 취소 버튼         |
-| ------------- | --------------------- | ------------- | ------------- |
-| content-input | content-input-message | submit-review | cancel-review |
+| 내용 입력창        | 내용 오류 메시지             | 작성 버튼         | 취소 버튼         | 자동완성 목록 |
+| ------------- | --------------------- | ------------- | ------------- | --- |
+| content-input | content-input-message | submit-review | cancel-review | snack-name-compl-list |
 
 
 - 리뷰 목록 (리뷰 목록 페이지 및 과자 페이지)
