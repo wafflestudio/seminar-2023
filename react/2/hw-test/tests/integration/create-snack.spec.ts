@@ -62,9 +62,11 @@ test('추가된 과자가 과자 목록 페이지에 있다', async ({ page }) =
   const card = page.getByTestId(TEST_ID['과자 카드']);
   await expect(card).toBeVisible();
   await expect(card.getByTestId(TEST_ID['과자 이름'])).toContainText('꼬깔콘 고소한맛');
-  await expect(card.getByTestId(TEST_ID['과자 이름'])).toHaveAttribute('href', new RegExp(`${snackId}$`));
   await expect(card.getByTestId(TEST_ID['과자 이미지'])).toHaveAttribute('src', img_kokal);
   await expect(card.getByTestId(TEST_ID['별점'])).toContainText(/^[1-5]\.\d+$/);
+
+  await card.getByTestId(TEST_ID['과자 이름']).click();
+  await expect(page).toHaveURL(new RegExp(`/snacks/${snackId}$`));
 });
 
 test('과자를 여러 개 추가할 수 있다', async ({ page }) => {
