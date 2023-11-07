@@ -521,12 +521,13 @@ CSSOM은 JS 수행을 중단함
 
 따라서  보통 CSS는 head에, JS는 body 태그 맨 밑에 배치
 
-CRA 쓰면 빌드할 때 이 정도는 자동으로 해 줍니다
+vite이 만들어주는 대로 하면 대강 맞습니다
 
 ---
+
+<!-- _class: lead -->
+
 # CSS Advanced
-
-
 
 CSS Modules
 SASS
@@ -535,7 +536,7 @@ CSS-in-JS
 ---
 # 지금까지의 CSS
 
-![](img/React%20Seminar%20430.png)
+<div style="display:flex">
 
 - 선택자를 이용한 match
 - 오타 검증 안됨
@@ -545,20 +546,24 @@ CSS-in-JS
 - 리팩토링할 때 어디까지 옮겨야 되는지 보는거 귀찮음
 - 관리하기 빡셈
 - 그냥 언어 자체가 어렵고 더러움
-  - 그건..
 
-![](img/React%20Seminar%20431.png)
+![](img/React%20Seminar%20430.png)
+
+</div>
+
 
 ---
 # CSS를 더 편하게 쓰기 위한 다양한 기술들
 
+<div style="display:grid;grid-template-columns:1fr auto">
+
 CSS Modules
-
 Sass
-
 CSS-in-JS
 
-![](img/React%20Seminar%20432.png)
+![h:400](img/React%20Seminar%20432.png)
+
+</div>
 
 ---
 # CSS Modules
@@ -574,16 +579,12 @@ CSS className이나 id를 고유하게 만들어주는 기술
 ---
 # CSS Modules 코드
 
-![](img/React%20Seminar%20433.png)
-
-![](img/React%20Seminar%20434.png)
-
-![](img/React%20Seminar%20435.png)
+![](img/React%20Seminar%20433.png) ![](img/React%20Seminar%20434.png) ![](img/React%20Seminar%20435.png)
 
 ---
 # SASS
 
-![](img/React%20Seminar%20436.png)
+![bg right contain](img/React%20Seminar%20436.png)
 
 CSS의 단점을 많이 개선한 CSS 전처리기
 
@@ -598,35 +599,31 @@ SASS 전처리기를 이용해서, 빌드 시에는 css로 자동 변환됨
 ---
 # SASS 코드
 
-![](img/React%20Seminar%20437.png)
-
-![](img/React%20Seminar%20438.png)
-
-![](img/React%20Seminar%20439.png)
+![](img/React%20Seminar%20437.png) ![](img/React%20Seminar%20438.png) ![](img/React%20Seminar%20439.png)
 
 ---
 # CSS-in-JS
 
 CSS를 JS 안에서 사용하겠다.
-
 모든 스타일이 변수로 연결되어 있기 때문에 유지보수가 아주 간편해짐
-
 진짜 써보면 신세계입니다 코드 관리가 너무 편안하고 명확해져요
+그래서 요즘 아주 유행하고 있습니다  [(확인: npm trends)](https://www.npmtrends.com/styled-components)
+대표주자:  [styled-components](https://styled-components.com/)
 
-그래서 요즘 아주 유행하고 있습니다  _[(확인: npm trends)](https://www.npmtrends.com/styled-components)_
+<div style="text-align:right">
 
-대표주자:  _[styled-components](https://styled-components.com/)_
+![w:500](img/React%20Seminar%20440.png)
 
-![](img/React%20Seminar%20440.png)
+</div>
 
 ---
 # CSS-in-JS 코드
 
-<span style="color:#434343">깔끔하죠</span>
+깔끔하죠
 
-<span style="color:#434343">하지만 치명적인 단점이 있는데</span>
+하지만 치명적인 단점이 있는데
 
-<span style="color:#434343">다음 슬라이드에서 설명합니다</span>
+다음 슬라이드에서 설명합니다
 
 ![](img/React%20Seminar%20441.png)
 
@@ -635,17 +632,17 @@ CSS를 JS 안에서 사용하겠다.
 
 CSS-in-CSS (css가 스타일을 담당하는 기존 방식)는 스타일이 CSS 안에 있음
 
-![](img/React%20Seminar%20442.png)
+![](img/React%20Seminar%20442.png)![](img/React%20Seminar%20444.png)![w:600](img/React%20Seminar%20443.png)
 
-![](img/React%20Seminar%20443.png)
-
-![](img/React%20Seminar%20444.png)
+---
+# CSS-in-CSS vs CSS-in-JS (1)
 
 CSS-in-JS는 스타일이 JS 안에 있음
 
-![](img/React%20Seminar%20445.png)
+![](img/React%20Seminar%20445.png)![w:600](img/React%20Seminar%20446.png)
 
-![](img/React%20Seminar%20446.png)
+---
+# CSS-in-CSS vs CSS-in-JS (1)
 
 - 앞서 공부한 브라우저 렌더 원리와 연결지어 보면?
 - CSS는 html을 파싱할 때 로드된 이후 DOM 생성과 병렬적으로 파싱 및 분석됨
@@ -655,7 +652,7 @@ CSS-in-JS는 스타일이 JS 안에 있음
 - 스타일 정보가 JS에 있다면 JS가 커진다
 - 직렬 딜레이가 있으면 병렬 딜레이보다 느리다
 - 정확한 삼단논법에 의해  __CSS-in-JS는 느리다__ 는 결론이 나옵니다.
-- _[https://pustelto.com/blog/css-vs-css-in-js-perf/](https://pustelto.com/blog/css-vs-css-in-js-perf/)_  에 다르면 실제로 수백 ms 정도 느리다고 합니다
+- [https://pustelto.com/blog/css-vs-css-in-js-perf/](https://pustelto.com/blog/css-vs-css-in-js-perf/)  에 다르면 실제로 수백 ms 정도 느리다고 합니다
 
 ---
 # 뭘 쓸까요?
@@ -681,3 +678,6 @@ CSS-in-JS는 코드 유지보수 측면에서 획기적으로 좋지만 성능�
 ---
 # 과제
 
+백엔드 만드는 중...
+
+이번 과제에서 저번에 배운 서버 연결과 오늘 배운 CSS 활용을 같이 해보게 될 겁니다
