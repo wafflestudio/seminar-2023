@@ -1,0 +1,10 @@
+<h1>블로그</h1>
+<ul>
+    {% for post in object_list %}
+        <li><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'post_create' %}">
+    <button>생성하기</button>
+</a>
