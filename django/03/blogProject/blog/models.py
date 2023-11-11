@@ -27,3 +27,9 @@ class Comment(models.Model):
     class Meta:
         verbose_name = "댓글"
         verbose_name_plural = "댓글 목록"
+
+
+class Tag(models.Model):
+    content = models.CharField(unique=True, primary_key=True, max_length=100)
+    posts = models.ManyToManyField(Post)
+    comments = models.ManyToManyField(Comment)
