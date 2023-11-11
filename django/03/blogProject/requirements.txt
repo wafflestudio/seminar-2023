@@ -1,4 +1,14 @@
 asgiref==3.7.2
+black==23.11.0
+click==8.1.7
+colorama==0.4.6
 Django==4.2.6
 django-debug-toolbar==4.2.0
+djangorestframework==3.14.0
+mypy-extensions==1.0.0
+packaging==23.2
+pathspec==0.11.2
+platformdirs==4.0.0
+pytz==2023.3.post1
 sqlparse==0.4.4
+tzdata==2023.3
