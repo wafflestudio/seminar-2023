@@ -1,7 +1,8 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views import generic
-from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
+from .pagination import CursorPagination
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from blog.forms import PostForm, CommentForm
 from blog.models import Post
@@ -59,6 +60,7 @@ class PostListCreateAPI(generics.ListCreateAPIView):
     serializer_class = PostSerializer
     queryset = Post.objects.all()
     permission_classes = (IsAuthenticatedOrReadOnly,)
+    pagination_class = CursorPagination
 
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user)
