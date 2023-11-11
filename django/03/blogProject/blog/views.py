@@ -1,12 +1,13 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views import generic
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 
 from blog.forms import PostForm, CommentForm
 from blog.models import Post
-from rest_framework.generics import CreateAPIView, ListCreateAPIView
+from rest_framework import generics
 
+from blog.permissions import IsOwnerOrReadOnly
 from blog.serializers import PostSerializer
 
 
@@ -54,10 +55,16 @@ class PostCreateView(LoginRequiredMixin, generic.CreateView):
         return super().form_valid(form)
 
 
-class PostListCreateAPI(ListCreateAPIView):
+class PostListCreateAPI(generics.ListCreateAPIView):
     serializer_class = PostSerializer
     queryset = Post.objects.all()
-    permission_classes = (IsAuthenticated,)
+    permission_classes = (IsAuthenticatedOrReadOnly,)
 
     def perform_create(self, serializer):
         serializer.save(created_by=self.request.user)
+
+
+class PostUpdateRetrieveDeleteAPI(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = PostSerializer
+    queryset = Post.objects.all()
+    permission_classes = (IsOwnerOrReadOnly,)
