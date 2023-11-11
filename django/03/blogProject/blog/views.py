@@ -2,14 +2,14 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.urls import reverse_lazy
 from django.views import generic
 from .pagination import CursorPagination
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
 
 from blog.forms import PostForm, CommentForm
-from blog.models import Post
+from blog.models import Post, Comment
 from rest_framework import generics
 
 from blog.permissions import IsOwnerOrReadOnly
-from blog.serializers import PostSerializer
+from blog.serializers import PostSerializer, CommentSerializer
 
 
 class PostListView(generic.ListView):
@@ -69,4 +69,19 @@ class PostListCreateAPI(generics.ListCreateAPIView):
 class PostUpdateRetrieveDeleteAPI(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = PostSerializer
     queryset = Post.objects.all()
+    permission_classes = (IsOwnerOrReadOnly,)
+
+
+class CommentCreateAPI(generics.CreateAPIView):
+    serializer_class = CommentSerializer
+    queryset = Comment.objects.all()
+    permission_classes = (IsAuthenticated,)
+
+    def perform_create(self, serializer):
+        serializer.save(created_by=self.request.user)
+
+
+class CommentRetrieveUpdateDestroyAPI(generics.RetrieveUpdateDestroyAPIView):
+    serializer_class = CommentSerializer
+    queryset = Comment.objects.all()
     permission_classes = (IsOwnerOrReadOnly,)

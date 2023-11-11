@@ -7,6 +7,8 @@ from blog.views import (
     PostDetailView,
     PostListCreateAPI,
     PostUpdateRetrieveDeleteAPI,
+    CommentCreateAPI,
+    CommentRetrieveUpdateDestroyAPI,
 )
 
 urlpatterns = [
@@ -19,6 +21,8 @@ urlpatterns = [
             [
                 path("posts/", PostListCreateAPI.as_view()),
                 path("posts/<int:pk>/", PostUpdateRetrieveDeleteAPI.as_view()),
+                path("comments/", CommentCreateAPI.as_view()),
+                path("comments/<int:pk>/", CommentRetrieveUpdateDestroyAPI.as_view()),
             ]
         ),
     ),

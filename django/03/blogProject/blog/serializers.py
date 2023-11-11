@@ -6,8 +6,20 @@ from blog.models import Post, Comment
 class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
-        fields = ["pk", "post", "created_by", "created_at", "updated_at"]
-        read_only_fields = ["pk", "created_at", "updated_at", "created_by"]
+        fields = [
+            "pk",
+            "post",
+            "created_by",
+            "created_at",
+            "updated_at",
+            "description",
+        ]
+        read_only_fields = [
+            "pk",
+            "created_at",
+            "updated_at",
+            "created_by",
+        ]
 
 
 class PostSerializer(serializers.ModelSerializer):
