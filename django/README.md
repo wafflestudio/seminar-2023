@@ -46,7 +46,7 @@
   </tr>
   <tr>
     <td>3</td>
-    <td>블로그 API 만들기 - DRF</td>
+    <td>블로그 API 만들기 (Django Rest Framework)</td>
     <td>11월 11일 (토) 오후 3시</td>
     <td>서울대 301동 203호</td>
     <td><a href="https://github.com/wafflestudio/seminar-2023/blob/main/django/03/03-django-seminar-21.5.pdf">링크</a></td>
