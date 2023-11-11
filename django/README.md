@@ -46,17 +46,17 @@
   </tr>
   <tr>
     <td>3</td>
-    <td>제로부터 블로그 API 만들기 (Django Rest Framework)</td>
+    <td>블로그 API 만들기 - DRF</td>
     <td>11월 11일 (토) 오후 3시</td>
     <td>서울대 301동 203호</td>
-    <td></td>
+    <td><a href="https://github.com/wafflestudio/seminar-2023/blob/main/django/03/03-django-seminar-21.5.pdf">링크</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/03">링크</a></td>
-    <td></td>
+    <td><a href="https://snu-ac-kr.zoom.us/j/92525519662?pwd=ZWx6VlNpWVBjdkptOEhndUxYNXV6UT09">링크</a></td>
     <td></td>
   </tr>
   <tr>
     <td>4</td>
-    <td>Pretotyping with django: 5일 안에 내 제품을 검증하는 법</td>
+    <td>소셜 로그인, 이미지 업로드</td>
     <td>11월 25일 (토) 오후 3시</td>
     <td>서울대 301동 203호</td>
     <td></td>
@@ -66,7 +66,7 @@
   </tr>
   <tr>
     <td>5</td>
-    <td>Instagram with django: 3명의 엔지니어로 1,400만 사용자를 확보한 방법</td>
+    <td>Pretotyping with django: 5일 안에 내 제품을 검증하는 법</td>
     <td>12월 2일 (토) 오후 3시</td>
     <td>서울대 301동 203호</td>
     <td></td>
