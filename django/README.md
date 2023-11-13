@@ -27,7 +27,7 @@
   <tr>
     <td>1</td>
     <td>무조건 도움되는 Git / virtualenv</td>
-    <td>10월 7일 (토) 오후 3시</td>
+    <td>10월 8일 (일) 오후 3시</td>
     <td>서울대 301동 203호</td>
     <td><a href="https://github.com/wafflestudio/seminar-2023/blob/main/django/01/01.pdf">링크</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/01">링크</a></td>
@@ -38,7 +38,7 @@
     <td>2</td>
     <td>제로부터 블로그 만들기 (Django Templates)</td>
     <td>10월 28일 (토) 오후 3시 30분</td>
-    <td>서울대 301동 203호</td>
+    <td>서울대 301동 205호</td>
     <td><a href="https://narayo9-snu.notion.site/59e0021641a846bebff8b9b71f54dcec?pvs=4">링크</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/02">링크</a></td>
     <td><a href="https://snu-ac-kr.zoom.us/j/94671721419">링크</a></td>
@@ -52,7 +52,7 @@
     <td><a href="https://github.com/wafflestudio/seminar-2023/blob/main/django/03/03-django-seminar-21.5.pdf">링크</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/03">링크</a></td>
     <td><a href="https://snu-ac-kr.zoom.us/j/92525519662?pwd=ZWx6VlNpWVBjdkptOEhndUxYNXV6UT09">링크</a></td>
-    <td></td>
+    <td><a href="https://www.youtube.com/watch?v=k5JtkbH0-1Y&list=PLzNDswlnDlcPhEyp7D6VFj04ve6cYgAXA&index=4">링크</a></td>
   </tr>
   <tr>
     <td>4</td>
