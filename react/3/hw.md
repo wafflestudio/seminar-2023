@@ -17,9 +17,9 @@
 
 ## 과제 스펙
 
-- 백엔드 서버의 주소는 다음과 같다:  https://seminar-react-api.wafflestudio.com
-  - API Docs는 [/docs](https://seminar-react-api.wafflestudio.com/docs/static/index.html)에서 읽을 수 있다.
-  - API 요청은 `https://seminar-react-api.wafflestudio.com/snacks`과 같이 위의 주소 뒤에 원하는 기능의 path를 붙여서 보내면 된다.
+- **패스워드 변경**: `PUT /users/me/password` API를 통해 반드시 패스워드를 변경한다.
+  - 힌트: curl, Postman 등의 프로그램을 활용할 수 있다.
+  - 힌트: 패스워드 변경은 액세스 토큰을 필요로 한다.
 - 로그인 화면
   - 로그인되어 있지 않을 경우, 어느 url로 접속하든 항상 로그인 화면을 보여준다.
   - 로그인 화면에서 username 과 password 를 입력하고 로그인 버튼을 누르면 [`POST /auth/login`](https://seminar-react-api.wafflestudio.com/docs/static/index.html#/default/post_auth_login) api를 이용해 로그인을 시도한다.
@@ -41,5 +41,8 @@
   - [`PATCH /reviews/{id}`](https://seminar-react-api.wafflestudio.com/docs/static/index.html#/default/patch_reviews__id_) api를 이용해 리뷰를 수정한다. 수정 후 화면에도 반영되어 있어야 한다.
   - [`DELETE /reviews/{id}`](https://seminar-react-api.wafflestudio.com/docs/static/index.html#/default/delete_reviews__id_) api를 이용해 리뷰를 삭제한다. 삭제 후 화면에도 반영되어 있어야 한다.
 
+- 백엔드 서버의 주소는 다음과 같다:  https://seminar-react-api.wafflestudio.com
+  - 자세한 API는 [/docs](https://seminar-react-api.wafflestudio.com/docs/static/index.html)에서 읽을 수 있다.
+  - API 요청은 `https://seminar-react-api.wafflestudio.com/snacks`과 같이 위의 주소 뒤에 원하는 기능의 path를 붙여서 보내면 된다.
 - 로그인 화면의 디자인은 자율에 맡긴다.
   - 단, 이후에 추가될 test spec을 만족하기 위해서는username 및 password를 입력하기 위한 input과 로그인 버튼이 있어야 한다.
