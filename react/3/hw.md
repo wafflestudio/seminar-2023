@@ -44,5 +44,7 @@
 - 백엔드 서버의 주소는 다음과 같다:  https://seminar-react-api.wafflestudio.com
   - 자세한 API는 [/docs](https://seminar-react-api.wafflestudio.com/docs/static/index.html)에서 읽을 수 있다.
   - API 요청은 `https://seminar-react-api.wafflestudio.com/snacks`과 같이 위의 주소 뒤에 원하는 기능의 path를 붙여서 보내면 된다.
+- 백엔드 DB에는 사용자의 목록이 이미 들어있다. `username`과 `password`는 각각 수강생의 github name과 실명으로 초기화되어있다.
+  - 자신의 계정으로만 로그인하도록 한다.
 - 로그인 화면의 디자인은 자율에 맡긴다.
   - 단, 이후에 추가될 test spec을 만족하기 위해서는username 및 password를 입력하기 위한 input과 로그인 버튼이 있어야 한다.
