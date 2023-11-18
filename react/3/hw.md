@@ -53,6 +53,7 @@
 
 본 과제의 백엔드 서버는 쿠키를 통한 액세스 토큰 재발급을 지원한다. 로컬에서 쿠키를 사용하기 위해서는 아래와 같이 vite.config.ts를 수정하여 서버가 https로 실행되도록 설정해야 한다.
 이 설정에 사용된 `@vitejs/plugin-basic-ssl`는 npm이나 yarn을 통해 설치할 수 있다.
+
 ```ts
 import * as reactPlugin from 'vite-plugin-react'
 import basicSsl from "@vitejs/plugin-basic-ssl";
@@ -66,3 +67,22 @@ const config: UserConfig = {
 
 export default config
 ```
+
+fetch를 사용할 때 쿠키를 받거나 보내기 위해서는 추가적인 설정이 필요하다. axios 등 다른 라이브러리에서 필요한 설정도 쉽게 찾을 수 있을 것이다.
+
+```ts
+fetch("https://api.api/auth/login", {
+  ...
+  // 응답의 Set-Cookie 헤더가 작동하기 위한 설정
+  credentials: "include",
+});
+/* ... */
+fetch("https://api.api/auth/login", {
+  ...
+  // 요청의 Cookie 헤더에 리프레시 토큰을 넣기 위한 설정
+  credentials: "include",
+});
+```
+
+참고로 리프레시 토큰의 값을 js로 읽는 것은 불가능하다. 크롬의 경우 개발자도구의 네트워크 탭에서 각 요청/응답의 쿠키를 확인하거나, 어플리케이션 탭에서 저장되어있는 쿠키의 값을 찾아볼 수 있다.
+작년에 여러 시행착오를 거치며 다듬어진 API이기 때문에 대체로 잘 작동할 것으로 예상되지만, 잘 작동하지 않는다면 (특히 이번 과제의 경우) 적극적으로 질문하도록 한다.
