@@ -48,3 +48,21 @@
   - 자신의 계정으로만 로그인하도록 한다.
 - 로그인 화면의 디자인은 자율에 맡긴다.
   - 단, 이후에 추가될 test spec을 만족하기 위해서는username 및 password를 입력하기 위한 input과 로그인 버튼이 있어야 한다.
+
+## 쿠키 사용 가이드
+
+본 과제의 백엔드 서버는 쿠키를 통한 액세스 토큰 재발급을 지원한다. 로컬에서 쿠키를 사용하기 위해서는 아래와 같이 vite.config.ts를 수정하여 서버가 https로 실행되도록 설정해야 한다.
+이 설정에 사용된 `@vitejs/plugin-basic-ssl`는 npm이나 yarn을 통해 설치할 수 있다.
+```ts
+import * as reactPlugin from 'vite-plugin-react'
+import basicSsl from "@vitejs/plugin-basic-ssl";
+import type { UserConfig } from 'vite'
+
+const config: UserConfig = {
+  jsx: 'react',
+  plugins: [reactPlugin, basicSsl()],
+  https: true,
+}
+
+export default config
+```
