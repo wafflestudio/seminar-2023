@@ -1,7 +1,7 @@
-Seminar2 Assignment
+Seminar3 Assignment
 ================================
 
-### **due: 2023.10.28 (토) 24:00**
+### **due: 2023.11.11 (토) 24:00**
 
 ## 과제 목적
 - UICollectionView과 DiffableDataSource의 사용 방법을 이해합니다.
