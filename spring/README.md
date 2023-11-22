@@ -76,9 +76,9 @@
     <td>11월 22일 (수) 오후 7시</td>
     <td>서울대 301동 203호</td>
     <td></td>
+    <td><a href="./week4/week4.pdf">링크</a></td>
     <td>링크</td>
-    <td>링크</td>
-    <td>링크</td>
+    <td><a href="https://snu-ac-kr.zoom.us/j/98971848946?pwd=V0J4ZXl2N0thaFMxSWU1K0puUlE2dz09">링크</a></td>
     <td>링크</td>
   </tr>
   </table>
