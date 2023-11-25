@@ -38,8 +38,12 @@
   - [`GET /snacks`](https://seminar-react-api.wafflestudio.com/docs/static/index.html#/default/get_snacks_) api를 이용해 과자 목록을 가져온다.
 - 과자 상세 페이지
   - [`GET /reviews`](https://seminar-react-api.wafflestudio.com/docs/static/index.html#/default/get_reviews_) api를 이용해 리뷰 목록을 가져온다. 리뷰 목록 페이지와는 다르게, api의 url 쿼리파라미터에 snack을 전달해야 한다.
+- 리뷰의 수정 및 삭제
   - [`PATCH /reviews/{id}`](https://seminar-react-api.wafflestudio.com/docs/static/index.html#/default/patch_reviews__id_) api를 이용해 리뷰를 수정한다. 수정 후 화면에도 반영되어 있어야 한다.
   - [`DELETE /reviews/{id}`](https://seminar-react-api.wafflestudio.com/docs/static/index.html#/default/delete_reviews__id_) api를 이용해 리뷰를 삭제한다. 삭제 후 화면에도 반영되어 있어야 한다.
+  - 해당 동작은 로그인한 사용자가 생성한 리뷰에만 사용할 수 있다.
+  - 다른 사용자가 만든 리뷰에는 수정 및 삭제 버튼이 나타나지 않는다.
+    - UI 상으로 자신의 리뷰와 다른 사람의 리뷰를 구분할 수 있게 하여도 좋다. 해당 UI는 채점에 반영하지는 않는다.
 
 - 백엔드 서버의 주소는 다음과 같다:  https://seminar-react-api.wafflestudio.com
   - 자세한 API는 [/docs](https://seminar-react-api.wafflestudio.com/docs/static/index.html)에서 읽을 수 있다.
