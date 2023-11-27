@@ -79,7 +79,7 @@
     <td><a href="./week4/week4.pdf">링크</a></td>
     <td>링크</td>
     <td><a href="https://snu-ac-kr.zoom.us/j/98971848946?pwd=V0J4ZXl2N0thaFMxSWU1K0puUlE2dz09">링크</a></td>
-    <td>링크</td>
+    <td><a href="https://www.youtube.com/watch?v=UnaicPsL14c">링크</a></td>
   </tr>
   </table>
 
