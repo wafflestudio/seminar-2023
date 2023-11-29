@@ -75,7 +75,7 @@
     <td>Jetpack Compose</td>
     <td>12월 1일 (금) 오후 7시</td>
     <td><a href="https://map.naver.com/p/entry/place/1754510954?placePath=%2Fhome&c=15.00,0,0,0,dh">서울대입구 스프링라운지</a></td>
-    <td><a href="https://developer.android.com/codelabs/jetpack-compose-basics?hl=ko#0"></a>사전 준비 (Jetpack Compose 튜토리얼)</td>
+    <td><a href="https://developer.android.com/codelabs/jetpack-compose-basics?hl=ko#0">튜토리얼</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023/blob/android/main/android/seminar_5/Seminar%205.pdf">세미나 5 자료</a></td>
     <td><a href=""></a></td>
     <td><a href=""></a></td>
