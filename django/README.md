@@ -56,22 +56,12 @@
   </tr>
   <tr>
     <td>4</td>
-    <td>소셜 로그인, 이미지 업로드</td>
-    <td>11월 25일 (토) 오후 3시</td>
-    <td>서울대 301동 203호</td>
-    <td></td>
-    <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/04">링크</a></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>5</td>
-    <td>Pretotyping with django: 5일 안에 내 제품을 검증하는 법</td>
+    <td>나만의 챗봇 만들기(GPT, S3 Storage)</td>
     <td>12월 2일 (토) 오후 3시</td>
     <td>서울대 301동 203호</td>
     <td></td>
-    <td>없음!</td>
-    <td></td>
+    <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/04">링크</a></td>
+    <td><a href="https://snu-ac-kr.zoom.us/j/95488956762?pwd=WFY4T2dFUmw1VHZFOFdpSjZYcWI3Zz09">링크</a></td>
     <td></td>
   </tr>
   </table>
