@@ -59,7 +59,7 @@
     <td>나만의 챗봇 만들기(GPT, S3 Storage)</td>
     <td>12월 2일 (토) 오후 3시</td>
     <td>서울대 301동 203호</td>
-    <td></td>
+    <td><a href="https://github.com/wafflestudio/seminar-2023/blob/main/django/04/04-django-seminar-21.5.pdf">링크</a></td>
     <td><a href="https://github.com/wafflestudio/seminar-2023-django-assignment/tree/main/04">링크</a></td>
     <td><a href="https://snu-ac-kr.zoom.us/j/95488956762?pwd=WFY4T2dFUmw1VHZFOFdpSjZYcWI3Zz09">링크</a></td>
     <td></td>
